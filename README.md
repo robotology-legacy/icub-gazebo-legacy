@@ -1,7 +1,7 @@
 icub_gazebo
 ===========
 
-Preliminary files for simulation of the iCub humanoid robot in Gazebo
+Preliminary files for simulation of the iCub humanoid robot in Gazebo (meshes courtesy of Joseph Salini - UPMC).
 
 #Installation
 Install [Gazebo](http://gazebosim.org/) and [gazebo_yarp_plugins](https://github.com/robotology/gazebo_yarp_plugins)
