@@ -1,0 +1,21 @@
+#this data is used to inizialize the fake controlBoard device in gazebo
+#the JointNames parameter list provide a mapping between the joints in
+#the controlBoard and the joints in Gazebo
+[GENERAL]
+Joints 7 // the number of joints of the robot part
+ 
+[GAZEBO]
+device controlboard
+subdevice gazebo_controlboard
+name /icubSimGazebo/right_arm
+rate 100
+jointNames r_shoulder_pitch r_shoulder_roll r_shoulder_yaw r_elbow r_wrist_prosup r_wrist_pitch r_wrist_yaw
+ 
+#PIDs:
+# this information is used to set the PID values in simulation for GAZEBO, we need only the first three values
+[GAZEBO_PIDS]
+#Right Arm
+Pid0 500.0 2.0 0.1 9999 9999 9 9
+Pid1 500.0 2.0 0.1 9999 9999 9 9
+Pid2 500.0 2.0 0.1 9999 9999 9 9
+Pid3 300.0 0.1 0.01 9999 9999 9 9
