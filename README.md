@@ -4,7 +4,7 @@ icub_gazebo
 Preliminary files for simulation of the iCub humanoid robot in Gazebo
 
 #Installation
-Install [Gazebo][http://gazebosim.org/] and [gazebo_yarp_plugins](https://github.com/robotology/gazebo_yarp_plugins)
+Install [Gazebo](http://gazebosim.org/) and [gazebo_yarp_plugins](https://github.com/robotology/gazebo_yarp_plugins)
 
 Clone this repository:
 ```
