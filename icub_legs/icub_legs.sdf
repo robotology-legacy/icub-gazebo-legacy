@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_root_link.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_root_link.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -28,7 +28,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_root_link.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_root_link.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -56,7 +56,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_hip_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_hip_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -65,7 +65,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_hip_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_hip_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -107,7 +107,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_hip_2.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_hip_2.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -116,7 +116,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_hip_2.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_hip_2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -189,7 +189,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_thigh.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_thigh.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -198,7 +198,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_thigh.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_thigh.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -240,7 +240,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_shank.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_shank.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -249,7 +249,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_shank.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_shank.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -291,7 +291,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_ankle_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_ankle_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -300,7 +300,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_ankle_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_ankle_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -375,7 +375,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_foot.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_foot.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -384,7 +384,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_foot.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_foot.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -424,7 +424,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_hip_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_hip_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -433,7 +433,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_hip_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_hip_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -475,7 +475,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_hip_2.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_hip_2.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -484,7 +484,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_hip_2.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_hip_2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -557,7 +557,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_thigh.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_thigh.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -566,7 +566,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_thigh.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_thigh.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -608,7 +608,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_shank.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_shank.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -617,7 +617,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_shank.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_shank.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -659,7 +659,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_ankle_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_ankle_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -668,7 +668,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_ankle_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_ankle_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -743,7 +743,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_foot.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_foot.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -752,7 +752,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_foot.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_foot.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -773,6 +773,7 @@
         <dynamics/>
       </axis>
     </joint>
+    <!--
     <link name='lap_belt_1'>
       <pose>0 0 0 3.14159 -1.57079 -2.65359e-06</pose>
       <inertial>
@@ -792,7 +793,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_lap_belt_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_lap_belt_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -801,7 +802,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_lap_belt_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_lap_belt_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -876,7 +877,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_chest.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_chest.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -885,7 +886,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_chest.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_chest.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -912,6 +913,7 @@
       <pose>-0.0107485 -0.11026 0.1753 -0.261795 -1.57078 -3.09255e-06</pose>
       <inertial>
         <pose>-5e-06 0.0187 -0.00119 0 -0 0</pose>
+        <inertia>
           <ixx>0.000123</ixx>
           <ixy>2.1e-08</ixy>
           <ixz>-1e-09</ixz>
@@ -925,7 +927,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_shoulder_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_shoulder_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -934,7 +936,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_shoulder_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_shoulder_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -976,7 +978,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_shoulder_2.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_shoulder_2.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -985,7 +987,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_shoulder_2.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_shoulder_2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1060,7 +1062,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_arm.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_arm.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1069,7 +1071,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_arm.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_arm.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1140,7 +1142,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_forearm.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_forearm.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1149,7 +1151,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_forearm.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_forearm.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1222,7 +1224,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_l_hand.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_l_hand.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1231,7 +1233,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_l_hand.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_l_hand.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1271,7 +1273,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_neck_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_neck_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1280,7 +1282,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_neck_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_neck_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1320,7 +1322,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_neck_2.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_neck_2.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1329,7 +1331,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_neck_2.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_neck_2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1369,7 +1371,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_head.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_head.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1378,7 +1380,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_head.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_head.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1418,7 +1420,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_shoulder_1.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_shoulder_1.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1427,7 +1429,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_shoulder_1.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_shoulder_1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1469,7 +1471,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_shoulder_2.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_shoulder_2.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1478,7 +1480,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_shoulder_2.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_shoulder_2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1553,7 +1555,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_arm.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_arm.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1562,7 +1564,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_arm.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_arm.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1633,7 +1635,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_forearm.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_forearm.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1642,7 +1644,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_forearm.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_forearm.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1713,7 +1715,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/collision/icub_simple_collision_r_hand.dae</uri>
+            <uri>model://icub_legs/meshes/collision/icub_simple_collision_r_hand.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1722,7 +1724,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_r_hand.dae</uri>
+            <uri>model://icub_legs/meshes/visual/icub_r_hand.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1743,25 +1745,31 @@
         <dynamics/>
       </axis>
     </joint>
-
+    -->
+    
     <!-- Configuration file for fake control boards -->
+
+    <!--
     <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
     </plugin>
     <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_head.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_head.ini</yarpConfigurationFile>
     </plugin>
     <plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
     </plugin>
     <plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
     </plugin>
+
+    -->
+
     <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
     </plugin>
     <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
-        <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
+        <yarpConfigurationFile>model://icub_legs/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
     </plugin>
 
     <!-- Spawing pose -->
