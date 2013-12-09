@@ -1,5 +1,5 @@
 <sdf version='1.4'>
-  <model name='test_icub'>
+  <model name='iCub'>
     <link name='root_link'>
       <pose>0 0 0 0 -0 0</pose>
       <inertial>
