@@ -1390,7 +1390,9 @@
          __default_topic__
         </topic>
       <imu/>
-    <plugin filename="libgazebo_yarp_imu.so" name="iCub_yarp_gazebo_plugin_IMU"/>
+    <plugin filename="libgazebo_yarp_imu.so" name="iCub_yarp_gazebo_plugin_IMU">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
+    </plugin>
     <pose>
      -0.072 -0.0068 0.044 0 -0 0
     </pose>
