@@ -43,6 +43,17 @@
         <pose>8.0431e-05 -0.00691643 -0.0023047 0 -0 0</pose>
         <mass>0.695</mass>
         <inertia>
+          <ixx>0.00447053</ixx>
+          <ixy>-2.2209e-05</ixy>
+          <ixz>1.39712e-05</ixz>
+          <iyy>0.00325085</iyy>
+          <iyz>4.77629e-05</iyz>
+          <izz>0.00490487</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_hip_1_collision'>
+        <pose>0 0 0 -0.945183 1.57079 -2.51598</pose>
+        <geometry>
           <mesh>
             <scale>1 1 1</scale>
             <uri>model://icub/meshes/collision/icub_simple_collision_l_hip_1.dae</uri>
