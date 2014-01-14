@@ -20,20 +20,8 @@
 
     <!-- iCub -->
     <include>
-        <uri>model://icub</uri>
+        <uri>model://icub_fixed</uri>
     </include>
-    
-    <joint name="fixed_base" type="revolute">
-        <parent>world</parent>
-        <child>iCub::root_link</child>
-        <axis>
-            <limit>
-                <lower>0</lower>
-                <upper>0</upper>
-            </limit>
-            <xyz>0 0 1</xyz>
-        </axis>
-    </joint>
    
   </world>
 </sdf>
