@@ -1445,10 +1445,7 @@
     <plugin filename="libgazebo_yarp_imu.so" name="iCub_yarp_gazebo_plugin_IMU">
         <yarpConfigurationFile>model://icub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
     </plugin>
-    <!-- pose is wrong should be fixed -->
-    <pose>
-     -0.072 -0.0068 0.044 0 -0 0
-    </pose>
+    <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
    </sensor>
     </link>
     <joint name='neck_yaw' type='revolute'>
