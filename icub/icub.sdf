@@ -85,7 +85,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.48</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_hip_2'>
@@ -269,7 +271,9 @@
           <effort>30</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.29</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_ankle_1'>
@@ -453,7 +457,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.49</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_hip_2'>
@@ -637,7 +643,9 @@
           <effort>30</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.31</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_ankle_1'>
