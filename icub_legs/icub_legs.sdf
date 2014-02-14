@@ -176,7 +176,7 @@
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin filename="libgazebo_yarp_forcetorque.so" name="left_leg_ft_plugin">
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_legs/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
         </plugin>
       </sensor>
     </joint>
@@ -421,7 +421,7 @@
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin filename="libgazebo_yarp_forcetorque.so" name="left_foot_ft_plugin">
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_legs/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
         </plugin>
       </sensor>
     </joint>
@@ -563,7 +563,7 @@
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin filename="libgazebo_yarp_forcetorque.so" name="right_leg_ft_plugin">
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_legs/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
         </plugin>
        </sensor>
     </joint>
@@ -808,7 +808,7 @@
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin filename="libgazebo_yarp_forcetorque.so" name="right_foot_ft_plugin">
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_legs/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
         </plugin>
        </sensor>
     </joint>
