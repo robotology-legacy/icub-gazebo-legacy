@@ -171,6 +171,16 @@
         </limit>
         <dynamics/>
       </axis>
+      <!-- check pose of the wrench returned by the simulated sensor -->
+      <sensor name="left_leg_ft" type="force_torque">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin filename="libgazebo_yarp_forcetorque.so" name="left_leg_ft_plugin">
+          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
     <link name='l_thigh'>
       <pose>0 -0.0681 -0.1199 1.57079 -1.53072e-05 3.14159</pose>
@@ -510,6 +520,16 @@
         </limit>
         <dynamics/>
       </axis>
+      <!-- check pose of the wrench returned by the simulated sensor -->
+      <sensor name="right_leg_ft" type="force_torque">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin filename="libgazebo_yarp_forcetorque.so" name="right_leg_ft_plugin">
+          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
     <link name='r_thigh'>
       <pose>0 0.0681 -0.1199 1.5708 -1.26536e-05 -3.14159</pose>
@@ -1035,6 +1055,16 @@
         </limit>
         <dynamics/>
       </axis>
+      <!-- check pose of the wrench returned by the simulated sensor -->
+      <sensor name="left_arm_ft" type="force_torque">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin filename="libgazebo_yarp_forcetorque.so" name="left_arm_ft_plugin">
+          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
     <link name='l_elbow_1'>
       <pose>-0.0257499 -0.11026 0.0230202 3.14159 -9.17449e-06 3.14159</pose>
@@ -1549,6 +1579,16 @@
         </limit>
         <dynamics/>
       </axis>
+      <!-- check pose of the wrench returned by the simulated sensor -->
+      <sensor name="right_arm_ft" type="force_torque">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin filename="libgazebo_yarp_forcetorque.so" name="right_arm_ft_plugin">
+          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
     <link name='r_elbow_1'>
       <pose>-0.0257496 0.11026 0.0230202 7.40268e-06 9.17449e-06 1.01961e-06</pose>
