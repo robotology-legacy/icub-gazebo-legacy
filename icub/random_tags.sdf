@@ -1,0 +1,37 @@
+ 
+    <!-- Configuration file for fake control boards -->
+    <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_head.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
+        <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+    </plugin>
+    <plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
+        <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+    </plugin>
+    <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
+    </plugin>
+
+    <!-- Spawing pose -->
+    <pose>0 0 0.70 0 0 0 </pose>
+    
+    
+    <sensor name="imu_sensor" type="imu">
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+      <imu/>
+    <plugin filename="libgazebo_yarp_imu.so" name="iCub_yarp_gazebo_plugin_IMU">
+        <yarpConfigurationFile>model://icub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
+    </plugin>
+    <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
+   </sensor>
