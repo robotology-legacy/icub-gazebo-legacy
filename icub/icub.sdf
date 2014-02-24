@@ -364,11 +364,14 @@
     	<surface>
      	<contact>
       	<ode>
+	<soft_erp>
+		0.5
+	</soft_erp>
        <kp>
-        1e+06
+        1e+05
        </kp>
        <kd>
-        100
+        10000
        </kd>
        <max_vel>
         1
@@ -748,11 +751,14 @@
     <surface>
      <contact>
       <ode>
+	<soft_erp>
+		0.5
+	</soft_erp>
        <kp>
-        1e+06
+        1e+05
        </kp>
        <kd>
-        100
+        10000
        </kd>
        <max_vel>
         1
