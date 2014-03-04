@@ -15,11 +15,11 @@ git clone https://github.com/traversaro/icub_gazebo.git
 
 Copy the icub directory contained in this repository in the directory ~/.gazebo/models/:
 ```
-cp -avr ./icub_gazebo/icub ~/.gazebo/models/icub 
+cp -avR ./icub_gazebo/icub ~/.gazebo/models/icub 
 ```
 In the repository is also present a model of only the legs of the iCub, you can install it in the same way:
 ```
-cp -avr ./icub_gazebo/icub_legs ~/.gazebo/models/icub_legs 
+cp -avR ./icub_gazebo/icub_legs ~/.gazebo/models/icub_legs 
 ```
 
 Usage
