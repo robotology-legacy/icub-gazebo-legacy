@@ -1167,8 +1167,10 @@
       <axis>
         <xyz>1.63402e-06 1 2.59738e-06</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0.0959931</lower>
+          <upper>1.85005</upper>
+          <effort>20</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
@@ -1216,8 +1218,10 @@
       <axis>
         <xyz>-5.50128e-06 2.5974e-06 -1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-0.872665</lower>
+          <upper>0.872665</upper>
+          <effort>0.45</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
@@ -1247,8 +1251,8 @@
       <axis>
         <xyz>1 -1.63401e-06 -5.5013e-06</xyz>
         <limit>
-          <lower>-0.436332</lower>
-          <upper>0.436332</upper>
+          <lower>-1.13446</lower>
+          <upper>0.174533</upper>
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
@@ -1298,8 +1302,10 @@
       <axis>
         <xyz>-1.63404e-06 -1 -6.2706e-06</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-0.436332</lower>
+          <upper>0.436332</upper>
+          <effort>0.65</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
@@ -1691,8 +1697,10 @@
       <axis>
         <xyz>-1.01955e-06 1 7.40268e-06</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0.0959931</lower>
+          <upper>1.85005</upper>
+          <effort>20</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
@@ -1740,8 +1748,10 @@
       <axis>
         <xyz>5.50129e-06 -7.40266e-06 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-0.872665</lower>
+          <upper>0.872665</upper>
+          <effort>0.45</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
@@ -1771,8 +1781,8 @@
       <axis>
         <xyz>-1 -1.01959e-06 5.5013e-06</xyz>
         <limit>
-          <lower>-0.436332</lower>
-          <upper>0.436332</upper>
+          <lower>-1.13446</lower>
+          <upper>0.174533</upper>
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
@@ -1822,8 +1832,10 @@
       <axis>
         <xyz>1.01957e-06 -1 -3.72946e-06</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-0.436332</lower>
+          <upper>0.436332</upper>
+          <effort>0.65</effort>
+          <velocity>100</velocity>
         </limit>
         <dynamics/>
       </axis>
