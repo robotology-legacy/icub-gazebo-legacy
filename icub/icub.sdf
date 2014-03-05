@@ -86,7 +86,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.48</damping>
+		<damping>0.5</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -138,7 +138,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_hip_3'>
@@ -171,7 +173,8 @@
           <effort>0</effort>
           <velocity>0</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+	</dynamics>
       </axis>
       <!-- check pose of the wrench returned by the simulated sensor -->
       <sensor name="left_leg_ft" type="force_torque">
@@ -232,7 +235,9 @@
           <effort>40</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_shank'>
@@ -284,7 +289,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.29</damping>
+		<damping>0.5</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -336,7 +341,9 @@
           <effort>24</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_foot'>
@@ -421,7 +428,9 @@
           <effort>11</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_hip_1'>
@@ -525,7 +534,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_hip_3'>
@@ -558,7 +569,8 @@
           <effort>0</effort>
           <velocity>0</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+	</dynamics>
       </axis>
       <!-- check pose of the wrench returned by the simulated sensor -->
       <sensor name="right_leg_ft" type="force_torque">
@@ -619,7 +631,9 @@
           <effort>40</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_shank'>
@@ -723,7 +737,9 @@
           <effort>24</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_foot'>
@@ -808,7 +824,9 @@
           <effort>11</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='lap_belt_1'>
@@ -859,7 +877,9 @@
           <effort>36</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='lap_belt_2'>
@@ -892,7 +912,9 @@
           <effort>80</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='chest'>
@@ -943,7 +965,9 @@
           <effort>80</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_shoulder_1'>
@@ -994,7 +1018,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_shoulder_2'>
@@ -1045,7 +1071,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_upper_arm'>
@@ -1078,7 +1106,9 @@
           <effort>34</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_arm'>
@@ -1129,7 +1159,8 @@
           <effort>0</effort>
           <velocity>0</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+	</dynamics>
       </axis>
       <!-- check pose of the wrench returned by the simulated sensor -->
       <sensor name="left_arm_ft" type="force_torque">
@@ -1172,7 +1203,9 @@
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_forearm'>
@@ -1223,7 +1256,9 @@
           <effort>0.45</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_wrist_1'>
@@ -1256,7 +1291,9 @@
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='l_hand'>
@@ -1307,7 +1344,9 @@
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='neck_1'>
@@ -1358,7 +1397,9 @@
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='neck_2'>
@@ -1409,7 +1450,9 @@
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='head'>
@@ -1473,7 +1516,9 @@
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_shoulder_1'>
@@ -1524,7 +1569,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_shoulder_2'>
@@ -1575,7 +1622,9 @@
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_upper_arm'>
@@ -1608,7 +1657,9 @@
           <effort>34</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_arm'>
@@ -1659,7 +1710,8 @@
           <effort>0</effort>
           <velocity>0</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+	</dynamics>
       </axis>
       <!-- check pose of the wrench returned by the simulated sensor -->
       <sensor name="right_arm_ft" type="force_torque">
@@ -1702,7 +1754,9 @@
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_forearm'>
@@ -1753,7 +1807,9 @@
           <effort>0.45</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_wrist_1'>
@@ -1786,7 +1842,9 @@
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     <link name='r_hand'>
@@ -1837,7 +1895,9 @@
           <effort>0.65</effort>
           <velocity>100</velocity>
         </limit>
-        <dynamics/>
+        <dynamics>
+		<damping>0.5</damping>
+	</dynamics>
       </axis>
     </joint>
     
