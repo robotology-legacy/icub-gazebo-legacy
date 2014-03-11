@@ -86,7 +86,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -139,7 +139,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -236,7 +236,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -289,7 +289,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -342,7 +342,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -470,7 +470,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -523,7 +523,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.49</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -576,7 +576,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -673,7 +673,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -726,7 +726,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.31</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -779,7 +779,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -907,7 +907,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -960,7 +960,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -995,7 +995,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1048,7 +1048,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1101,7 +1101,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1154,7 +1154,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1189,7 +1189,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1286,7 +1286,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1339,7 +1339,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1374,7 +1374,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1427,7 +1427,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1480,7 +1480,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1533,7 +1533,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1599,7 +1599,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1652,7 +1652,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1705,7 +1705,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1740,7 +1740,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1837,7 +1837,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1890,7 +1890,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1925,7 +1925,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
@@ -1978,7 +1978,7 @@
           <velocity>100</velocity>
         </limit>
         <dynamics>
-		<damping>0.5</damping>
+		<damping>10</damping>
 	</dynamics>
       </axis>
     </joint>
