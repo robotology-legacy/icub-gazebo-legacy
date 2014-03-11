@@ -232,7 +232,7 @@
         <limit>
           <lower>-1.3962634016</lower>
           <upper>1.3613568166</upper>
-          <effort>40</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -285,7 +285,7 @@
         <limit>
             <lower>-2.181661565</lower>
             <upper>0.2617993878</upper>
-          <effort>30</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -338,7 +338,7 @@
         <limit>
           <lower>-0.3490658504</lower>
           <upper>0.7679448709</upper>
-          <effort>24</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -466,7 +466,7 @@
         <limit>
           <lower>-0.418879</lower>
           <upper>0.418879</upper>
-          <effort>11</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -669,7 +669,7 @@
         <limit>
             <lower>-1.3962634016</lower>
             <upper>1.3613568166</upper>
-          <effort>40</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -722,7 +722,7 @@
         <limit>
           <lower>-2.181661565</lower>
           <upper>0.2617993878</upper>
-          <effort>30</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -775,7 +775,7 @@
         <limit>
             <lower>-0.3490658504</lower>
             <upper>0.7679448709</upper>
-          <effort>24</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -903,7 +903,7 @@
         <limit>
           <lower>-0.3839724354</lower>
           <upper>0.3839724354</upper>
-          <effort>11</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -956,7 +956,7 @@
         <limit>
           <lower>-0.383972</lower>
           <upper>1.46608</upper>
-          <effort>36</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -991,7 +991,7 @@
         <limit>
           <lower>-0.680678</lower>
           <upper>0.680678</upper>
-          <effort>80</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1044,7 +1044,7 @@
         <limit>
           <lower>-1.02974</lower>
           <upper>1.02974</upper>
-          <effort>80</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1185,7 +1185,7 @@
         <limit>
           <lower>-0.645772</lower>
           <upper>1.74533</upper>
-          <effort>34</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1282,7 +1282,7 @@
         <limit>
           <lower>0.0959931</lower>
           <upper>1.85005</upper>
-          <effort>20</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1335,7 +1335,7 @@
         <limit>
           <lower>-0.872665</lower>
           <upper>0.872665</upper>
-          <effort>0.45</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1370,7 +1370,7 @@
         <limit>
           <lower>-1.13446</lower>
           <upper>0.174533</upper>
-          <effort>0.65</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1423,7 +1423,7 @@
         <limit>
           <lower>-0.436332</lower>
           <upper>0.436332</upper>
-          <effort>0.65</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1476,7 +1476,7 @@
         <limit>
           <lower>-0.698132</lower>
           <upper>0.523599</upper>
-          <effort>20</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1529,7 +1529,7 @@
         <limit>
           <lower>-1.22173</lower>
           <upper>1.0472</upper>
-          <effort>20</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1595,7 +1595,7 @@
         <limit>
           <lower>-0.959931</lower>
           <upper>0.959931</upper>
-          <effort>20</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1736,7 +1736,7 @@
         <limit>
           <lower>-0.645772</lower>
           <upper>1.74533</upper>
-          <effort>34</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1833,7 +1833,7 @@
         <limit>
           <lower>0.0959931</lower>
           <upper>1.85005</upper>
-          <effort>20</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1886,7 +1886,7 @@
         <limit>
           <lower>-0.872665</lower>
           <upper>0.872665</upper>
-          <effort>0.45</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1921,7 +1921,7 @@
         <limit>
           <lower>-1.13446</lower>
           <upper>0.174533</upper>
-          <effort>0.65</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
@@ -1974,7 +1974,7 @@
         <limit>
           <lower>-0.436332</lower>
           <upper>0.436332</upper>
-          <effort>0.65</effort>
+          <effort>84</effort>
           <velocity>100</velocity>
         </limit>
         <dynamics>
