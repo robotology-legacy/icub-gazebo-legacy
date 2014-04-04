@@ -372,34 +372,19 @@
                 <surface>
                     <contact>
                         <ode>
-                            <soft_erp>
-                                0.5
-                            </soft_erp>
-                            <kp>
-                                1e+05
-                            </kp>
-                            <kd>
-                                10000
-                            </kd>
-                            <max_vel>
-                                1
-                            </max_vel>
-                            <min_depth>
-                                0
-                            </min_depth>
+                            <soft_erp>  0.5    </soft_erp>
+                            <kp>        1e+05  </kp>
+                            <kd>        10000  </kd>
+                            <max_vel>   1      </max_vel>
+                            <min_depth> 0      </min_depth>
                         </ode>
                     </contact>
                     <friction>
                         <ode>
-                            <mu>
-                                1
-                            </mu>
-                            <mu2>
-                                1
-                            </mu2>
-                            <fdir1>
-                                1 0 0
-                            </fdir1>
+                            <mu>  1  </mu>
+                            <mu2> 1  </mu2>
+                            <slip1> 0.000001 </slip1>
+                            <slip2> 0.000001 </slip2>
                         </ode>
                     </friction>
                 </surface>
@@ -810,34 +795,19 @@
                 <surface>
                     <contact>
                         <ode>
-                            <soft_erp>
-                                0.5
-                            </soft_erp>
-                            <kp>
-                                1e+05
-                            </kp>
-                            <kd>
-                                10000
-                            </kd>
-                            <max_vel>
-                                1
-                            </max_vel>
-                            <min_depth>
-                                0
-                            </min_depth>
+                            <soft_erp>  0.5   </soft_erp>
+                            <kp>        1e+05 </kp>
+                            <kd>        10000 </kd>
+                            <max_vel>   1     </max_vel>
+                            <min_depth> 0     </min_depth>
                         </ode>
                     </contact>
                     <friction>
                         <ode>
-                            <mu>
-                                1
-                            </mu>
-                            <mu2>
-                                1
-                            </mu2>
-                            <fdir1>
-                                1 0 0
-                            </fdir1>
+                            <mu>  1  </mu>
+                            <mu2> 1  </mu2>
+                            <slip1> 0.000001 </slip1>
+                            <slip2> 0.000001 </slip2>
                         </ode>
                     </friction>
                 </surface>
@@ -2010,7 +1980,6 @@
 
         <!-- Spawing pose -->
         <pose>0 0 0.70 0 0 0 </pose>
-    
     
     </model>
 </sdf>
