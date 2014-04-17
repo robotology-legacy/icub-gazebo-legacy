@@ -12,8 +12,8 @@ Clone this repository:
 git clone https://github.com/traversaro/icub_gazebo.git
 ```
 
-To let know to Gazebo that models are present in this directory, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. To ensure you do not have to modify it every time you want to run a simulation, you can add a line to 
-your the `.bashrc` file in your home:
+
+To let know to Gazebo that models are present in the repo you just clone, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. You can add a line to the `.bashrc` file in your home:
 ```
 export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:/home/user/path/to/icub_gazebo
 ```
