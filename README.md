@@ -12,14 +12,10 @@ Clone this repository:
 git clone https://github.com/traversaro/icub_gazebo.git
 ```
 
-
-Copy the icub directory contained in this repository in the directory ~/.gazebo/models/:
+To let know to Gazebo that models are present in this directory, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. To ensure you do not have to modify it every time you want to run a simulation, you can add a line to 
+your the `.bashrc` file in your home:
 ```
-cp -avR ./icub_gazebo/icub ~/.gazebo/models/icub 
-```
-In the repository is also present a model of only the legs of the iCub, you can install it in the same way:
-```
-cp -avR ./icub_gazebo/icub_legs ~/.gazebo/models/icub_legs 
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:/home/user/path/to/icub_gazebo
 ```
 
 Usage
