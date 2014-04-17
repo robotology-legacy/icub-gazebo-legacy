@@ -11,7 +11,7 @@ Clone this repository:
 ```
 git clone https://github.com/traversaro/icub_gazebo.git
 ```
-
+ 
 
 To let know to Gazebo that models are present in the repo you just clone, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. You can add a line to the `.bashrc` file in your home:
 ```
