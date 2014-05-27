@@ -20,7 +20,7 @@ export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:/home/user/path/to/icub_gazebo
 
 Usage
 -----
-As the iCub Gazebo models uses [Yarp](yarp.it), remember to start it before starting the simulation, using the following command in a console:
+As the iCub Gazebo models uses [Yarp](http://yarp.it), remember to start it before starting the simulation, using the following command in a console:
 ```
 yarpserver 
 ```
