@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.4'>
-  <model name="iCub">
+  <model name="iCub_fixed">
     <include>
       <uri>model://icub</uri>
       <pose>0.0 0 1.0 0 0 0</pose>
