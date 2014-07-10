@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2008/03/COLLADASchema" version="1.5.0">
+	<asset>
+		<contributor>
+			<authoring_tool>OpenRAVE Collada Writer</authoring_tool>
+		</contributor>
+		<created>2013-06-24T17:17:14.000000</created>
+		<modified>2013-06-24T17:17:14.000000</modified>
+		<unit/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_visual_scenes id="vscenes">
+		<visual_scene id="vscene" name="Visual Scene">
+			<node id="visual1" name="l2" sid="visual1">
+				<translate>0 0 0</translate>
+				<rotate>1 0 0 0</rotate>
+				<instance_node url="#v1.node0" sid="node0" name="l2"/>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<library_geometries id="geometries">
+		<geometry id="g1_link0_geom0">
+			<mesh>
+				<source id="g1_link0_geom0_positions">
+					<float_array id="g1_link0_geom0_positions-array" count="324" digits="2490384">0 -2.220446049250313e-18 -0.06 0 2.220446049250313e-18 -0.05 0.04 -2.220446049250313e-18 -0.06 0.04 2.220446049250313e-18 -0.05 0.04 -2.220446049250313e-18 -0.06 0.04 2.220446049250313e-18 -0.05 0.03969682038687743 -0.004915531626588567 -0.06 0.03969682038687743 -0.004915531626588562 -0.05 0.03879187744140038 -0.009756548804335088 -0.06 0.03879187744140038 -0.009756548804335085 -0.05 0.03729888917617424 -0.01444966664748612 -0.06 0.03729888917617424 -0.01444966664748611 -0.05 0.03524048777143138 -0.01892374227344041 -0.05999999999999999 0.03524048777143138 -0.0189237422734404 -0.04999999999999999 0.03264787649424887 -0.02311095325633005 -0.05999999999999999 0.03264787649424887 -0.02311095325633004 -0.04999999999999999 0.02956035668882636 -0.02694782574586229 -0.05999999999999999 0.02956035668882636 -0.02694782574586229 -0.04999999999999999 0.02602473200816969 -0.03037619666618829 -0.05999999999999998 0.02602473200816969 -0.03037619666618828 -0.04999999999999999 0.02209459891842024 -0.03334409540884478 -0.05999999999999998 0.02209459891842024 -0.03334409540884478 -0.04999999999999999 0.01782953423106153 -0.03580653165420249 -0.05999999999999998 0.01782953423106153 -0.03580653165420249 -0.04999999999999998 0.01329419197918639 -0.0377261773788511 -0.05999999999999998 0.01329419197918639 -0.0377261773788511 -0.04999999999999998 0.008557323328259902 -0.03907393271038403 -0.05999999999999998 0.008557323328259902 -0.03907393271038403 -0.04999999999999998 0.003690734378532081 -0.03982936705180138 -0.05999999999999998 0.003690734378532081 -0.03982936705180138 -0.04999999999999998 -0.001231802342246808 -0.03998102878853464 -0.05999999999999998 -0.001231802342246808 -0.03998102878853464 -0.04999999999999998 -0.006135666195147413 -0.03952661888325038 -0.05999999999999998 -0.006135666195147413 -0.03952661888325038 -0.04999999999999998 -0.01094651960288331 -0.03847302572691277 -0.05999999999999998 -0.01094651960288331 -0.03847302572691277 -0.04999999999999998 -0.01559143493170717 -0.03683622071779815 -0.05999999999999998 -0.01559143493170717 -0.03683622071779815 -0.04999999999999998 -0.01999999999999999 -0.03464101615137755 -0.05999999999999998 -0.01999999999999999 -0.03464101615137755 -0.04999999999999998 -0.02410538545517025 -0.03192068909120958 -0.05999999999999998 -0.02410538545517025 -0.03192068909120958 -0.04999999999999999 -0.02784535783851706 -0.02871647692257768 -0.05999999999999998 -0.02784535783851706 -0.02871647692257768 -0.04999999999999999 -0.03116322298102682 -0.02507695223576426 -0.05999999999999999 -0.03116322298102682 -0.02507695223576425 -0.04999999999999999 -0.03400868542918456 -0.02105728651509425 -0.05999999999999999 -0.03400868542918456 -0.02105728651509424 -0.04999999999999999 -0.03633861087278095 -0.01671841379547135 -0.05999999999999999 -0.03633861087278095 -0.01671841379547134 -0.04999999999999999 -0.03811768001708626 -0.01212610696452175 -0.06 -0.03811768001708626 -0.01212610696452174 -0.05 -0.03931892398735607 -0.007349980712662818 -0.06 -0.03931892398735607 -0.007349980712662812 -0.05 -0.03992413314948177 -0.002462436245357713 -0.06 -0.03992413314948177 -0.002462436245357709 -0.05 -0.03992413314948177 0.002462436245357699 -0.06 -0.03992413314948177 0.002462436245357703 -0.05 -0.03931892398735607 0.007349980712662802 -0.06 -0.03931892398735607 0.007349980712662807 -0.05 -0.03811768001708626 0.01212610696452173 -0.06 -0.03811768001708626 0.01212610696452174 -0.05 -0.03633861087278095 0.01671841379547133 -0.06000000000000001 -0.03633861087278095 0.01671841379547134 -0.05000000000000001 -0.03400868542918457 0.02105728651509422 -0.06000000000000001 -0.03400868542918457 0.02105728651509423 -0.05000000000000001 -0.03116322298102682 0.02507695223576425 -0.06000000000000001 -0.03116322298102682 0.02507695223576425 -0.05000000000000001 -0.02784535783851707 0.02871647692257767 -0.06000000000000001 -0.02784535783851707 0.02871647692257768 -0.05000000000000002 -0.02410538545517026 0.03192068909120958 -0.06000000000000001 -0.02410538545517026 0.03192068909120958 -0.05000000000000002 -0.02000000000000002 0.03464101615137754 -0.06000000000000002 -0.02000000000000002 0.03464101615137754 -0.05000000000000002 -0.01559143493170717 0.03683622071779815 -0.06000000000000002 -0.01559143493170717 0.03683622071779815 -0.05000000000000002 -0.01094651960288332 0.03847302572691276 -0.06000000000000002 -0.01094651960288332 0.03847302572691276 -0.05000000000000002 -0.00613566619514744 0.03952661888325037 -0.06000000000000002 -0.00613566619514744 0.03952661888325037 -0.05000000000000002 -0.001231802342246818 0.03998102878853464 -0.06000000000000002 -0.001231802342246818 0.03998102878853464 -0.05000000000000002 0.003690734378532062 0.03982936705180139 -0.06000000000000002 0.003690734378532062 0.03982936705180139 -0.05000000000000002 0.008557323328259902 0.03907393271038403 -0.06000000000000002 0.008557323328259902 0.03907393271038403 -0.05000000000000002 0.01329419197918638 0.0377261773788511 -0.06000000000000002 0.01329419197918638 0.0377261773788511 -0.05000000000000002 0.01782953423106151 0.0358065316542025 -0.06000000000000002 0.01782953423106151 0.0358065316542025 -0.05000000000000002 0.02209459891842023 0.03334409540884478 -0.06000000000000001 0.02209459891842023 0.03334409540884478 -0.05000000000000002 0.02602473200816968 0.03037619666618829 -0.06000000000000001 0.02602473200816968 0.0303761966661883 -0.05000000000000002 0.02956035668882637 0.02694782574586228 -0.06000000000000001 0.02956035668882637 0.02694782574586229 -0.05000000000000001 0.03264787649424886 0.02311095325633005 -0.06000000000000001 0.03264787649424886 0.02311095325633006 -0.05000000000000001 0.03524048777143137 0.01892374227344042 -0.06000000000000001 0.03524048777143137 0.01892374227344043 -0.05000000000000001 0.03729888917617424 0.01444966664748612 -0.06 0.03729888917617424 0.01444966664748612 -0.05 0.03879187744140038 0.009756548804335101 -0.06 0.03879187744140038 0.009756548804335104 -0.05 0.03969682038687743 0.004915531626588558 -0.06 0.03969682038687743 0.004915531626588563 -0.05 0.04 7.576728343928512e-18 -0.06 0.04 1.201762044242914e-17 -0.05</float_array>
+					<technique_common>
+						<accessor count="108" source="#g1_link0_geom0_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom0_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom0_positions"/>
+				</vertices>
+				<triangles count="208" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom0_vertices" set="0"/>
+					<p>0 2 4 1 5 3 2 3 4 4 3 5 0 4 6 1 7 5 4 5 6 6 5 7 0 6 8 1 9 7 6 7 8 8 7 9 0 8 10 1 11 9 8 9 10 10 9 11 0 10 12 1 13 11 10 11 12 12 11 13 0 12 14 1 15 13 12 13 14 14 13 15 0 14 16 1 17 15 14 15 16 16 15 17 0 16 18 1 19 17 16 17 18 18 17 19 0 18 20 1 21 19 18 19 20 20 19 21 0 20 22 1 23 21 20 21 22 22 21 23 0 22 24 1 25 23 22 23 24 24 23 25 0 24 26 1 27 25 24 25 26 26 25 27 0 26 28 1 29 27 26 27 28 28 27 29 0 28 30 1 31 29 28 29 30 30 29 31 0 30 32 1 33 31 30 31 32 32 31 33 0 32 34 1 35 33 32 33 34 34 33 35 0 34 36 1 37 35 34 35 36 36 35 37 0 36 38 1 39 37 36 37 38 38 37 39 0 38 40 1 41 39 38 39 40 40 39 41 0 40 42 1 43 41 40 41 42 42 41 43 0 42 44 1 45 43 42 43 44 44 43 45 0 44 46 1 47 45 44 45 46 46 45 47 0 46 48 1 49 47 46 47 48 48 47 49 0 48 50 1 51 49 48 49 50 50 49 51 0 50 52 1 53 51 50 51 52 52 51 53 0 52 54 1 55 53 52 53 54 54 53 55 0 54 56 1 57 55 54 55 56 56 55 57 0 56 58 1 59 57 56 57 58 58 57 59 0 58 60 1 61 59 58 59 60 60 59 61 0 60 62 1 63 61 60 61 62 62 61 63 0 62 64 1 65 63 62 63 64 64 63 65 0 64 66 1 67 65 64 65 66 66 65 67 0 66 68 1 69 67 66 67 68 68 67 69 0 68 70 1 71 69 68 69 70 70 69 71 0 70 72 1 73 71 70 71 72 72 71 73 0 72 74 1 75 73 72 73 74 74 73 75 0 74 76 1 77 75 74 75 76 76 75 77 0 76 78 1 79 77 76 77 78 78 77 79 0 78 80 1 81 79 78 79 80 80 79 81 0 80 82 1 83 81 80 81 82 82 81 83 0 82 84 1 85 83 82 83 84 84 83 85 0 84 86 1 87 85 84 85 86 86 85 87 0 86 88 1 89 87 86 87 88 88 87 89 0 88 90 1 91 89 88 89 90 90 89 91 0 90 92 1 93 91 90 91 92 92 91 93 0 92 94 1 95 93 92 93 94 94 93 95 0 94 96 1 97 95 94 95 96 96 95 97 0 96 98 1 99 97 96 97 98 98 97 99 0 98 100 1 101 99 98 99 100 100 99 101 0 100 102 1 103 101 100 101 102 102 101 103 0 102 104 1 105 103 102 103 104 104 103 105 0 104 106 1 107 105 104 105 106 106 105 107</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 0 -0.055</translate>
+					<rotate>-1 -0 -0 90.00000000000003</rotate>
+					<cylinder>
+						<height>0.01</height>
+						<radius>0.04 0.04</radius>
+					</cylinder>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+		<geometry id="g1_link0_geom1">
+			<mesh>
+				<source id="g1_link0_geom1_positions">
+					<float_array id="g1_link0_geom1_positions-array" count="324" digits="2490384">0.04 0.02999999999999999 -0.01999999999999999 -0.04 0.03000000000000001 -0.02000000000000001 0.04 0.04099999999999999 -0.01999999999999999 -0.04 0.04100000000000001 -0.02000000000000001 0.04 0.04099999999999999 -0.01999999999999999 -0.04 0.04100000000000001 -0.02000000000000001 0.04 0.04091662560639128 -0.01864822880268814 -0.04 0.0409166256063913 -0.01864822880268815 0.04 0.04066776629638509 -0.01731694907880784 -0.04 0.04066776629638511 -0.01731694907880786 0.04 0.04025719452344791 -0.01602634167194131 -0.04 0.04025719452344792 -0.01602634167194133 0.04 0.03969113413714362 -0.01479597087480388 -0.04 0.03969113413714363 -0.0147959708748039 0.04 0.03897816603591843 -0.01364448785450923 -0.04 0.03897816603591844 -0.01364448785450925 0.04 0.03812909808942724 -0.01258934791988786 -0.04 0.03812909808942726 -0.01258934791988788 0.04 0.03715680130224665 -0.01164654591679821 -0.04 0.03715680130224667 -0.01164654591679823 0.04 0.03607601470256556 -0.01083037376256768 -0.04 0.03607601470256557 -0.0108303737625677 0.04 0.03490312191354191 -0.01015320379509431 -0.04 0.03490312191354193 -0.01015320379509432 0.04 0.03365590279427624 -0.009625301220815941 -0.04 0.03365590279427626 -0.009625301220815959 0.04 0.03235326391527146 -0.009254668504644384 -0.04 0.03235326391527148 -0.009254668504644402 0.04 0.03101495195409631 -0.009046924060754613 -0.04 0.03101495195409633 -0.00904692406075463 0.04 0.02966125435588212 -0.009005217083152968 -0.04 0.02966125435588213 -0.009005217083152986 0.04 0.02831269179633445 -0.009130179807106139 -0.04 0.02831269179633447 -0.009130179807106157 0.04 0.02698970710920708 -0.009419917925098982 -0.04 0.0269897071092071 -0.009419917925098999 0.04 0.02571235539378052 -0.009870039302605502 -0.04 0.02571235539378054 -0.009870039302605519 0.04 0.02449999999999999 -0.01047372055837117 -0.04 0.02450000000000001 -0.01047372055837118 0.04 0.02337101899982817 -0.01122181049991736 -0.04 0.02337101899982819 -0.01122181049991737 0.04 0.0223425265944078 -0.01210296884629113 -0.04 0.02234252659440782 -0.01210296884629115 0.04 0.02143011368021762 -0.01310383813516482 -0.04 0.02143011368021763 -0.01310383813516484 0.04 0.02064761150697424 -0.01420924620834908 -0.04 0.02064761150697425 -0.01420924620834909 0.04 0.02000688200998523 -0.01540243620624537 -0.04 0.02000688200998525 -0.01540243620624539 0.04 0.01951763799530127 -0.01666532058475651 -0.04 0.01951763799530129 -0.01666532058475653 0.04 0.01918729590347707 -0.01797875530401772 -0.04 0.01918729590347709 -0.01797875530401773 0.04 0.01902086338389251 -0.01932283003252662 -0.04 0.01902086338389252 -0.01932283003252664 0.04 0.01902086338389251 -0.02067716996747336 -0.04 0.01902086338389252 -0.02067716996747338 0.04 0.01918729590347707 -0.02202124469598226 -0.04 0.01918729590347709 -0.02202124469598228 0.04 0.01951763799530127 -0.02333467941524347 -0.04 0.01951763799530128 -0.02333467941524349 0.04 0.02000688200998523 -0.02459756379375461 -0.04 0.02000688200998525 -0.02459756379375463 0.04 0.02064761150697423 -0.0257907537916509 -0.04 0.02064761150697425 -0.02579075379165092 0.04 0.02143011368021761 -0.02689616186483516 -0.04 0.02143011368021763 -0.02689616186483518 0.04 0.0223425265944078 -0.02789703115370885 -0.04 0.02234252659440781 -0.02789703115370887 0.04 0.02337101899982817 -0.02877818950008262 -0.04 0.02337101899982819 -0.02877818950008264 0.04 0.02449999999999999 -0.02952627944162881 -0.04 0.0245 -0.02952627944162883 0.04 0.02571235539378052 -0.03012996069739448 -0.04 0.02571235539378054 -0.0301299606973945 0.04 0.02698970710920708 -0.030580082074901 -0.04 0.02698970710920709 -0.03058008207490102 0.04 0.02831269179633444 -0.03086982019289384 -0.04 0.02831269179633446 -0.03086982019289386 0.04 0.02966125435588211 -0.03099478291684701 -0.04 0.02966125435588213 -0.03099478291684703 0.04 0.03101495195409631 -0.03095307593924537 -0.04 0.03101495195409633 -0.03095307593924539 0.04 0.03235326391527146 -0.0307453314953556 -0.04 0.03235326391527148 -0.03074533149535562 0.04 0.03365590279427624 -0.03037469877918404 -0.04 0.03365590279427626 -0.03037469877918406 0.04 0.0349031219135419 -0.02984679620490568 -0.04 0.03490312191354192 -0.0298467962049057 0.04 0.03607601470256555 -0.02916962623743231 -0.04 0.03607601470256557 -0.02916962623743232 0.04 0.03715680130224665 -0.02835345408320177 -0.04 0.03715680130224667 -0.02835345408320179 0.04 0.03812909808942724 -0.02741065208011212 -0.04 0.03812909808942726 -0.02741065208011214 0.04 0.03897816603591843 -0.02635551214549076 -0.04 0.03897816603591844 -0.02635551214549077 0.04 0.03969113413714362 -0.02520402912519611 -0.04 0.03969113413714363 -0.02520402912519613 0.04 0.04025719452344791 -0.02397365832805868 -0.04 0.04025719452344792 -0.02397365832805869 0.04 0.04066776629638509 -0.02268305092119215 -0.04 0.04066776629638511 -0.02268305092119216 0.04 0.04091662560639128 -0.02135177119731185 -0.04 0.0409166256063913 -0.02135177119731186 0.04 0.04099999999999999 -0.01999999999999999 -0.04 0.04100000000000001 -0.02000000000000001</float_array>
+					<technique_common>
+						<accessor count="108" source="#g1_link0_geom1_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom1_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom1_positions"/>
+				</vertices>
+				<triangles count="208" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom1_vertices" set="0"/>
+					<p>0 2 4 1 5 3 2 3 4 4 3 5 0 4 6 1 7 5 4 5 6 6 5 7 0 6 8 1 9 7 6 7 8 8 7 9 0 8 10 1 11 9 8 9 10 10 9 11 0 10 12 1 13 11 10 11 12 12 11 13 0 12 14 1 15 13 12 13 14 14 13 15 0 14 16 1 17 15 14 15 16 16 15 17 0 16 18 1 19 17 16 17 18 18 17 19 0 18 20 1 21 19 18 19 20 20 19 21 0 20 22 1 23 21 20 21 22 22 21 23 0 22 24 1 25 23 22 23 24 24 23 25 0 24 26 1 27 25 24 25 26 26 25 27 0 26 28 1 29 27 26 27 28 28 27 29 0 28 30 1 31 29 28 29 30 30 29 31 0 30 32 1 33 31 30 31 32 32 31 33 0 32 34 1 35 33 32 33 34 34 33 35 0 34 36 1 37 35 34 35 36 36 35 37 0 36 38 1 39 37 36 37 38 38 37 39 0 38 40 1 41 39 38 39 40 40 39 41 0 40 42 1 43 41 40 41 42 42 41 43 0 42 44 1 45 43 42 43 44 44 43 45 0 44 46 1 47 45 44 45 46 46 45 47 0 46 48 1 49 47 46 47 48 48 47 49 0 48 50 1 51 49 48 49 50 50 49 51 0 50 52 1 53 51 50 51 52 52 51 53 0 52 54 1 55 53 52 53 54 54 53 55 0 54 56 1 57 55 54 55 56 56 55 57 0 56 58 1 59 57 56 57 58 58 57 59 0 58 60 1 61 59 58 59 60 60 59 61 0 60 62 1 63 61 60 61 62 62 61 63 0 62 64 1 65 63 62 63 64 64 63 65 0 64 66 1 67 65 64 65 66 66 65 67 0 66 68 1 69 67 66 67 68 68 67 69 0 68 70 1 71 69 68 69 70 70 69 71 0 70 72 1 73 71 70 71 72 72 71 73 0 72 74 1 75 73 72 73 74 74 73 75 0 74 76 1 77 75 74 75 76 76 75 77 0 76 78 1 79 77 76 77 78 78 77 79 0 78 80 1 81 79 78 79 80 80 79 81 0 80 82 1 83 81 80 81 82 82 81 83 0 82 84 1 85 83 82 83 84 84 83 85 0 84 86 1 87 85 84 85 86 86 85 87 0 86 88 1 89 87 86 87 88 88 87 89 0 88 90 1 91 89 88 89 90 90 89 91 0 90 92 1 93 91 90 91 92 92 91 93 0 92 94 1 95 93 92 93 94 94 93 95 0 94 96 1 97 95 94 95 96 96 95 97 0 96 98 1 99 97 96 97 98 98 97 99 0 98 100 1 101 99 98 99 100 100 99 101 0 100 102 1 103 101 100 101 102 102 101 103 0 102 104 1 105 103 102 103 104 104 103 105 0 104 106 1 107 105 104 105 106 106 105 107</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 0.03 -0.02</translate>
+					<rotate>0.7071067811865476 0.7071067811865476 1.110223024625157e-16 180</rotate>
+					<cylinder>
+						<height>0.08</height>
+						<radius>0.011 0.011</radius>
+					</cylinder>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+		<geometry id="g1_link0_geom2">
+			<mesh>
+				<source id="g1_link0_geom2_positions">
+					<float_array id="g1_link0_geom2_positions-array" count="24" digits="2490384">0.03 0.05 -0.04 0.03 0.05 -0.05 0.03 0 -0.04 0.03 0 -0.05 -0.03 0.05 -0.04 -0.03 0.05 -0.05 -0.03 0 -0.04 -0.03 0 -0.05</float_array>
+					<technique_common>
+						<accessor count="8" source="#g1_link0_geom2_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom2_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom2_positions"/>
+				</vertices>
+				<triangles count="12" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom2_vertices" set="0"/>
+					<p>0 2 1 1 2 3 4 5 6 5 7 6 0 1 4 1 5 4 2 6 3 3 6 7 0 4 2 2 4 6 1 3 5 3 7 5</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 0.025 -0.045</translate>
+					<rotate>1 0 0 0</rotate>
+					<box>
+						<half_extents>0.03 0.025 0.005</half_extents>
+					</box>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+		<geometry id="g1_link0_geom3">
+			<mesh>
+				<source id="g1_link0_geom3_positions">
+					<float_array id="g1_link0_geom3_positions-array" count="24" digits="2490384">0.015 0.005000000000000001 -0.04 0.015 0.005000000000000001 -0.05 0.015 -0.035 -0.04 0.015 -0.035 -0.05 -0.015 0.005000000000000001 -0.04 -0.015 0.005000000000000001 -0.05 -0.015 -0.035 -0.04 -0.015 -0.035 -0.05</float_array>
+					<technique_common>
+						<accessor count="8" source="#g1_link0_geom3_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom3_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom3_positions"/>
+				</vertices>
+				<triangles count="12" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom3_vertices" set="0"/>
+					<p>0 2 1 1 2 3 4 5 6 5 7 6 0 1 4 1 5 4 2 6 3 3 6 7 0 4 2 2 4 6 1 3 5 3 7 5</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 -0.015 -0.045</translate>
+					<rotate>1 0 0 0</rotate>
+					<box>
+						<half_extents>0.015 0.02 0.005</half_extents>
+					</box>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+		<geometry id="g1_link0_geom4">
+			<mesh>
+				<source id="g1_link0_geom4_positions">
+					<float_array id="g1_link0_geom4_positions-array" count="24" digits="2490384">0.03 0.05 -0.02 0.03 0.05 -0.04 0.03 0.04 -0.02 0.03 0.04 -0.04 -0.03 0.05 -0.02 -0.03 0.05 -0.04 -0.03 0.04 -0.02 -0.03 0.04 -0.04</float_array>
+					<technique_common>
+						<accessor count="8" source="#g1_link0_geom4_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom4_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom4_positions"/>
+				</vertices>
+				<triangles count="12" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom4_vertices" set="0"/>
+					<p>0 2 1 1 2 3 4 5 6 5 7 6 0 1 4 1 5 4 2 6 3 3 6 7 0 4 2 2 4 6 1 3 5 3 7 5</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 0.045 -0.03</translate>
+					<rotate>1 0 0 0</rotate>
+					<box>
+						<half_extents>0.03 0.005 0.01</half_extents>
+					</box>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+		<geometry id="g1_link0_geom5">
+			<mesh>
+				<source id="g1_link0_geom5_positions">
+					<float_array id="g1_link0_geom5_positions-array" count="24" digits="2490384">0.0175 -0.03 -0.009999999999999998 0.0175 -0.03 -0.05 0.0175 -0.04 -0.009999999999999998 0.0175 -0.04 -0.05 -0.0175 -0.03 -0.009999999999999998 -0.0175 -0.03 -0.05 -0.0175 -0.04 -0.009999999999999998 -0.0175 -0.04 -0.05</float_array>
+					<technique_common>
+						<accessor count="8" source="#g1_link0_geom5_positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="g1_link0_geom5_vertices">
+					<input semantic="POSITION" source="#g1_link0_geom5_positions"/>
+				</vertices>
+				<triangles count="12" material="mat0">
+					<input offset="0" semantic="VERTEX" source="#g1_link0_geom5_vertices" set="0"/>
+					<p>0 2 1 1 2 3 4 5 6 5 7 6 0 1 4 1 5 4 2 6 3 3 6 7 0 4 2 2 4 6 1 3 5 3 7 5</p>
+				</triangles>
+			</mesh>
+			<extra type="geometry_info">
+				<technique profile="OpenRAVE">
+					<translate>0 -0.035 -0.03</translate>
+					<rotate>1 0 0 0</rotate>
+					<box>
+						<half_extents>0.0175 0.005 0.02</half_extents>
+					</box>
+					<visible>
+						<bool>true</bool>
+					</visible>
+				</technique>
+			</extra>
+		</geometry>
+	</library_geometries>
+	<library_effects id="effects">
+		<effect id="g1_link0_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="g1_link0_geom1_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="g1_link0_geom2_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="g1_link0_geom3_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="g1_link0_geom4_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="g1_link0_geom5_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0 0 0 0</color>
+						</ambient>
+						<diffuse>
+							<color>0.699999988079071 0.699999988079071 0.699999988079071 0</color>
+						</diffuse>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials id="materials">
+		<material id="g1_link0_geom0_mat">
+			<instance_effect url="#g1_link0_geom0_eff"/>
+		</material>
+		<material id="g1_link0_geom1_mat">
+			<instance_effect url="#g1_link0_geom1_eff"/>
+		</material>
+		<material id="g1_link0_geom2_mat">
+			<instance_effect url="#g1_link0_geom2_eff"/>
+		</material>
+		<material id="g1_link0_geom3_mat">
+			<instance_effect url="#g1_link0_geom3_eff"/>
+		</material>
+		<material id="g1_link0_geom4_mat">
+			<instance_effect url="#g1_link0_geom4_eff"/>
+		</material>
+		<material id="g1_link0_geom5_mat">
+			<instance_effect url="#g1_link0_geom5_eff"/>
+		</material>
+	</library_materials>
+	<library_nodes id="nodes">
+		<node id="v1.node0" name="l2" sid="node0">
+			<translate>0 0 0</translate>
+			<rotate>1 0 0 0</rotate>
+			<instance_geometry url="#g1_link0_geom0">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom0_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+			<instance_geometry url="#g1_link0_geom1">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom1_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+			<instance_geometry url="#g1_link0_geom2">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom2_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+			<instance_geometry url="#g1_link0_geom3">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom3_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+			<instance_geometry url="#g1_link0_geom4">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom4_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+			<instance_geometry url="#g1_link0_geom5">
+				<bind_material>
+					<technique_common>
+						<instance_material symbol="mat0" target="#g1_link0_geom5_mat"/>
+					</technique_common>
+				</bind_material>
+			</instance_geometry>
+		</node>
+	</library_nodes>
+	<library_kinematics_models id="kmodels">
+		<kinematics_model id="kmodel1" name="l2">
+			<asset>
+				<subject>:Interface Author: Rosen Diankov
+
+Simplest robot possible that just passes the trajectories to the controller</subject>
+			</asset>
+			<technique_common>
+				<link sid="link0" name="l2">
+					<translate>0 0 0</translate>
+					<rotate>1 0 0 0</rotate>
+				</link>
+			</technique_common>
+			<extra type="interface_type">
+				<technique profile="OpenRAVE">
+					<interface type="robot">GenericRobot</interface>
+				</technique>
+			</extra>
+			<extra type="collision">
+				<technique profile="OpenRAVE">
+					<link_collision_state link="kmodel1/link0">
+						<bool>true</bool>
+					</link_collision_state>
+				</technique>
+			</extra>
+		</kinematics_model>
+	</library_kinematics_models>
+	<library_articulated_systems id="asystems">
+		<articulated_system id="body1_kinematics">
+			<kinematics>
+				<instance_kinematics_model url="#kmodel1" sid="kmodel1_inst">
+					<newparam sid="body1_kinematics_kmodel1_inst">
+						<SIDREF>body1_kinematics/kmodel1_inst</SIDREF>
+					</newparam>
+				</instance_kinematics_model>
+				<technique_common/>
+			</kinematics>
+		</articulated_system>
+		<articulated_system id="body1_motion">
+			<motion>
+				<instance_articulated_system url="#body1_kinematics">
+					<newparam sid="body1_motion_kmodel1_inst">
+						<SIDREF>body1_kinematics/body1_kinematics_kmodel1_inst</SIDREF>
+					</newparam>
+				</instance_articulated_system>
+				<technique_common/>
+			</motion>
+			<extra type="interface_type">
+				<technique profile="OpenRAVE">
+					<interface type="robot">GenericRobot</interface>
+				</technique>
+			</extra>
+		</articulated_system>
+	</library_articulated_systems>
+	<library_kinematics_scenes id="kscenes">
+		<kinematics_scene id="kscene" name="Kinematics Scene">
+			<instance_articulated_system sid="body1_motion_inst" url="#body1_motion" name="l2">
+				<newparam sid="kscene_kmodel1_inst">
+					<SIDREF>body1_motion/body1_motion_kmodel1_inst</SIDREF>
+				</newparam>
+			</instance_articulated_system>
+		</kinematics_scene>
+	</library_kinematics_scenes>
+	<library_physics_scenes id="pscenes">
+		<physics_scene id="pscene" name="Physics Scene">
+			<instance_physics_model url="#pmodel1" sid="pmodel1_inst" parent="#v1.node0">
+				<instance_rigid_body body="rigid0" sid="rigid0" target="#v1.node0"/>
+			</instance_physics_model>
+			<technique_common>
+				<gravity>0 0 -9.797930195020351</gravity>
+			</technique_common>
+		</physics_scene>
+	</library_physics_scenes>
+	<library_physics_models id="pmodels">
+		<physics_model id="pmodel1" name="l2">
+			<rigid_body sid="rigid0" name="l2">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>1</mass>
+					<mass_frame>
+						<translate>0 0 0</translate>
+						<rotate>1 0 0 0</rotate>
+					</mass_frame>
+					<inertia>0.4 0.4 0.4</inertia>
+					<shape>
+						<instance_geometry url="#g1_link0_geom0"/>
+						<translate>0 0 -0.055</translate>
+						<rotate>1 0 0 180</rotate>
+					</shape>
+					<shape>
+						<instance_geometry url="#g1_link0_geom1"/>
+						<translate>0 0.03 -0.02</translate>
+						<rotate>0.5773502691896258 0.5773502691896257 0.5773502691896258 120</rotate>
+					</shape>
+					<shape>
+						<instance_geometry url="#g1_link0_geom2"/>
+						<translate>0 0.025 -0.045</translate>
+						<rotate>1 0 0 0</rotate>
+					</shape>
+					<shape>
+						<instance_geometry url="#g1_link0_geom3"/>
+						<translate>0 -0.015 -0.045</translate>
+						<rotate>1 0 0 0</rotate>
+					</shape>
+					<shape>
+						<instance_geometry url="#g1_link0_geom4"/>
+						<translate>0 0.045 -0.03</translate>
+						<rotate>1 0 0 0</rotate>
+					</shape>
+					<shape>
+						<instance_geometry url="#g1_link0_geom5"/>
+						<translate>0 -0.035 -0.03</translate>
+						<rotate>1 0 0 0</rotate>
+					</shape>
+				</technique_common>
+			</rigid_body>
+		</physics_model>
+	</library_physics_models>
+	<scene>
+		<instance_physics_scene url="#pscene" sid="pscene_inst" name="Physics Scene"/>
+		<instance_visual_scene url="#vscene" sid="vscene_inst" name="Visual Scene"/>
+		<instance_kinematics_scene url="#kscene" sid="kscene_inst" name="Kinematics Scene">
+			<bind_kinematics_model node="visual1/node0">
+				<param>kscene_kmodel1_inst</param>
+			</bind_kinematics_model>
+		</instance_kinematics_scene>
+	</scene>
+	<extra id="sensors" type="library_sensors">
+		<technique profile="OpenRAVE"/>
+	</extra>
+	<extra id="actuators" type="library_actuators">
+		<technique profile="OpenRAVE"/>
+	</extra>
+</COLLADA>
