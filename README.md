@@ -13,7 +13,7 @@ git clone https://github.com/robotology-playground/icub-gazebo.git
 ```
  
 
-To let know to Gazebo that models are present in the repo you just clone, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. You can add a line to the `.bashrc` file in your home:
+To let Gazebo know the existence of the models, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. You can add a line to the `.bashrc` file in your home:
 ```
 export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:/home/user/path/to/icub-gazebo
 ```
