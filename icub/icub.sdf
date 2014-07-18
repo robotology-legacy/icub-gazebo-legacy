@@ -83,7 +83,7 @@
                 <limit>
                     <lower>-0.6235987756</lower>
                     <upper>1.6707963268</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -136,7 +136,7 @@
                 <limit>
                     <lower>-0.34</lower>
                     <upper>1.6707963268</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -233,7 +233,7 @@
                 <limit>
                     <lower>-1.4962634016</lower>
                     <upper>1.4613568166</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -286,7 +286,7 @@
                 <limit>
                     <lower>-2.281661565</lower>
                     <upper>0.4617993878</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -339,7 +339,7 @@
                 <limit>
                     <lower>-0.4490658504</lower>
                     <upper>0.8679448709</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -452,7 +452,7 @@
                 <limit>
                     <lower>-0.518879</lower>
                     <upper>0.518879</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -505,7 +505,7 @@
                 <limit>
                     <lower>-0.6235987756</lower>
                     <upper>1.6707963268</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -558,7 +558,7 @@
                 <limit>
                     <lower>-0.34</lower>
                     <upper>1.6707963268</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -655,7 +655,7 @@
                 <limit>
                     <lower>-1.4962634016</lower>
                     <upper>1.4613568166</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -708,7 +708,7 @@
                 <limit>
                     <lower>-2.281661565</lower>
                     <upper>0.3617993878</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -761,7 +761,7 @@
                 <limit>
                     <lower>-0.4490658504</lower>
                     <upper>0.8679448709</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -875,7 +875,7 @@
                 <limit>
                     <lower>-0.4839724354</lower>
                     <upper>0.4839724354</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -929,7 +929,7 @@
                 <limit>
                     <lower>-0.383972</lower>
                     <upper>1.46608</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -964,7 +964,7 @@
                 <limit>
                     <lower>-0.680678</lower>
                     <upper>0.680678</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1017,7 +1017,7 @@
                 <limit>
                     <lower>-1.02974</lower>
                     <upper>1.02974</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1070,7 +1070,7 @@
                 <limit>
                     <lower>-1.65806</lower>
                     <upper>0.0872665</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1123,7 +1123,7 @@
                 <limit>
                     <lower>0</lower>
                     <upper>2.80649</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1158,7 +1158,7 @@
                 <limit>
                     <lower>-0.645772</lower>
                     <upper>1.74533</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1255,7 +1255,7 @@
                 <limit>
                     <lower>0.0959931</lower>
                     <upper>1.85005</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1308,7 +1308,7 @@
                 <limit>
                     <lower>-0.872665</lower>
                     <upper>0.872665</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1343,7 +1343,7 @@
                 <limit>
                     <lower>-1.13446</lower>
                     <upper>0.174533</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1396,7 +1396,7 @@
                 <limit>
                     <lower>-0.436332</lower>
                     <upper>0.436332</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1449,7 +1449,7 @@
                 <limit>
                     <lower>-0.698132</lower>
                     <upper>0.523599</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1502,7 +1502,7 @@
                 <limit>
                     <lower>-1.22173</lower>
                     <upper>1.0472</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1568,7 +1568,7 @@
                 <limit>
                     <lower>-0.959931</lower>
                     <upper>0.959931</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1621,7 +1621,7 @@
                 <limit>
                     <lower>-1.65806</lower>
                     <upper>0.0872665</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1674,7 +1674,7 @@
                 <limit>
                     <lower>0</lower>
                     <upper>2.80649</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1709,7 +1709,7 @@
                 <limit>
                     <lower>-0.645772</lower>
                     <upper>1.74533</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1806,7 +1806,7 @@
                 <limit>
                     <lower>0.0959931</lower>
                     <upper>1.85005</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1859,7 +1859,7 @@
                 <limit>
                     <lower>-0.872665</lower>
                     <upper>0.872665</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1894,7 +1894,7 @@
                 <limit>
                     <lower>-1.13446</lower>
                     <upper>0.174533</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
@@ -1947,7 +1947,7 @@
                 <limit>
                     <lower>-0.436332</lower>
                     <upper>0.436332</upper>
-                    <effort>84</effort>
+                    <effort>10000</effort>
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
