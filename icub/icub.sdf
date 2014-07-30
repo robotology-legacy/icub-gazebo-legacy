@@ -179,6 +179,9 @@
             </axis>
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="left_leg_ft" type="force_torque">
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
                 <update_rate>100</update_rate>
@@ -417,6 +420,9 @@
                 <dynamics/>
             </axis>
             <sensor name='left_foot_ft' type='force_torque'>
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>1</always_on>
                 <update_rate>100</update_rate>
                 <pose>0 0 0 0 0 0</pose>
@@ -601,6 +607,9 @@
             </axis>
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="right_leg_ft" type="force_torque">
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
                 <update_rate>100</update_rate>
@@ -840,6 +849,9 @@
                 <dynamics/>
             </axis>
             <sensor name='right_foot_ft' type='force_torque'>
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>1</always_on>
                 <update_rate>100</update_rate>
                 <pose>0 0 0 0 0 0</pose>
@@ -1219,6 +1231,9 @@
             </axis>
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="left_arm_ft" type="force_torque">
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
                 <update_rate>100</update_rate>
@@ -1770,6 +1785,9 @@
             </axis>
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="right_arm_ft" type="force_torque">
+                <force_torque>
+                    <frame>parent</frame>
+                </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
                 <update_rate>100</update_rate>
