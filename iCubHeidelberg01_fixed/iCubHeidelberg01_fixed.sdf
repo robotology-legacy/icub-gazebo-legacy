@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="iCubHeidelberg01_fixed">
+    <include>
+      <uri>model://iCubHeidelberg01_model</uri>
+      <pose>0.0 0 1.0 1.57079632679 0 0</pose>
+    </include>
+
+    <joint name="fixed to ground" type="revolute">
+      <parent>world</parent>
+      <child>iCubHeidelberg01_SIM_MODEL::root_link</child>
+       <axis>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <xyz>0 0 1</xyz>
+        </axis>
+    </joint>
+
+  </model>
+</sdf>
