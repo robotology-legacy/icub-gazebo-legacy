@@ -87,7 +87,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -140,7 +140,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -240,7 +240,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -293,7 +293,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -346,7 +346,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -372,24 +372,31 @@
                         <uri>model://icub/meshes/collision/icub_simple_collision_l_foot.dae</uri>
                     </mesh>
                 </geometry>
+                <max_contacts> 10 </max_contacts>
                 <surface>
                     <contact>
                         <ode>
-                            <soft_erp>  0.5    </soft_erp>
-                            <kp>        1e+05  </kp>
-                            <kd>        10000  </kd>
-                            <max_vel>   1      </max_vel>
-                            <min_depth> 0      </min_depth>
+                            <soft_erp>  0.200  </soft_erp>
+                            <soft_cfm>  0.000  </soft_cfm>
+                            <kp>        100000.000  </kp>
+                            <kd>        1.0     </kd>
+                            <max_vel>   100.00  </max_vel>
+                            <min_depth> 0.0010  </min_depth>
                         </ode>
                     </contact>
                     <friction>
                         <ode>
                             <mu>  1  </mu>
                             <mu2> 1  </mu2>
-                            <slip1> 0.000001 </slip1>
-                            <slip2> 0.000001 </slip2>
+                            <fdir1>0.000000 0.000000 0.000000</fdir1>
+                            <slip1> 0.00000 </slip1>
+                            <slip2> 0.00000 </slip2>
                         </ode>
                     </friction>
+                    <bounce>
+                        <restitution_coefficient>0.000000</restitution_coefficient>
+                        <threshold>100000.000000</threshold>
+                    </bounce>
                 </surface>
             </collision>
             <visual name='l_foot_visual'>
@@ -462,7 +469,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -515,7 +522,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -568,7 +575,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -668,7 +675,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -721,7 +728,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -774,7 +781,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
 
@@ -801,24 +808,31 @@
                         <uri>model://icub/meshes/collision/icub_simple_collision_r_foot.dae</uri>
                     </mesh>
                 </geometry>
+                <max_contacts> 10 </max_contacts>
                 <surface>
                     <contact>
                         <ode>
-                            <soft_erp>  0.5   </soft_erp>
-                            <kp>        1e+05 </kp>
-                            <kd>        10000 </kd>
-                            <max_vel>   1     </max_vel>
-                            <min_depth> 0     </min_depth>
+                            <soft_erp>  0.200  </soft_erp>
+                            <soft_cfm>  0.000  </soft_cfm>
+                            <kp>        100000.000  </kp>
+                            <kd>        1.0     </kd>
+                            <max_vel>   100.00  </max_vel>
+                            <min_depth> 0.0010  </min_depth>
                         </ode>
                     </contact>
                     <friction>
                         <ode>
                             <mu>  1  </mu>
                             <mu2> 1  </mu2>
-                            <slip1> 0.000001 </slip1>
-                            <slip2> 0.000001 </slip2>
+                            <fdir1>0.000000 0.000000 0.000000</fdir1>
+                            <slip1> 0.00000 </slip1>
+                            <slip2> 0.00000 </slip2>
                         </ode>
                     </friction>
+                    <bounce>
+                        <restitution_coefficient>0.000000</restitution_coefficient>
+                        <threshold>100000.000000</threshold>
+                    </bounce>
                 </surface>
             </collision>
             <visual name='r_foot_visual'>
@@ -891,7 +905,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
 
@@ -945,7 +959,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -980,7 +994,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1033,7 +1047,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1086,7 +1100,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1139,7 +1153,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1174,7 +1188,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1274,7 +1288,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1327,7 +1341,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1362,7 +1376,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1415,7 +1429,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1468,7 +1482,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1521,7 +1535,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1587,7 +1601,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1640,7 +1654,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1693,7 +1707,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1728,7 +1742,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1828,7 +1842,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1881,7 +1895,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1916,7 +1930,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1969,7 +1983,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.1</damping>
+                    <damping>0.5</damping>
                 </dynamics>
             </axis>
         </joint>
