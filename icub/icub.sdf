@@ -180,7 +180,8 @@
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="left_leg_ft" type="force_torque">
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
@@ -428,7 +429,8 @@
             </axis>
             <sensor name='left_foot_ft' type='force_torque'>
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>1</always_on>
                 <update_rate>100</update_rate>
@@ -615,7 +617,8 @@
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="right_leg_ft" type="force_torque">
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
@@ -864,7 +867,8 @@
             </axis>
             <sensor name='right_foot_ft' type='force_torque'>
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>1</always_on>
                 <update_rate>100</update_rate>
@@ -1246,7 +1250,8 @@
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="left_arm_ft" type="force_torque">
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
@@ -1800,7 +1805,8 @@
             <!-- check pose of the wrench returned by the simulated sensor -->
             <sensor name="right_arm_ft" type="force_torque">
                 <force_torque>
-                    <frame>parent</frame>
+                    <frame>child</frame>
+                    <!-- child_to_parent is the default <measure_direction>child_to_parent</measure_direction> -->
                 </force_torque>
                 <always_on>true</always_on>
                 <visualize>true</visualize>
