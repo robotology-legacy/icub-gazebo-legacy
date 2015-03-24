@@ -87,7 +87,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -140,7 +140,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -241,7 +241,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -294,7 +294,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -347,7 +347,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -471,7 +471,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -524,7 +524,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -577,7 +577,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -678,7 +678,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -731,7 +731,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -784,7 +784,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
 
@@ -909,7 +909,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
 
@@ -963,7 +963,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -998,7 +998,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1051,7 +1051,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1104,7 +1104,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1157,7 +1157,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1192,7 +1192,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1293,7 +1293,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1346,7 +1346,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1381,7 +1381,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1434,7 +1434,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1487,7 +1487,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1540,7 +1540,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1606,7 +1606,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1659,7 +1659,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1712,7 +1712,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1747,7 +1747,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1848,7 +1848,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1901,7 +1901,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1936,7 +1936,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1989,7 +1989,7 @@
                     <velocity>100</velocity>
                 </limit>
                 <dynamics>
-                    <damping>0.5</damping>
+                    <damping>1.0</damping>
                 </dynamics>
             </axis>
         </joint>
@@ -1997,23 +1997,26 @@
         <!-- Configuration file for fake control boards -->
         <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
+            <initialConfiguration>0.0 0.0 0.0</initialConfiguration>
         </plugin>
         <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_head.ini</yarpConfigurationFile>
         </plugin>
         <plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
-            <initialConfiguration>0.90 0.52 0 0.785 0 0 0.698</initialConfiguration>
+            <initialConfiguration>-0.6278    0.5231    0.0010    0.8727    0    0     0</initialConfiguration>
         </plugin>
         <plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
-            <initialConfiguration>0.90 0.52 0 0.785 0 0 0.698</initialConfiguration>
+            <initialConfiguration>-0.6278    0.5231    0.0010    0.8727    0    0     0</initialConfiguration>
         </plugin>
         <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+            <initialConfiguration>0.2094    0.0         0   -0.1745   -0.0175   0 </initialConfiguration>
         </plugin>
         <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
             <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
+            <initialConfiguration>0.2094    0.0         0   -0.1745   -0.0175   0 </initialConfiguration>
         </plugin>
         <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
             <robotNamefromConfigFile>model://icub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>>
