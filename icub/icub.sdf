@@ -366,19 +366,19 @@
                 </inertia>
             </inertial>
             <collision name='l_foot_collision'>
-                <pose>3.95315e-11 4.452e-07 -5.14839e-06 8.98039e-06 -1.36732e-05 -1.01971e-06</pose>
-<!--            <pose>-3e-02 0 3.5e-2 0 0 0</pose> -->
+                <!-- <pose>3.95315e-11 4.452e-07 -5.14839e-06 8.98039e-06 -1.36732e-05 -1.01971e-06</pose> -->
+           <pose>-3e-02 0 3.5e-2 0 0 0</pose>
                 <geometry>
-                    <mesh>
+<!--                     <mesh>
                         <scale>1 1 1</scale>
                         <uri>model://icub/meshes/collision/icub_simple_collision_l_foot.dae</uri>
-                    </mesh>
-<!--                <box>
+                    </mesh> -->
+                   <box>
                         <size>0.03 0.07 0.15</size>
-                    </box> -->
+                    </box>
                 </geometry>
-                <max_contacts> 10 </max_contacts>
-<!--            <max_contacts> 4 </max_contacts> -->
+                <!-- <max_contacts> 10 </max_contacts> -->
+           <max_contacts> 4 </max_contacts>
                 <surface>
                     <contact>
                         <ode>
@@ -809,19 +809,19 @@
                 </inertia>
             </inertial>
             <collision name='r_foot_collision'>
-                <pose>2.79458e-11 -1.60371e-06 -3.98983e-06 -3.14159 -1.10245e-05 3.67318e-06</pose>
-<!--            <pose>-3e-02 0 3.5e-2 0 0 0</pose> -->
+                <!-- <pose>2.79458e-11 -1.60371e-06 -3.98983e-06 -3.14159 -1.10245e-05 3.67318e-06</pose> -->
+                <pose>-3e-02 0 3.5e-2 0 0 0</pose>
                 <geometry>
-                    <mesh>
+<!--                     <mesh>
                         <scale>1 1 1</scale>
                         <uri>model://icub/meshes/collision/icub_simple_collision_r_foot.dae</uri>
-                    </mesh>
-<!--                <box>
+                    </mesh> -->
+                    <box>
                         <size>0.03 0.07 0.15</size>
-                    </box> -->
+                    </box>
                 </geometry>
+                <!-- <max_contacts> 10 </max_contacts> -->
                 <max_contacts> 10 </max_contacts>
-<!--            <max_contacts> 4 </max_contacts> -->
                 <surface>
                     <contact>
                         <ode>
