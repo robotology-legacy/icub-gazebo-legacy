@@ -3,7 +3,7 @@
   <model name="iCub_fixed">
     <include>
       <uri>model://icub</uri>
-      <pose>0.0 0 1.0 0 0 0</pose>
+      <pose>0.0 0 1.0 0 0 3.14</pose>
     </include>
 
     <joint name="fixed to ground" type="revolute">
