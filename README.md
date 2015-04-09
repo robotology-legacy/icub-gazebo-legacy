@@ -35,3 +35,10 @@ gazebo ./icub-gazebo/world/icub.world
 ```
 or simply drag and drop the "iCub" model from the Insert tab in Gazebo.
 The same instructions work also for the icub_legs model.
+
+Model generation
+----------------
+The model store in this repo are actually the result of a process of extraction of kinematics parameters, inertial parameters and meshes from the original CAD files of the iCub robot. There are currently two ways of generating this models: 
+
+* The legacy generation system based on kinematics and dynamics parameters hardcoded in the legacy iDyn library, combined with meshes manually extracted from the CAD models, available at https://github.com/robotology-playground/icub-model-generator . This process is used to generate the models for the iCub version 1 model, that is available as `icub` in this repository.
+* The new generation system that converts from actual Creo CAD models of the iCub, described in http://wiki.icub.org/wiki/Creo_Mechanism_to_URDF . This system is currently under testing, and will be used for iCub 2.5 and all the following version of iCub. If you have an iCub and you want to know if a precise model for your system can be extracted from CAD models, please [open an new issue in the `icub-support` repository](https://github.com/robotology/icub-support/issues/new). At the moment, no model generated with this new system is available in this repository. 
