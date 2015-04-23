@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<portscope rows="1" columns="1" carrier="mcast">
+	<plot title = "time varying force"
+		  gridx = "0"
+		  gridy = "0" >
+		<graph remote="/applyWrench/force" 
+			   index="0"
+			   color="Red"
+			   title="force_x"		/>
+		
+		<graph remote="/applyWrench/force" 
+			   index="1"
+			   color="Blue"
+			   title="force_y"		/>
+		
+		<graph remote="/applyWrench/force" 
+			   index="2"
+			   color="Green"
+			   title="force_z"		/>
+	</plot>
+
+</portscope>	   
