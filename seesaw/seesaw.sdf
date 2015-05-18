@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<sdf version="1.5">
+<model name="box">
+	<pose>0 0 0.10 0 0 0</pose>
+    <link name="seesaw">
+			<inertial>
+               <!-- inertia elements extracted from seesaw_mass_properties.dat file -->
+			   <pose>0.0 0.0 -0.020045615 0 -0 0</pose>
+                   
+        		   <mass>4.263831</mass>
+        		   <inertia>
+        		         <ixx>0.076698599</ixx>
+        		         <ixy>0.0</ixy>
+        		         <ixz>0.0</ixz>
+        		         <iyy>0.039590108</iyy>
+        		         <iyz>0.0</iyz>
+        		         <izz>0.10893139</izz>
+        		   </inertia>
+      		</inertial>
+      		<collision name='seesaw_collision'>
+                <geometry>
+                   <mesh>
+                     <scale>0.001 0.001 0.001</scale>
+                     <uri>model://seesaw/seesaw.stl</uri>
+                  </mesh>
+                </geometry>
+        		<max_contacts>10</max_contacts>
+        		<surface>
+          			<contact>
+            			<ode>
+              				<soft_erp>0.2</soft_erp>
+              				<soft_cfm>0</soft_cfm>
+              				<kp>18000000</kp>
+              				<kd>100</kd>
+              				<max_vel>100</max_vel>
+              				<min_depth>0.0001</min_depth>
+            			</ode>
+                </contact>
+          			<friction>
+            			<ode>
+              				<mu>1</mu>
+              				<mu2>1</mu2>
+              				<fdir1>0 0 0</fdir1>
+              				<slip1>0</slip1>
+              				<slip2>0</slip2>
+            			</ode>
+          			</friction>
+          			<bounce>
+            			<restitution_coefficient>0</restitution_coefficient>
+            			<threshold>100000</threshold>
+          			</bounce>
+        		</surface>
+      		</collision>
+
+			<visual name="seesaw_visual">
+                <geometry>
+                   <mesh>
+                     <scale>0.001 0.001 0.001</scale>
+                     <uri>model://seesaw/seesaw.stl</uri>
+                  </mesh>
+                </geometry>
+			</visual>	
+    
+		</link>
+
+</model>
+</sdf>	
