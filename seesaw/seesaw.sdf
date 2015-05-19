@@ -11,7 +11,6 @@
          <plugin name='seesaw_yarp_gazebo_plugin_IMU' filename='libgazebo_yarp_imu.so'>
             <yarpConfigurationFile>model://seesaw/conf/gazebo_seesaw_inertial.ini</yarpConfigurationFile>
          </plugin>
-         <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
       </sensor>
 			<inertial>
                <!-- inertia elements extracted from seesaw_mass_properties.dat file -->
