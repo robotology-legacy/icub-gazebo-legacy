@@ -1,8 +1,18 @@
 <?xml version='1.0'?>
 <sdf version="1.5">
-<model name="box">
+<model name="seesaw">
 	<pose>0 0 0.10 0 0 0</pose>
     <link name="seesaw">
+      <sensor name='imu_sensor' type='imu'>
+         <always_on>1</always_on>
+         <update_rate>100</update_rate>
+         <visualize>1</visualize>
+         <imu/>
+         <plugin name='seesaw_yarp_gazebo_plugin_IMU' filename='libgazebo_yarp_imu.so'>
+            <yarpConfigurationFile>model://seesaw/conf/gazebo_seesaw_inertial.ini</yarpConfigurationFile>
+         </plugin>
+         <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
+      </sensor>
 			<inertial>
                <!-- inertia elements extracted from seesaw_mass_properties.dat file -->
 			   <pose>0.0 0.0 -0.020045615 0 -0 0</pose>
