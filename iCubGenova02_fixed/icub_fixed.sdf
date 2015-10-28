@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="iCubGenova02_fixed">
+    <include>
+      <uri>model://iCubGenova02</uri>
+      <pose>0 0 1 0 0 0</pose>
+    </include>
+
+    <joint name="fixed to ground" type="fixed">
+      <parent>world</parent>
+      <child>iCubGenova02::root_link</child>
+    </joint>
+
+  </model>
+</sdf>

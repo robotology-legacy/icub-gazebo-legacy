@@ -1,0 +1,1564 @@
+<sdf version='1.5'>
+  <model name='iCubGenova02'>
+   <pose>0 0 0.6 0 0 0</pose>
+    <link name='root_link'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.024882 0.000104 -0.044081 1.5708 0 -1.5708</pose>
+        <mass>5.09143</mass>
+        <inertia>
+          <ixx>0.0139679</ixx>
+          <ixy>-5.93488e-06</ixy>
+          <ixz>-1.55458e-05</ixz>
+          <iyy>0.0202112</iyy>
+          <iyz>-0.00170968</iyz>
+          <izz>0.0249124</izz>
+        </inertia>
+      </inertial>
+      <collision name='root_link_collision'>
+        <pose>-0.0364 0 0.032 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/root.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='root_link_visual'>
+        <pose>-0.0364 0 0.032 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/root.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name='l_hip_1'>
+      <pose>0.006452 -0.022386 -0.119913 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.041678 -6.3e-05 -0.000401 0 -0 0</pose>
+        <mass>0.915608</mass>
+        <inertia>
+          <ixx>0.000402555</ixx>
+          <ixy>1.07708e-06</ixy>
+          <ixz>-1.569e-06</ixz>
+          <iyy>0.000570806</iyy>
+          <iyz>-6.5378e-07</iyz>
+          <izz>0.00057937</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_hip_1_collision'>
+        <pose>-0.022386 0.151913 0.042852 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_hip_1_visual'>
+        <pose>-0.022386 0.151913 0.042852 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_hip_pitch' type='revolute'>
+      <child>l_hip_1</child>
+      <parent>root_link</parent>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>1.48353</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_hip_2'>
+      <pose>0.031992 -0.0701 -0.119913 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>1.3e-05 -0.053033 0.024191 0 -0 0</pose>
+        <mass>0.547373</mass>
+        <inertia>
+          <ixx>0.000674703</ixx>
+          <ixy>6.60082e-07</ixy>
+          <ixz>-1.95755e-07</ixz>
+          <iyy>0.000345917</iyy>
+          <iyz>1.94658e-05</iyz>
+          <izz>0.000499395</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_hip_2_collision'>
+        <pose>-0.0701 0.151913 0.068392 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='l_hip_2_collision_l_hip_2_1'>
+        <pose>-0.043409 0.151913 -0.045418 3.14159 -1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_hip_2_visual'>
+        <pose>-0.0701 0.151913 0.068392 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='l_hip_2_visual_l_hip_2_1'>
+        <pose>-0.043409 0.151913 -0.045418 3.14159 -1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_hip_3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_hip_roll' type='revolute'>
+      <child>l_hip_2</child>
+      <parent>l_hip_1</parent>
+      <axis>
+        <xyz>-1 -0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_upper_leg'>
+      <pose>0.007309 -0.0701 -0.208813 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.000116 -0.078858 0.003309 0 -0 0</pose>
+        <mass>2.20843</mass>
+        <inertia>
+          <ixx>0.00791838</ixx>
+          <ixy>-0.000140684</ixy>
+          <ixz>-4.64418e-06</ixz>
+          <iyy>0.00176919</iyy>
+          <iyz>-0.000167361</iyz>
+          <izz>0.00791102</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_upper_leg_collision'>
+        <pose>-0.0701 0.241013 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_upper_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_upper_leg_visual'>
+        <pose>-0.0701 0.241013 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_upper_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_hip_yaw' type='revolute'>
+      <child>l_upper_leg</child>
+      <parent>l_hip_2</parent>
+      <axis>
+        <xyz>0 -0 1</xyz>
+        <limit>
+          <lower>-1.22173</lower>
+          <upper>1.22173</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_lower_leg'>
+      <pose>0.007309 -0.046317 -0.354438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.027377 -0.088559 0.000854 0 -0 0</pose>
+        <mass>1.87237</mass>
+        <inertia>
+          <ixx>0.00540418</ixx>
+          <ixy>-0.000305905</ixy>
+          <ixz>8.58509e-05</ixz>
+          <iyy>0.0019275</iyy>
+          <iyz>-0.000293159</iyz>
+          <izz>0.00583249</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_lower_leg_collision'>
+        <pose>-0.046317 0.386638 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_lower_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_lower_leg_visual'>
+        <pose>-0.046317 0.386638 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_lower_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_knee' type='revolute'>
+      <child>l_lower_leg</child>
+      <parent>l_upper_leg</parent>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <limit>
+          <lower>-1.74533</lower>
+          <upper>0</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ankle_1'>
+      <pose>0.007309 -0.1056 -0.555438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.034594 6.3e-05 0.015261 0 -0 0</pose>
+        <mass>0.879758</mass>
+        <inertia>
+          <ixx>0.000524207</ixx>
+          <ixy>-1.45611e-06</ixy>
+          <ixz>3.96996e-05</ixz>
+          <iyy>0.000580223</iyy>
+          <iyz>3.73998e-06</iyz>
+          <izz>0.000400428</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ankle_1_collision'>
+        <pose>-0.1056 0.587138 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_ankle_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ankle_1_visual'>
+        <pose>-0.1056 0.587138 0.043409 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_ankle_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_ankle_pitch' type='revolute'>
+      <child>l_ankle_1</child>
+      <parent>l_lower_leg</parent>
+      <axis>
+        <xyz>0 -1 -0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>0.523599</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ankle_2'>
+      <pose>-0.040779 -0.0701 -0.555438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.003154 -0.050525 -0.030008 0 -0 0</pose>
+        <mass>0.649857</mass>
+        <inertia>
+          <ixx>0.00175158</ixx>
+          <ixy>1.7275e-05</ixy>
+          <ixz>3.30063e-05</ixz>
+          <iyy>0.00180982</iyy>
+          <iyz>8.88895e-05</iyz>
+          <izz>0.000502082</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ankle_2_collision'>
+        <pose>-0.0701 0.587138 -0.004679 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_ankle_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='l_ankle_2_collision_l_ankle_2_1'>
+        <pose>-0.0701 0.587138 -0.004679 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_foot.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ankle_2_visual'>
+        <pose>-0.0701 0.587138 -0.004679 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_ankle_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='l_ankle_2_visual_l_ankle_2_1'>
+        <pose>-0.0701 0.587138 -0.004679 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_foot.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_ankle_roll' type='revolute'>
+      <child>l_ankle_2</child>
+      <parent>l_ankle_1</parent>
+      <axis>
+        <xyz>-1 -0 0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>0.349066</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_hip_1'>
+      <pose>0.006452 0.023366 -0.119913 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.040711 -5.9e-05 -0.000523 0 -0 0</pose>
+        <mass>0.920354</mass>
+        <inertia>
+          <ixx>0.000404796</ixx>
+          <ixy>-1.20388e-06</ixy>
+          <ixz>1.0611e-06</ixz>
+          <iyy>0.000575006</iyy>
+          <iyz>-5.32287e-07</iyz>
+          <izz>0.000580444</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_hip_1_collision'>
+        <pose>0.023366 0.151913 0.042852 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_hip_1_visual'>
+        <pose>0.023366 0.151913 0.042852 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_hip_pitch' type='revolute'>
+      <child>r_hip_1</child>
+      <parent>root_link</parent>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>1.48353</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_hip_2'>
+      <pose>0.032796 0.0701 -0.119913 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>6.8e-05 -0.053205 0.025006 0 -0 0</pose>
+        <mass>0.545612</mass>
+        <inertia>
+          <ixx>0.000667914</ixx>
+          <ixy>1.04681e-06</ixy>
+          <ixz>1.68214e-07</ixz>
+          <iyy>0.000343994</iyy>
+          <iyz>1.4664e-05</iyz>
+          <izz>0.000494191</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_hip_2_collision'>
+        <pose>0.0701 0.151913 0.069196 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='r_hip_2_collision_r_hip_2_1'>
+        <pose>0.0701 0.151913 0.069196 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_hip_2_visual'>
+        <pose>0.0701 0.151913 0.069196 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='r_hip_2_visual_r_hip_2_1'>
+        <pose>0.0701 0.151913 0.069196 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_hip_3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_hip_roll' type='revolute'>
+      <child>r_hip_2</child>
+      <parent>r_hip_1</parent>
+      <axis>
+        <xyz>1 0 -0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_upper_leg'>
+      <pose>0.007309 0.0701 -0.208813 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-3.9e-05 -0.078897 0.003322 0 -0 0</pose>
+        <mass>2.20355</mass>
+        <inertia>
+          <ixx>0.00791322</ixx>
+          <ixy>0.000147226</ixy>
+          <ixz>6.31387e-06</ixz>
+          <iyy>0.00176632</iyy>
+          <iyz>-0.000167232</iyz>
+          <izz>0.00790413</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_upper_leg_collision'>
+        <pose>0.0701 0.241013 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_upper_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_upper_leg_visual'>
+        <pose>0.0701 0.241013 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_upper_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_hip_yaw' type='revolute'>
+      <child>r_upper_leg</child>
+      <parent>r_hip_2</parent>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1.22173</lower>
+          <upper>1.22173</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_lower_leg'>
+      <pose>0.007309 0.046296 -0.354438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.027417 -0.088787 0.001091 0 -0 0</pose>
+        <mass>1.87201</mass>
+        <inertia>
+          <ixx>0.00540828</ixx>
+          <ixy>0.000292508</ixy>
+          <ixz>-7.03247e-05</ixz>
+          <iyy>0.00192613</iyy>
+          <iyz>-0.000332689</iyz>
+          <izz>0.00583736</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_lower_leg_collision'>
+        <pose>0.046296 0.386638 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_lower_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_lower_leg_visual'>
+        <pose>0.046296 0.386638 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_lower_leg.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_knee' type='revolute'>
+      <child>r_lower_leg</child>
+      <parent>r_upper_leg</parent>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <limit>
+          <lower>-1.74533</lower>
+          <upper>0</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ankle_1'>
+      <pose>0.007309 0.1056 -0.555438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.034628 6.3e-05 0.015251 0 -0 0</pose>
+        <mass>0.880328</mass>
+        <inertia>
+          <ixx>0.000524342</ixx>
+          <ixy>9.5836e-07</ixy>
+          <ixz>-3.92498e-05</ixz>
+          <iyy>0.000581159</iyy>
+          <iyz>3.73943e-06</iyz>
+          <izz>0.000401231</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_ankle_1_collision'>
+        <pose>0.1056 0.587138 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_ankle_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_ankle_1_visual'>
+        <pose>0.1056 0.587138 0.043709 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_ankle_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_ankle_pitch' type='revolute'>
+      <child>r_ankle_1</child>
+      <parent>r_lower_leg</parent>
+      <axis>
+        <xyz>0 -1 -0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>0.523599</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ankle_2'>
+      <pose>0.025809 0.0701 -0.555438 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.00316 -0.050533 0.036539 0 -0 0</pose>
+        <mass>0.649755</mass>
+        <inertia>
+          <ixx>0.00174809</ixx>
+          <ixy>-1.73727e-05</ixy>
+          <ixz>-3.30389e-05</ixz>
+          <iyy>0.00180643</iyy>
+          <iyz>8.85797e-05</iyz>
+          <izz>0.000501903</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_ankle_2_collision'>
+        <pose>0.0701 0.587138 0.062209 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_ankle_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='r_ankle_2_collision_r_ankle_2_1'>
+        <pose>0.0701 0.587138 0.062209 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_foot.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_ankle_2_visual'>
+        <pose>0.0701 0.587138 0.062209 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_ankle_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='r_ankle_2_visual_r_ankle_2_1'>
+        <pose>0.0701 0.587138 0.062209 0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_foot.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_ankle_roll' type='revolute'>
+      <child>r_ankle_2</child>
+      <parent>r_ankle_1</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>0.349066</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.223</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='torso_1'>
+      <pose>0 0.027046 0 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.027092 0.029148 -0.00044 0 -0 0</pose>
+        <mass>0.67144</mass>
+        <inertia>
+          <ixx>0.00040911</ixx>
+          <ixy>-1.04522e-06</ixy>
+          <ixz>-1.02516e-06</ixz>
+          <iyy>0.000384141</iyy>
+          <iyz>6.50708e-06</iyz>
+          <izz>0.000299445</izz>
+        </inertia>
+      </inertial>
+      <collision name='torso_1_collision'>
+        <pose>0.027046 0.032 0.0364 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/torso_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='torso_1_visual'>
+        <pose>0.027046 0.032 0.0364 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/torso_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='torso_pitch' type='revolute'>
+      <child>torso_1</child>
+      <parent>root_link</parent>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>1.22173</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='torso_2'>
+      <pose>0.057691 0 0.032 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.000113 0.036182 0.057661 0 -0 0</pose>
+        <mass>0.428161</mass>
+        <inertia>
+          <ixx>0.000833014</ixx>
+          <ixy>2.2275e-08</ixy>
+          <ixz>8.1931e-08</ixz>
+          <iyy>0.000440576</iyy>
+          <iyz>-6.00823e-07</iyz>
+          <izz>0.000605488</izz>
+        </inertia>
+      </inertial>
+      <collision name='torso_2_collision'>
+        <pose>0 0.1433 0.038998 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/torso_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='torso_2_visual'>
+        <pose>0 0.1433 0.038998 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/torso_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='torso_roll' type='revolute'>
+      <child>torso_2</child>
+      <parent>torso_1</parent>
+      <axis>
+        <xyz>-1 -0 0</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>0.523599</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='chest'>
+      <pose>-0.005497 0 0.082 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.000189 0.073091 -0.047238 0 -0 0</pose>
+        <mass>8.63802</mass>
+        <inertia>
+          <ixx>0.0486666</ixx>
+          <ixy>3.29185e-05</ixy>
+          <ixz>0.000205812</ixz>
+          <iyy>0.0498553</iyy>
+          <iyz>-0.000485288</iyz>
+          <izz>0.0294678</izz>
+        </inertia>
+      </inertial>
+      <collision name='chest_collision'>
+        <pose>0 0.0928 -0.024189 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/bb_chest.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='chest_visual'>
+        <pose>0 0.0928 -0.024189 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/bb_chest.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='torso_yaw' type='revolute'>
+      <child>chest</child>
+      <parent>torso_2</parent>
+      <axis>
+        <xyz>-0 0 -1</xyz>
+        <limit>
+          <lower>-0.872665</lower>
+          <upper>0.872665</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_shoulder_1'>
+      <pose>-0.013466 -0.120016 0.1748 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.008985 -3.3e-05 -0.0089 0 -0 0</pose>
+        <mass>0.114882</mass>
+        <inertia>
+          <ixx>2.24676e-05</ixx>
+          <ixy>-1.77064e-08</ixy>
+          <ixz>3.55951e-06</ixz>
+          <iyy>2.29712e-05</iyy>
+          <iyz>6.57597e-08</iyz>
+          <izz>1.00139e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_shoulder_1_collision'>
+        <pose>-0.120257 0 -0.032223 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_shoulder_1_visual'>
+        <pose>-0.120257 0 -0.032223 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_shoulder_pitch' type='revolute'>
+      <child>l_shoulder_1</child>
+      <parent>chest</parent>
+      <axis>
+        <xyz>-0.258819 -0.965926 0</xyz>
+        <limit>
+          <lower>-1.66679</lower>
+          <upper>0.174533</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_shoulder_2'>
+      <pose>-0.021986 -0.106345 0.1748 -3.14159 1.309 -0.261799</pose>
+      <inertial>
+        <pose>0.021475 0.000269 -0.019411 0 -0 0</pose>
+        <mass>0.239074</mass>
+        <inertia>
+          <ixx>0.000159206</ixx>
+          <ixy>1.51033e-07</ixy>
+          <ixz>-1.04783e-05</ixz>
+          <iyy>0.000207209</iyy>
+          <iyz>1.20634e-06</iyz>
+          <izz>0.000105106</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_shoulder_2_collision'>
+        <pose>-0.106587 0 -0.040743 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_shoulder_2_visual'>
+        <pose>-0.106587 0 -0.040743 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_shoulder_roll' type='revolute'>
+      <child>l_shoulder_2</child>
+      <parent>l_shoulder_1</parent>
+      <axis>
+        <xyz>-0.965926 0.258819 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>2.80649</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_shoulder_3'>
+      <pose>-0.010619 -0.109391 0.151932 -3.14159 1.309 -0.261799</pose>
+      <inertial>
+        <pose>0.063499 0.000122 0.025662 0 -0 0</pose>
+        <mass>1.10593</mass>
+        <inertia>
+          <ixx>0.000715591</ixx>
+          <ixy>-3.59253e-06</ixy>
+          <ixz>-0.000249648</ixz>
+          <iyy>0.00164142</iyy>
+          <iyz>2.42485e-06</iyz>
+          <izz>0.00146227</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_shoulder_3_collision'>
+        <pose>-0.131721 0 -0.035295 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='l_shoulder_3_collision_l_shoulder_3_1'>
+        <pose>-0.131721 -0 -0.035295 -0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_upper_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_shoulder_3_visual'>
+        <pose>-0.131721 0 -0.035295 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_shoulder_3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='l_shoulder_3_visual_l_shoulder_3_1'>
+        <pose>-0.131721 -0 -0.035295 -0 0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_upper_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_shoulder_yaw' type='revolute'>
+      <child>l_shoulder_3</child>
+      <parent>l_shoulder_2</parent>
+      <axis>
+        <xyz>-0 0 -1</xyz>
+        <limit>
+          <lower>-0.645772</lower>
+          <upper>1.39626</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_elbow_1'>
+      <pose>-0.016308 -0.072667 0.01574 3.14159 1.309 -0.261799</pose>
+      <inertial>
+        <pose>0.090439 0.02985 0.009215 0 -0 0</pose>
+        <mass>1.17718</mass>
+        <inertia>
+          <ixx>0.00107783</ixx>
+          <ixy>0.000310534</ixy>
+          <ixz>-0.00156091</ixz>
+          <iyy>0.00689571</iyy>
+          <iyz>0.000135264</iyz>
+          <izz>0.00628941</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_elbow_1_collision'>
+        <pose>-0.25939 0.034 -0.085033 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_elbow_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_elbow_1_visual'>
+        <pose>-0.25939 0.034 -0.085033 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/l_elbow_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_elbow' type='revolute'>
+      <child>l_elbow_1</child>
+      <parent>l_shoulder_3</parent>
+      <axis>
+        <xyz>0.258819 0.965926 -0</xyz>
+        <limit>
+          <lower>0.261799</lower>
+          <upper>1.85005</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='neck_1'>
+      <pose>-0.010808 0.0143 0.254797 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>0.014371 0.006567 -0.006384 0 -0 0</pose>
+        <mass>0.125793</mass>
+        <inertia>
+          <ixx>4.0647e-05</ixx>
+          <ixy>8.09156e-08</ixy>
+          <ixz>-3.74998e-08</ixz>
+          <iyy>3.881e-05</iyy>
+          <iyz>9.39717e-06</iyz>
+          <izz>4.7535e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='neck_1_collision'>
+        <pose>0.0143 -0.079997 -0.029501 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/neck_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='neck_1_visual'>
+        <pose>0.0143 -0.079997 -0.029501 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/neck_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='neck_pitch' type='revolute'>
+      <child>neck_1</child>
+      <parent>chest</parent>
+      <axis>
+        <xyz>-0 1 0</xyz>
+        <limit>
+          <lower>-0.698132</lower>
+          <upper>0.383972</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='neck_2'>
+      <pose>-0.031608 0 0.264297 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-8.9e-05 0.035225 -0.019545 0 -0 0</pose>
+        <mass>0.177087</mass>
+        <inertia>
+          <ixx>0.000117943</ixx>
+          <ixy>-5.25591e-07</ixy>
+          <ixz>4.68307e-07</ixz>
+          <iyy>4.04013e-05</iyy>
+          <iyz>9.81476e-06</iyz>
+          <izz>0.000105186</izz>
+        </inertia>
+      </inertial>
+      <collision name='neck_2_collision'>
+        <pose>0 -0.089497 -0.050301 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/neck_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='neck_2_visual'>
+        <pose>0 -0.089497 -0.050301 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/neck_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='neck_roll' type='revolute'>
+      <child>neck_2</child>
+      <parent>neck_1</parent>
+      <axis>
+        <xyz>-1 -0 0</xyz>
+        <limit>
+          <lower>-0.349066</lower>
+          <upper>0.349066</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='head'>
+      <pose>-0.010808 0 0.241953 1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose>-0.000574 0.113511 -0.007539 0 -0 0</pose>
+        <mass>1.50691</mass>
+        <inertia>
+          <ixx>0.00680478</ixx>
+          <ixy>-1.60267e-05</ixy>
+          <ixz>7.28166e-05</ixz>
+          <iyy>0.00634736</iyy>
+          <iyz>0.000292091</iyz>
+          <izz>0.00478116</izz>
+        </inertia>
+      </inertial>
+      <collision name='head_collision'>
+        <pose>0 -0.067153 -0.029501 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/head.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='head_visual'>
+        <pose>0 -0.067153 -0.029501 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/head.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='imu_frame' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.0095 0.133444 0.0093 -1.5708 1.5708 0</pose>
+      </sensor>
+    </link>
+    <joint name='neck_yaw' type='revolute'>
+      <child>head</child>
+      <parent>neck_2</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.872665</lower>
+          <upper>0.872665</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_shoulder_1'>
+      <pose>-0.013466 0.120016 0.1748 -1.5708 -0 2.0944</pose>
+      <inertial>
+        <pose>-0.012266 3.2e-05 -0.003211 0 -0 0</pose>
+        <mass>0.114862</mass>
+        <inertia>
+          <ixx>2.24541e-05</ixx>
+          <ixy>-1.65173e-08</ixy>
+          <ixz>-3.55626e-06</ixz>
+          <iyy>2.29582e-05</iyy>
+          <iyz>-6.13337e-08</iyz>
+          <izz>1.00116e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_shoulder_1_collision'>
+        <pose>0.099008 0 -0.026529 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_shoulder_1_visual'>
+        <pose>0.099008 0 -0.026529 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_shoulder_pitch' type='revolute'>
+      <child>r_shoulder_1</child>
+      <parent>chest</parent>
+      <axis>
+        <xyz>0.258819 -0.965926 -0</xyz>
+        <limit>
+          <lower>-1.66679</lower>
+          <upper>0.174533</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_shoulder_2'>
+      <pose>-0.021982 0.106346 0.1748 -3.14159 -1.309 -2.87979</pose>
+      <inertial>
+        <pose>-0.021414 0.000272 -0.01944 0 -0 0</pose>
+        <mass>0.238162</mass>
+        <inertia>
+          <ixx>0.000158626</ixx>
+          <ixy>-1.12091e-07</ixy>
+          <ixz>1.02574e-05</ixz>
+          <iyy>0.000206526</iyy>
+          <iyz>1.19785e-06</iyz>
+          <izz>0.000104956</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_shoulder_2_collision'>
+        <pose>0.106588 0 -0.040739 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_shoulder_2_visual'>
+        <pose>0.106588 0 -0.040739 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_shoulder_roll' type='revolute'>
+      <child>r_shoulder_2</child>
+      <parent>r_shoulder_1</parent>
+      <axis>
+        <xyz>0.965926 0.258819 -0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>2.80649</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_shoulder_3'>
+      <pose>-0.010619 0.109391 0.152175 -3.14159 -1.309 -2.87979</pose>
+      <inertial>
+        <pose>-0.063663 8.3e-05 0.025734 0 -0 0</pose>
+        <mass>1.10423</mass>
+        <inertia>
+          <ixx>0.000715257</ixx>
+          <ixy>3.29596e-06</ixy>
+          <ixz>0.000249446</ixz>
+          <iyy>0.00163689</iyy>
+          <iyz>8.77807e-07</iyz>
+          <izz>0.00145834</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_shoulder_3_collision'>
+        <pose>0.131487 0 -0.035232 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='r_shoulder_3_collision_r_shoulder_3_1'>
+        <pose>0.131487 -0 -0.035232 -0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_upper_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_shoulder_3_visual'>
+        <pose>0.131487 0 -0.035232 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_shoulder_3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='r_shoulder_3_visual_r_shoulder_3_1'>
+        <pose>0.131487 -0 -0.035232 -0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_upper_arm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_shoulder_yaw' type='revolute'>
+      <child>r_shoulder_3</child>
+      <parent>r_shoulder_2</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.645772</lower>
+          <upper>1.39626</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_elbow_1'>
+      <pose>-0.019284 0.083776 0.01574 -3.14159 -1.309 -2.87979</pose>
+      <inertial>
+        <pose>-0.0905 0.01842 0.009185 0 -0 0</pose>
+        <mass>1.17637</mass>
+        <inertia>
+          <ixx>0.00107282</ixx>
+          <ixy>-0.000311989</ixy>
+          <ixz>0.00155336</ixz>
+          <iyy>0.00689615</iyy>
+          <iyz>0.000137135</iyz>
+          <izz>0.00629364</izz>
+        </inertia>
+      </inertial>
+      <collision name='r_elbow_1_collision'>
+        <pose>0.25939 0.0225 -0.085033 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_elbow_1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='r_elbow_1_visual'>
+        <pose>0.25939 0.0225 -0.085033 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://iCubGenova02/meshes/dae/r_elbow_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_elbow' type='revolute'>
+      <child>r_elbow_1</child>
+      <parent>r_shoulder_3</parent>
+      <axis>
+        <xyz>-0.258819 0.965926 0</xyz>
+        <limit>
+          <lower>0.261799</lower>
+          <upper>1.85005</upper>
+          <effort>50000</effort>
+          <velocity>50000</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.06</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <static>0</static>
+    <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_torso.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='controlboard_head' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_head.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='controlboard_left_arm' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_arm.ini</yarpConfigurationFile>
+      <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+    </plugin>
+    <plugin name='controlboard_right_arm' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_arm.ini</yarpConfigurationFile>
+      <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+    </plugin>
+    <plugin name='controlboard_right_leg' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_leg.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='controlboard_left_leg' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_leg.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='apply_external_wrench' filename='libgazebo_yarp_externalwrench.so'>
+      <robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
+    </plugin>
+  </model>
+</sdf>
