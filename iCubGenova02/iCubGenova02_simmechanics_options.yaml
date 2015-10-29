@@ -347,6 +347,19 @@ reverseRotationAxis:
   r_shoulder_yaw
   r_elbow
   neck_roll
+  
+assignedMasses:
+  chest: 7.6380
+  l_upper_leg: 1.8084
+  l_lower_leg: 1.4724
+  l_ankle_1  : 0.6798
+  r_upper_leg: 1.8035
+  r_lower_leg: 1.4720
+  r_ankle_1  : 0.6803
+
+
+  
+  
 
 XMLBlobs: 
   - |
