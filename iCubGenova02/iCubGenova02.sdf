@@ -340,7 +340,7 @@
         </geometry>
       </collision>
       <collision name='l_ankle_2_collision_l_ankle_2_1'>
-        <pose>-0.0701 0.587138 -0.004679 0 0 -0</pose>
+        <pose>-0.0701 0.587138 -0.004379 0 0 -0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -358,7 +358,7 @@
         </geometry>
       </visual>
       <visual name='l_ankle_2_visual_l_ankle_2_1'>
-        <pose>-0.0701 0.587138 -0.004679 0 0 -0</pose>
+        <pose>-0.0701 0.587138 -0.004379 0 0 -0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1007,21 +1007,21 @@
       </axis>
     </joint>
     <link name='l_shoulder_3'>
-      <pose>-0.010619 -0.109391 0.151932 -3.14159 1.309 -0.261799</pose>
+      <pose>-0.010619 -0.109391 0.152503 3.14159 1.309 -0.5236</pose>
       <inertial>
-        <pose>0.063499 0.000122 0.025662 0 -0 0</pose>
+        <pose>0.064051 0.000122 0.02581 0 -0 0</pose>
         <mass>1.10593</mass>
         <inertia>
           <ixx>0.000715591</ixx>
-          <ixy>-3.59253e-06</ixy>
+          <ixy>-3.59534e-06</ixy>
           <ixz>-0.000249648</ixz>
           <iyy>0.00164142</iyy>
-          <iyz>2.42485e-06</iyz>
+          <iyz>2.42401e-06</iyz>
           <izz>0.00146227</izz>
         </inertia>
       </inertial>
       <collision name='l_shoulder_3_collision'>
-        <pose>-0.131721 0 -0.035295 0 -0 0</pose>
+        <pose>-0.13117 0 -0.035147 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1030,7 +1030,7 @@
         </geometry>
       </collision>
       <collision name='l_shoulder_3_collision_l_shoulder_3_1'>
-        <pose>-0.131721 -0 -0.035295 -0 0 -0</pose>
+        <pose>-0.13117 0 -0.035147 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1039,7 +1039,7 @@
         </geometry>
       </collision>
       <visual name='l_shoulder_3_visual'>
-        <pose>-0.131721 0 -0.035295 0 -0 0</pose>
+        <pose>-0.13117 0 -0.035147 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1048,7 +1048,7 @@
         </geometry>
       </visual>
       <visual name='l_shoulder_3_visual_l_shoulder_3_1'>
-        <pose>-0.131721 -0 -0.035295 -0 0 -0</pose>
+        <pose>-0.13117 0 -0.035147 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1078,9 +1078,9 @@
       </axis>
     </joint>
     <link name='l_elbow_1'>
-      <pose>-0.016308 -0.072667 0.01574 -3.14159 1.309 -0.261799</pose>
+      <pose>-0.006609 -0.072446 0.01574 3.14159 1.309 -0.5236</pose>
       <inertial>
-        <pose>0.090439 0.02985 0.009215 0 -0 0</pose>
+        <pose>0.090439 0.029851 0.009214 0 -0 0</pose>
         <mass>1.17718</mass>
         <inertia>
           <ixx>0.00107783</ixx>
@@ -1114,7 +1114,7 @@
       <child>l_elbow_1</child>
       <parent>l_shoulder_3</parent>
       <axis>
-        <xyz>0.258819 0.965926 -0</xyz>
+        <xyz>0.5 0.866025 0</xyz>
         <limit>
           <lower>0.261799</lower>
           <upper>1.85005</upper>
@@ -1412,21 +1412,21 @@
       </axis>
     </joint>
     <link name='r_shoulder_3'>
-      <pose>-0.010619 0.109391 0.152175 -3.14159 -1.309 -2.87979</pose>
+      <pose>-0.010619 0.109391 0.157318 3.14159 -1.309 -2.61799</pose>
       <inertial>
-        <pose>-0.063663 8.3e-05 0.025734 0 -0 0</pose>
+        <pose>-0.068631 8.3e-05 0.027065 0 -0 0</pose>
         <mass>1.10423</mass>
         <inertia>
-          <ixx>0.000715257</ixx>
-          <ixy>3.29596e-06</ixy>
+          <ixx>0.000715258</ixx>
+          <ixy>3.2957e-06</ixy>
           <ixz>0.000249446</ixz>
           <iyy>0.00163689</iyy>
-          <iyz>8.77807e-07</iyz>
+          <iyz>8.77894e-07</iyz>
           <izz>0.00145834</izz>
         </inertia>
       </inertial>
       <collision name='r_shoulder_3_collision'>
-        <pose>0.131487 0 -0.035232 0 -0 0</pose>
+        <pose>0.126519 0 -0.033901 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1435,7 +1435,7 @@
         </geometry>
       </collision>
       <collision name='r_shoulder_3_collision_r_shoulder_3_1'>
-        <pose>0.131487 -0 -0.035232 -0 -0 0</pose>
+        <pose>0.126519 0 -0.033901 -0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1444,7 +1444,7 @@
         </geometry>
       </collision>
       <visual name='r_shoulder_3_visual'>
-        <pose>0.131487 0 -0.035232 0 -0 0</pose>
+        <pose>0.126519 0 -0.033901 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1453,7 +1453,7 @@
         </geometry>
       </visual>
       <visual name='r_shoulder_3_visual_r_shoulder_3_1'>
-        <pose>0.131487 -0 -0.035232 -0 -0 0</pose>
+        <pose>0.126519 0 -0.033901 -0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -1483,7 +1483,7 @@
       </axis>
     </joint>
     <link name='r_elbow_1'>
-      <pose>-0.019284 0.083776 0.01574 3.14159 -1.309 -2.87979</pose>
+      <pose>-0.012359 0.082406 0.01574 3.14159 -1.309 -2.61799</pose>
       <inertial>
         <pose>-0.0905 0.01842 0.009185 0 -0 0</pose>
         <mass>1.17637</mass>
@@ -1519,7 +1519,7 @@
       <child>r_elbow_1</child>
       <parent>r_shoulder_3</parent>
       <axis>
-        <xyz>-0.258819 0.965926 0</xyz>
+        <xyz>-0.5 0.866025 0</xyz>
         <limit>
           <lower>0.261799</lower>
           <upper>1.85005</upper>
