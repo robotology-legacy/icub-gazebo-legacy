@@ -357,34 +357,54 @@ assignedMasses:
   r_lower_leg: 1.4720
   r_ankle_1  : 0.6803
 
-
-  
-  
-
 XMLBlobs: 
   - |
-    	<gazebo>
-    	<plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_torso.ini</yarpConfigurationFile>
-    	</plugin>
-    	<plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_head.ini</yarpConfigurationFile>
-    	</plugin>
-    	<plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_arm.ini</yarpConfigurationFile>
-    		<initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
-    	</plugin>
-    	<plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_arm.ini</yarpConfigurationFile>
-    		<initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
-    	</plugin>
-    	<plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_leg.ini</yarpConfigurationFile>
-    	</plugin>
-    	<plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
-    		<yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_leg.ini</yarpConfigurationFile>
-    	</plugin>
-    	<plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
-    		<robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
-    	</plugin>
-    	</gazebo>
+        <gazebo reference="r_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo reference="r_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo reference="l_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo>
+        <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_torso.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_head.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_arm.ini</yarpConfigurationFile>
+            <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_arm.ini</yarpConfigurationFile>
+            <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
+             <robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
+        </plugin>
+        </gazebo>
