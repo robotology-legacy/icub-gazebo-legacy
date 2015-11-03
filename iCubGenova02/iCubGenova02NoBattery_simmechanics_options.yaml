@@ -1,0 +1,410 @@
+# Meshes options 
+scale: "0.001 0.001 0.001"
+forcelowercase: Yes
+filenameformatchangeext: "model://iCubGenova02/meshes/dae/%s.dae"
+
+# Rename options (map Creo names to URDF names)
+rename:
+ RootPart: base_link
+ SIM_SEA_2-5_ROOT_LINK: root_link
+ SIM_SEA_2-5_LAP_BELT_1: torso_1
+ SIM_SEA_2-5_LAP_BELT_2: torso_2
+ SIM_SEA_2-5_R_HIP_1: r_hip_1
+ SIM_SEA_2-5_R_HIP_2: r_hip_2
+ SIM_SEA_2-5_R_UPPER_THIGH: r_hip_3
+ SIM_SEA_2-5_R_THIGH: r_upper_leg
+ SIM_SEA_2-5_R_SHANK: r_lower_leg
+ SIM_SEA_2-5_R_ANKLE: r_ankle_1
+ SIM_SEA_2-5_R_FOOT: r_ankle_2
+ SIM_SEA_2-5_R_SOLE: r_foot
+ SIM_SEA_2-5_L_HIP_1: l_hip_1
+ SIM_SEA_2-5_L_HIP_2: l_hip_2
+ SIM_SEA_2-5_L_UPPER_THIGH: l_hip_3
+ SIM_SEA_2-5_L_THIGH: l_upper_leg
+ SIM_SEA_2-5_L_SHANK: l_lower_leg
+ SIM_SEA_2-5_L_ANKLE: l_ankle_1
+ SIM_SEA_2-5_L_FOOT: l_ankle_2
+ SIM_SEA_2-5_L_SOLE: l_foot
+ SIM_SEA_2-5_CHEST_BB: chest
+ SIM_SEA_2-5_R_SHOULDER_1: r_shoulder_1
+ SIM_SEA_2-5_R_SHOULDER_2: r_shoulder_2
+ SIM_SEA_2-5_R_UPPER_ARM: r_shoulder_3
+ SIM_SEA_2-5_R_ELBOW: r_upper_arm
+ SIM_SEA_2-5_R_FOREARM_HAND: r_elbow_1
+ SIM_SEA_2-5_L_SHOULDER_1: l_shoulder_1
+ SIM_SEA_2-5_L_SHOULDER_2: l_shoulder_2
+ SIM_SEA_2-5_L_UPPER_ARM: l_shoulder_3
+ SIM_SEA_2-5_L_ELBOW: l_upper_arm
+ SIM_SEA_2-5_L_FOREARM_HAND: l_elbow_1
+ SIM_SEA_2-5_NECK_1: neck_1
+ SIM_SEA_2-5_NECK_2: neck_2
+ SIM_SEA_2-5_HEAD: head
+ RootGround--RootPart: root_joint_unknown
+ RootPart--RootPart: base_joint_unknown
+ RootPart--SIM_SEA_2-5_ROOT_LINK: base_fixed_joint
+ RootPart--SIM_SEA_2-5_R_HIP_1: r_hip_unknown
+ RootPart--SIM_SEA_2-5_L_HIP_1: l_hip_unknown
+ RootPart--SIM_SEA_2-5_CHEST_BB: torso_yaw_unknown
+ RootPart--SIM_SEA_2-5_NECK_1: neck_pitch_unknown
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_LAP_BELT_1: torso_pitch
+ SIM_SEA_2-5_LAP_BELT_1--SIM_SEA_2-5_LAP_BELT_2: torso_roll
+ SIM_SEA_2-5_LAP_BELT_2--SIM_SEA_2-5_CHEST_BB: torso_yaw
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_R_HIP_1: r_hip_pitch
+ SIM_SEA_2-5_R_HIP_1--SIM_SEA_2-5_R_HIP_2: r_hip_roll
+ SIM_SEA_2-5_R_HIP_2--SIM_SEA_2-5_R_UPPER_THIGH: r_leg_ft_sensor
+ SIM_SEA_2-5_R_UPPER_THIGH--SIM_SEA_2-5_R_THIGH: r_hip_yaw
+ SIM_SEA_2-5_R_THIGH--SIM_SEA_2-5_R_SHANK: r_knee
+ SIM_SEA_2-5_R_SHANK--SIM_SEA_2-5_R_ANKLE: r_ankle_pitch
+ SIM_SEA_2-5_R_ANKLE--SIM_SEA_2-5_R_FOOT: r_ankle_roll
+ SIM_SEA_2-5_R_FOOT--SIM_SEA_2-5_R_SOLE: r_foot_ft_sensor
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_L_HIP_1: l_hip_pitch
+ SIM_SEA_2-5_L_HIP_1--SIM_SEA_2-5_L_HIP_2: l_hip_roll
+ SIM_SEA_2-5_L_HIP_2--SIM_SEA_2-5_L_UPPER_THIGH: l_leg_ft_sensor
+ SIM_SEA_2-5_L_UPPER_THIGH--SIM_SEA_2-5_L_THIGH: l_hip_yaw
+ SIM_SEA_2-5_L_THIGH--SIM_SEA_2-5_L_SHANK: l_knee
+ SIM_SEA_2-5_L_SHANK--SIM_SEA_2-5_L_ANKLE: l_ankle_pitch
+ SIM_SEA_2-5_L_ANKLE--SIM_SEA_2-5_L_FOOT: l_ankle_roll
+ SIM_SEA_2-5_L_FOOT--SIM_SEA_2-5_L_SOLE: l_foot_ft_sensor
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_R_SHOULDER_1: r_shoulder_pitch
+ SIM_SEA_2-5_R_SHOULDER_1--SIM_SEA_2-5_R_SHOULDER_2: r_shoulder_roll
+ SIM_SEA_2-5_R_SHOULDER_2--SIM_SEA_2-5_R_UPPER_ARM: r_shoulder_yaw
+ SIM_SEA_2-5_R_UPPER_ARM--SIM_SEA_2-5_R_ELBOW: r_arm_ft_sensor
+ SIM_SEA_2-5_R_ELBOW--SIM_SEA_2-5_R_FOREARM_HAND: r_elbow
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_L_SHOULDER_1: l_shoulder_pitch
+ SIM_SEA_2-5_L_SHOULDER_1--SIM_SEA_2-5_L_SHOULDER_2: l_shoulder_roll
+ SIM_SEA_2-5_L_SHOULDER_2--SIM_SEA_2-5_L_UPPER_ARM: l_shoulder_yaw
+ SIM_SEA_2-5_L_UPPER_ARM--SIM_SEA_2-5_L_ELBOW: l_arm_ft_sensor
+ SIM_SEA_2-5_L_ELBOW--SIM_SEA_2-5_L_FOREARM_HAND: l_elbow
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_NECK_1: neck_pitch
+ SIM_SEA_2-5_NECK_1--SIM_SEA_2-5_NECK_2: neck_roll
+ SIM_SEA_2-5_NECK_2--SIM_SEA_2-5_HEAD: neck_yaw
+
+# Frames options 
+exportAllUseradded: No
+
+exportedFrames:
+  - frameName: SCSYS_ROOT_LINK_EMS_ACC_EB5
+    frameReferenceLink: root_link
+    exportedFrameName: root_link_ems_acc_eb5
+  - frameName: SCSYS_ROOT_LINK_EMS_GYRO_EB5
+    frameReferenceLink: root_link
+    exportedFrameName: root_link_ems_gyro_eb5
+  - frameName: SCSYS_CHEST_EMS_ACC_EB1
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_acc_eb1
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB1
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_gyro_eb1
+  - frameName: SCSYS_CHEST_EMS_ACC_EB2
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_acc_eb2
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB2
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_gyro_eb2
+  - frameName: SCSYS_CHEST_EMS_ACC_EB3
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_acc_eb3
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB3
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_gyro_eb3
+  - frameName: SCSYS_CHEST_EMS_ACC_EB4
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_acc_eb4
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB4
+    frameReferenceLink: chest
+    exportedFrameName: chest_ems_gyro_eb4
+  - frameName: SCSYS_CHEST_MTB_ACC_0B7
+    frameReferenceLink: chest
+    exportedFrameName: chest_mtb_acc_0b7
+  - frameName: SCSYS_CHEST_MTB_ACC_0B8
+    frameReferenceLink: chest
+    exportedFrameName: chest_mtb_acc_0b8
+  - frameName: SCSYS_CHEST_MTB_ACC_0B9
+    frameReferenceLink: chest
+    exportedFrameName: chest_mtb_acc_0b9
+  - frameName: SCSYS_CHEST_MTB_ACC_0B10
+    frameReferenceLink: chest
+    exportedFrameName: chest_mtb_acc_0b10
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B10
+    frameReferenceLink: r_upper_arm
+    exportedFrameName: r_upper_arm_mtb_acc_2b10
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B11
+    frameReferenceLink: r_upper_arm
+    exportedFrameName: r_upper_arm_mtb_acc_2b11
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B12
+    frameReferenceLink: r_upper_arm
+    exportedFrameName: r_upper_arm_mtb_acc_2b12
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B13
+    frameReferenceLink: r_upper_arm
+    exportedFrameName: r_upper_arm_mtb_acc_2b13
+  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B7
+    frameReferenceLink: r_elbow_1
+    exportedFrameName: r_forearm_mtb_acc_2b7
+  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B8
+    frameReferenceLink: r_elbow_1
+    exportedFrameName: r_forearm_mtb_acc_2b8
+  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B9
+    frameReferenceLink: r_elbow_1
+    exportedFrameName: r_forearm_mtb_acc_2b9
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B10
+    frameReferenceLink: l_upper_arm
+    exportedFrameName: l_upper_arm_mtb_acc_1b10
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B11
+    frameReferenceLink: l_upper_arm
+    exportedFrameName: l_upper_arm_mtb_acc_1b11
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B12
+    frameReferenceLink: l_upper_arm
+    exportedFrameName: l_upper_arm_mtb_acc_1b12
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B13
+    frameReferenceLink: l_upper_arm
+    exportedFrameName: l_upper_arm_mtb_acc_1b13
+  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B7
+    frameReferenceLink: l_elbow_1
+    exportedFrameName: l_forearm_mtb_acc_1b7
+  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B8
+    frameReferenceLink: l_elbow_1
+    exportedFrameName: l_forearm_mtb_acc_1b8
+  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B9
+    frameReferenceLink: l_elbow_1
+    exportedFrameName: l_forearm_mtb_acc_1b9
+  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB8
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_ems_acc_eb8
+  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB11
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_ems_acc_eb11
+  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB8
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_ems_gyro_eb8
+  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB11
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_ems_gyro_eb11
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B1
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b1
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B2
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b2
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B3
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b3
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B4
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b4
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B5
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b5
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B6
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b6
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B7
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_mtb_acc_11b7
+  - frameName: SCSYS_R_LOWER_LEG_EMS_ACC_EB9
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_ems_acc_eb9
+  - frameName: SCSYS_R_LOWER_LEG_EMS_GYRO_EB9
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_ems_gyro_eb9
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B8
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_mtb_acc_11b8
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B9
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_mtb_acc_11b9
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B10
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_mtb_acc_11b10
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B11
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_mtb_acc_11b11
+  - frameName: SCSYS_R_FOOT_MTB_ACC_11B12
+    frameReferenceLink: r_foot
+    exportedFrameName: r_foot_mtb_acc_11b12
+  - frameName: SCSYS_R_FOOT_MTB_ACC_11B13
+    frameReferenceLink: r_foot
+    exportedFrameName: r_foot_mtb_acc_11b13
+  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB6
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_ems_acc_eb6
+  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB10
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_ems_acc_eb10
+  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB6
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_ems_gyro_eb6
+  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB10
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_ems_gyro_eb10
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B1
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b1
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B2
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b2
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B3
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b3
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B4
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b4
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B5
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b5
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B6
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b6
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B7
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_mtb_acc_10b7
+  - frameName: SCSYS_L_LOWER_LEG_EMS_ACC_EB7
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_ems_acc_eb7
+  - frameName: SCSYS_L_LOWER_LEG_EMS_GYRO_EB7
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_ems_gyro_eb7
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B8
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_mtb_acc_10b8
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B9
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_mtb_acc_10b9
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B10
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_mtb_acc_10b10
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B11
+    frameReferenceLink: l_lower_leg
+    exportedFrameName: l_lower_leg_mtb_acc_10b11
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B12
+    frameReferenceLink: l_foot
+    exportedFrameName: l_foot_mtb_acc_10b12
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B13
+    frameReferenceLink: l_foot
+    exportedFrameName: l_foot_mtb_acc_10b13
+  - frameName: SCSYS_L_SOLE
+    frameReferenceLink: l_foot
+    exportedFrameName: l_sole
+  - frameName:  SCSYS_R_SOLE
+    frameReferenceLink: r_foot
+    exportedFrameName: r_sole
+
+linkFrames: 
+  - linkName: root_link
+    frameName: SCSYS_SIM_LAP_BELT_2_ALT_ORIG_1
+  - linkName: l_hip_3
+    frameName: SCSYS_L_UPPER_LEG_FT45
+    frameReferenceLink: l_hip_2
+  - linkName: r_hip_3
+    frameName: SCSYS_R_UPPER_LEG_FT45
+    frameReferenceLink: r_hip_2
+  - linkName: l_foot
+    frameName: SCSYS_L_FOOT_FT45
+    frameReferenceLink: l_ankle_2
+  - linkName: r_foot
+    frameName: SCSYS_R_FOOT_FT45
+    frameReferenceLink: r_ankle_2    
+  - linkName: l_upper_arm
+    frameName: SCSYS_L_UPPER_ARM_FT45
+    frameReferenceLink: l_shoulder_3
+  - linkName: r_upper_arm
+    frameName: SCSYS_R_UPPER_ARM_FT45
+    frameReferenceLink: r_shoulder_3
+
+# Sensors options
+forceTorqueSensors:
+  - jointName: l_leg_ft_sensor
+    directionChildToParent: Yes
+  - jointName: r_leg_ft_sensor
+    directionChildToParent: Yes
+  - jointName: l_foot_ft_sensor
+    directionChildToParent: Yes
+  - jointName: r_foot_ft_sensor
+    directionChildToParent: Yes
+  - jointName: l_arm_ft_sensor
+    directionChildToParent: Yes
+  - jointName: r_arm_ft_sensor
+    directionChildToParent: Yes
+    
+IMUs:
+  - linkName: head
+    frameName: SCSYS_HEAD_MTX_IMU
+    sensorName: "imu_frame"
+    exportFrameInURDF: Yes
+
+# Workaround options 
+reverseRotationAxis:
+  l_hip_yaw
+  l_knee
+  l_ankle_pitch
+  r_hip_pitch
+  r_hip_roll
+  r_ankle_roll
+  torso_pitch
+  torso_roll
+  l_shoulder_roll
+  l_elbow
+  r_shoulder_pitch
+  r_shoulder_yaw
+  r_elbow
+  neck_roll
+  
+assignedMasses:
+  chest: 7.2380
+  l_upper_leg: 1.8084
+  l_lower_leg: 1.4724
+  l_ankle_1  : 0.6798
+  r_upper_leg: 1.8035
+  r_lower_leg: 1.4720
+  r_ankle_1  : 0.6803
+
+XMLBlobs: 
+  - |
+        <gazebo reference="r_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo reference="r_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo reference="l_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - | 
+        <gazebo>
+        <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_torso.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_head.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_arm.ini</yarpConfigurationFile>
+            <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_arm" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_arm.ini</yarpConfigurationFile>
+            <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_right_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_left_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
+             <robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
+        </plugin>
+        </gazebo>
