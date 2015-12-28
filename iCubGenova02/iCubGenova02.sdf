@@ -460,7 +460,7 @@
               <soft_erp>0.2</soft_erp>
               <soft_cfm>0</soft_cfm>
               <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
+              <kp>180000</kp>
               <!--<kd>1</kd>-->
               <kd>100</kd>
               <max_vel>100</max_vel>
@@ -957,7 +957,7 @@
               <soft_erp>0.2</soft_erp>
               <soft_cfm>0</soft_cfm>
               <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
+              <kp>180000</kp>
               <!--<kd>1</kd>-->
               <kd>100</kd>
               <max_vel>100</max_vel>
