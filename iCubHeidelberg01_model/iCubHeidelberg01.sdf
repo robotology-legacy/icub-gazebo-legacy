@@ -350,15 +350,33 @@
         </inertia>
       </inertial>
       <collision name='l_upper_foot_collision'>
-        <pose>0.0701 0.587138 0.000853467 0 -0 0</pose>
+        <pose>-0.004 -0.055 0.019 0.0 0.0 0.0</pose>
         <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://iCubHeidelberg01_model/dae_meshes/sim_sea_l_foot_prt.dae</uri>
-          </mesh>
+          <box>
+            <size>0.10 0.04 0.22</size>
+          </box>
         </geometry>
+    	<surface>
+                <contact>
+                    <ode>
+                        <soft_erp>  0.5   </soft_erp>
+                        <kp>        1e+05 </kp>
+                        <kd>        10000 </kd>
+                        <max_vel>   1     </max_vel>
+                        <min_depth> 0     </min_depth>
+                    </ode>
+                </contact>
+                <friction>
+                    <ode>
+                        <mu>  1  </mu>
+                        <mu2> 1  </mu2>
+                        <slip1> 0.000001 </slip1>
+                        <slip2> 0.000001 </slip2>
+                    </ode>
+                </friction>
+        </surface>
       </collision>
-      <collision name='l_upper_foot_collision_l_foot'>
+      <!-- <collision name='l_upper_foot_collision_l_foot'>
         <pose>0.0701 0.587138 0.000853467 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -385,7 +403,7 @@
                 </ode>
             </friction>
         </surface>
-      </collision>
+      </collision> -->
       <visual name='l_upper_foot_visual'>
         <pose>0.0701 0.587138 0.000853467 0 -0 0</pose>
         <geometry>
@@ -741,15 +759,33 @@
         </inertia>
       </inertial>
       <collision name='r_upper_foot_collision'>
-        <pose>0.0701 0.587138 -0.000853467 0 -0 0</pose>
+        <pose>-0.004 -0.055 -0.019 0.0 0.0 0.0</pose>
         <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://iCubHeidelberg01_model/dae_meshes/sim_sea_r_foot_prt.dae</uri>
-          </mesh>
+          <box>
+            <size>0.10 0.04 0.22</size>
+          </box>
         </geometry>
+    	<surface>
+                <contact>
+                    <ode>
+                        <soft_erp>  0.5   </soft_erp>
+                        <kp>        1e+05 </kp>
+                        <kd>        10000 </kd>
+                        <max_vel>   1     </max_vel>
+                        <min_depth> 0     </min_depth>
+                    </ode>
+                </contact>
+                <friction>
+                    <ode>
+                        <mu>  1  </mu>
+                        <mu2> 1  </mu2>
+                        <slip1> 0.000001 </slip1>
+                        <slip2> 0.000001 </slip2>
+                    </ode>
+                </friction>
+        </surface>
       </collision>
-      <collision name='r_upper_foot_collision_r_foot'>
+      <!-- <collision name='r_upper_foot_collision_r_foot'>
         <pose>0.0701 0.587138 -0.000853467 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -757,7 +793,7 @@
             <uri>model://iCubHeidelberg01_model/dae_meshes/sim_sea_r_sole_prt.dae</uri>
           </mesh>
         </geometry>
-	<surface>
+    <surface>
             <contact>
                 <ode>
                     <soft_erp>  0.5   </soft_erp>
@@ -776,7 +812,7 @@
                 </ode>
             </friction>
         </surface>
-      </collision>
+      </collision> -->
       <visual name='r_upper_foot_visual'>
         <pose>0.0701 0.587138 -0.000853467 0 -0 0</pose>
         <geometry>
