@@ -127,8 +127,8 @@
       <axis>
         <xyz>-1 2.65359e-06 7.34641e-06</xyz>
         <limit>
-          <lower>-2.07694</lower>
-          <upper>0.296706</upper>
+          <lower>-0.296706</lower>
+          <upper>2.07694</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -555,8 +555,8 @@
       <axis>
         <xyz>1 5.55111e-17 -7.34641e-06</xyz>
         <limit>
-          <lower>-2.07694</lower>
-          <upper>0.296706</upper>
+          <lower>-0.296706</lower>
+          <upper>2.07694</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -1447,8 +1447,8 @@
       <axis>
         <xyz>-4.69281e-06 1 6.74621e-11</xyz>
         <limit>
-          <lower>-0.698132</lower>
-          <upper>0.523599</upper>
+          <lower>-0.523599</lower>
+          <upper>0.383972</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -1500,8 +1500,8 @@
       <axis>
         <xyz>-1 -4.69282e-06 1.46928e-05</xyz>
         <limit>
-          <lower>-1.22173</lower>
-          <upper>1.0472</upper>
+          <lower>-0.349066</lower>
+          <upper>0.349066</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -1556,14 +1556,13 @@
         </plugin>
         <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
       </sensor>
-
       <sensor name="left_camera" type="camera">
         <pose>-0.07 -0.108 -0.034 1.5708 3.1415 0</pose>
         <camera>
           <horizontal_fov>1.5708</horizontal_fov>
           <image>
-            <width>320</width>
-            <height>240</height>
+            <width>640</width>
+            <height>480</height>
           </image>
           <clip>
             <near>0.1</near>
@@ -1574,17 +1573,16 @@
         <update_rate>30</update_rate>
         <visualize>true</visualize>
         <plugin filename="libgazebo_yarp_camera.so" name="left_camera_plugin">
-            <yarpConfigurationFile>model://yarp_camera/left_camera.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_with_cameras/conf/left_camera.ini</yarpConfigurationFile>
         </plugin>
       </sensor> 
-
       <sensor name="right_camera" type="camera">
         <pose>-0.07 -0.108 0.034 1.5708 3.1415 0</pose>
         <camera>
           <horizontal_fov>1.5708</horizontal_fov>
           <image>
-            <width>320</width>
-            <height>240</height>
+            <width>640</width>
+            <height>480</height>
           </image>
           <clip>
             <near>0.1</near>
@@ -1595,10 +1593,9 @@
         <update_rate>30</update_rate>
         <visualize>true</visualize>
         <plugin filename="libgazebo_yarp_camera.so" name="right_camera_plugin">
-            <yarpConfigurationFile>model://yarp_camera/right_camera.ini</yarpConfigurationFile>
+          <yarpConfigurationFile>model://icub_with_cameras/conf/right_camera.ini</yarpConfigurationFile>
         </plugin>
       </sensor>
-
     </link>
     <joint name='neck_yaw' type='revolute'>
       <child>head</child>
@@ -1606,8 +1603,8 @@
       <axis>
         <xyz>1.46928e-05 1.48834e-12 1</xyz>
         <limit>
-          <lower>-0.959931</lower>
-          <upper>0.959931</upper>
+          <lower>-0.767945</lower>
+          <upper>0.767945</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -2015,6 +2012,9 @@
     </plugin>
     <plugin name='controlboard_right_leg' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
+      <robotNamefromConfigFile>model://icub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>>
     </plugin>
     <pose>0 0 0.70 0 0 0</pose>
   </model>
