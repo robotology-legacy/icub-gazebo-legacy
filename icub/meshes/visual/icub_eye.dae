@@ -309,7 +309,7 @@
       <node id="head" name="head" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
         <node id="head_mesh_001" name="head_mesh_001" type="NODE">
-          <matrix sid="transform">1 0 0 0.054 0 1 0 0.034 0 0 1 -0.138 0 0 0 1</matrix>
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
           <instance_geometry url="#head_006-mesh" name="head_mesh_001">
             <bind_material>
               <technique_common>
@@ -319,7 +319,7 @@
           </instance_geometry>
         </node>
         <node id="head_mesh_002" name="head_mesh_002" type="NODE">
-          <matrix sid="transform">1 0 0 0.054 0 1 0 0.034 0 0 1 -0.138 0 0 0 1</matrix>
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
           <instance_geometry url="#head_007-mesh" name="head_mesh_002">
             <bind_material>
               <technique_common>
@@ -329,7 +329,7 @@
           </instance_geometry>
         </node>
         <node id="head_mesh_000" name="head_mesh_000" type="NODE">
-          <matrix sid="transform">1 0 0 0.054 0 1 0 0.034 0 0 1 -0.138 0 0 0 1</matrix>
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
           <instance_geometry url="#head_008-mesh" name="head_mesh_000">
             <bind_material>
               <technique_common>
