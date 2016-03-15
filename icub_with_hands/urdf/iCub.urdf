@@ -4,6 +4,14 @@
 
    <link name="base_link">
       <origin rpy="0 0 0" xyz="0 0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- HEAD AND WAIST -->
@@ -12,87 +20,175 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/l0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/l0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l1">
       <visual>
          <origin rpy="1.5708 0 0" xyz="0.033 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l1.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l2">
       <visual>
          <origin rpy="1.5708 0 -1.5708" xyz="0 0 -0.0055"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l2.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l3">
       <visual>
          <origin rpy="-1.5708 0 -1.5708" xyz="0 -0.0046 -0.223"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l3.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l4">
       <visual>
          <origin rpy="1.5708 0 1.5708" xyz="0 0.0099 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l4.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l5">
       <visual>
          <origin rpy="-1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l5.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l5.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l6">
       <visual>
       <origin rpy="-1.5708 0 1.5708" xyz="0 -0.05150 0.082"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l6.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l6.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l7">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l8">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l8.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l8.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l7s">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="l8s">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/l8.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/l8.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- RIGHT ARM -->
@@ -100,63 +196,119 @@
    <link name="ra0">
       <visual>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra0.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra1">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 -0.1077"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra1.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra2">
       <visual>
       <origin rpy="-1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra2.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra3">
       <visual>
       <origin rpy="-1.5708 0 -1.5708" xyz="0.0039 0.0145 -0.15725"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra3.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra4">
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.015 0 -0.004"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra4.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra5">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 -0.141"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra5.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra5.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ra6">
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/ra6.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/ra6.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- LEFT ARM -->
@@ -164,557 +316,965 @@
    <link name="la0">
       <visual>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la0.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la1">
       <visual>
       <origin rpy="-1.5708 0 1.5708" xyz="0 0 0.1077"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la1.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la2">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la2.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la3">
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0.0039 0.0145 0.15725"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la3.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la4">
       <visual>
       <origin rpy="1.5708 0 0" xyz="-0.015 0 -0.004"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la4.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la5">
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 -0.141"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la5.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la5.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="la6">
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
          <geometry>
-            <mesh filename="package://icub_description/meshes/la6.dae"/>
+            <mesh filename="package://icub_with_hands/meshes/la6.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- RIGHT LEG -->
 
    <link name="rl0">
-
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl1">
-
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl2">
-
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0 0.002 0.008"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl3">
-
       <visual>
       <origin rpy="-1.5708 0 -1.5708" xyz="0 0 0.225"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl4">
-
       <visual>
       <origin rpy="3.1416 0 1.5708" xyz="0 -0.215 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl4.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl5">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl5.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl5.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="rl6">
-
       <visual>
       <origin rpy="3.1416 0 0" xyz="-0.041 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/rl6.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/rl6.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- LEFT LEG -->
 
    <link name="ll0">
-
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll1">
-
       <visual>
       <origin rpy="-1.5708 0 1.5708" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll2">
-
       <visual>
       <origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll3">
-
       <visual>
       <origin rpy="1.5708 0 1.5708" xyz="0 0 -0.225"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll4">
-
       <visual>
       <origin rpy="3.1416 0 1.5708" xyz="0 -0.215 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll4.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll5">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll5.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll5.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ll6">
-
       <visual>
       <origin rpy="0 0 0" xyz="-0.041 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ll6.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ll6.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- RIGHT HAND -->
 
    <link name="right_palm">
-
       <visual>
       <origin rpy="0 0 3.1416" xyz="-0.0625 0 0.016"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/right_palm.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/right_palm.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="thumbbase">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="tl0">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/tl0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/tl0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="tl1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.021 0 0.0056"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/tl1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/tl1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="tl2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.026 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/tl2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/tl2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="tl3">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/tl3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/tl3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="tl4">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/tl4.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/tl4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="indexbase">
-
       <visual>
       <origin rpy="0.0959 0 0.0175" xyz="0.0018 -0.027 -0.00375"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/indexbase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/indexbase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="il0">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/il0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/il0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="il1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0259 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/il1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/il1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="il2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/il2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/il2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="il3">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/il3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/il3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="middlebase">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0028 -0.01 -0.005"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/middlebase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/middlebase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ml0">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.015 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ml0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ml0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ml1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0285 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ml1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ml1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ml2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0240 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ml2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ml2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ml3">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ml3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ml3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ringbase">
-
       <visual>
       <origin rpy="0.0873 0 0.0087" xyz="0.00165 0.0059 -0.00425"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ringbase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ringbase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ril0">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ril0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ril0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ril1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0259 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ril1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ril1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ril2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ril2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ril2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ril3">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ril3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ril3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="littlebase">
-
       <visual>
       <origin rpy="0.0873 0 0.0175" xyz="-0.00025 0.02475 -0.0025"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/littlebase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/littlebase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lil0">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lil0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lil0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lil1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0218 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lil1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lil1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lil2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.019 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lil2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lil2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lil3">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lil3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lil3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 <!-- LEFT HAND -->
 
    <link name="left_palm">
-
       <visual>
       <origin rpy="0 0 0" xyz="-0.0625 0 0.016"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/left_palm.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/left_palm.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lthumbbase">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ltl0">
-
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ltl0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ltl0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ltl1">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.021 0 -0.0056"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ltl1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ltl1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ltl2">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.026 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ltl2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ltl2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ltl3">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ltl3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ltl3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="ltl4">
-
       <visual>
       <origin rpy="0 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/ltl4.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/ltl4.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lindexbase">
-
       <visual>
       <origin rpy="0.0959 0 -3.2141" xyz="-0.0018 -0.027 -0.00375"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lindexbase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lindexbase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lail0">
-
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lail0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lail0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lail1">
@@ -722,9 +1282,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.0259 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lail1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lail1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lail2">
@@ -732,9 +1300,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lail2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lail2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lail3">
@@ -742,9 +1318,17 @@
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lail3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lail3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lmiddlebase">
@@ -752,9 +1336,17 @@
       <visual>
       <origin rpy="0 0 3.1416" xyz="-0.0028 -0.01 -0.005"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lmiddlebase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lmiddlebase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lml0">
@@ -762,9 +1354,17 @@
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.015 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lml0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lml0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lml1">
@@ -772,9 +1372,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.0285 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lml1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lml1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lml2">
@@ -782,9 +1390,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.0240 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lml2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lml2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lml3">
@@ -792,9 +1408,17 @@
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lml3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lml3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lringbase">
@@ -802,9 +1426,17 @@
       <visual>
       <origin rpy="-0.0873 0 3.1329" xyz="-0.00165 0.0059 -0.00425"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lringbase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lringbase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lril0">
@@ -812,9 +1444,17 @@
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lril0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lril0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lril1">
@@ -822,9 +1462,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.0259 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lril1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lril1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lril2">
@@ -832,9 +1480,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.022 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lril2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lril2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="lril3">
@@ -842,9 +1498,17 @@
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/lril3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/lril3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="llittlebase">
@@ -852,9 +1516,17 @@
       <visual>
       <origin rpy="-0.0873 0 3.1241" xyz="0.00025 0.02475 -0.0025"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/llittlebase.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/llittlebase.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="llil0">
@@ -862,9 +1534,17 @@
       <visual>
       <origin rpy="1.5708 0 0" xyz="0.0148 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/llil0.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/llil0.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="llil1">
@@ -872,9 +1552,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.0218 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/llil1.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/llil1.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="llil2">
@@ -882,9 +1570,17 @@
       <visual>
       <origin rpy="0 0 0" xyz="0.019 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/llil2.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/llil2.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
    <link name="llil3">
@@ -892,9 +1588,17 @@
       <visual>
       <origin rpy="-1.5708 0 0" xyz="0.0168 0 0"/>
          <geometry>
-	    <mesh filename="package://icub_description/meshes/llil3.dae"/>
+	    <mesh filename="package://icub_with_hands/meshes/llil3.dae"/>
          </geometry>
       </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.111"/>
+      <inertia
+        ixx="0.112" ixy="0.0" ixz="0.0"
+        iyy="0.112" iyz="0.0"
+        izz="0.112"/>
+    </inertial>
    </link>
 
 
