@@ -1,0 +1,791 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+
+  <model name='r_hand'>
+
+
+    <link name='r_hand_base_link'>
+
+      <inertial>
+        <pose frame=''>0.011682 -0.051682 0.000577 0 -0 0</pose>
+        <mass>1.221</mass>
+        <inertia>
+          <ixx>1.23289</ixx>
+          <ixy>0.000161951</ixy>
+          <ixz>4.09312e-06</ixz>
+          <iyy>1.2322</iyy>
+          <iyz>1.57346e-05</iyz>
+          <izz>1.23277</izz>
+        </inertia>
+      </inertial>
+      <visual name='base_link_fixed_joint_lump__r_palm_visual'>
+        <pose frame=''>0.016 -0.0625 -0 -1.5708 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_palm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rindexbase_visual_1'>
+        <pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_indexbase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rail0_visual_2'>
+        <pose frame=''>0.01225 -0.079098 0.026741 0.0959 0.017507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ail0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rlittlebase_visual_3'>
+        <pose frame=''>0.0135 -0.06225 -0.02475 -1.4835 0.017507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_littlebase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rlil0_visual_4'>
+        <pose frame=''>0.0135 -0.077048 -0.025009 0.0873 0.017507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_lil0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rmiddlebase_visual_5'>
+        <pose frame=''>0.011 -0.0653 0.01 -1.5708 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_middlebase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rml0_visual_6'>
+        <pose frame=''>0.011 -0.0803 0.01 -0 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ml0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rringbase_visual_7'>
+        <pose frame=''>0.01175 -0.06415 -0.0059 -1.4835 0.008707 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ringbase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__rril0_visual_8'>
+        <pose frame=''>0.01175 -0.078949 -0.006029 0.0873 0.008707 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ril0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name='r_ail1'>
+      <pose frame=''>0.01225 -0.079098 0.026741 0.0959 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ail1_visual'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ail1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_aij3' type='revolute'>
+      <child>r_ail1</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>-0.095753 -0.017426 0.995253</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ail2'>
+      <pose frame=''>0.012251 -0.104994 0.026287 0.0959 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ail2_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ail2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_aij4' type='revolute'>
+      <child>r_ail2</child>
+      <parent>r_ail1</parent>
+      <axis>
+        <xyz>-0.095753 -0.017426 0.995253</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ail3'>
+      <pose frame=''>0.012251 -0.126991 0.025902 0.0959 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ail3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ail3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_aij5' type='revolute'>
+      <child>r_ail3</child>
+      <parent>r_ail2</parent>
+      <axis>
+        <xyz>-0.095753 -0.017426 0.995253</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='r_lil1'>
+      <pose frame=''>0.0135 -0.077048 -0.025009 0.0873 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_lil1_visual'>
+        <pose frame=''>0.0218 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_lil1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_lij3' type='revolute'>
+      <child>r_lil1</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>-0.087189 -0.01744 0.996039</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_lil2'>
+      <pose frame=''>0.0135 -0.098844 -0.025391 0.0873 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_lil2_visual'>
+        <pose frame=''>0.019 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_lil2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_lij4' type='revolute'>
+      <child>r_lil2</child>
+      <parent>r_lil1</parent>
+      <axis>
+        <xyz>-0.087189 -0.01744 0.996039</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_lil3'>
+      <pose frame=''>0.0135 -0.117841 -0.025723 0.0873 0.017507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_lil3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_lil3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_lij5' type='revolute'>
+      <child>r_lil3</child>
+      <parent>r_lil2</parent>
+      <axis>
+        <xyz>-0.087189 -0.01744 0.996039</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='r_ml1'>
+      <pose frame=''>0.011 -0.0803 0.01 -0 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ml1_visual'>
+        <pose frame=''>0.0285 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ml1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_mj3' type='revolute'>
+      <child>r_ml1</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>0 -7e-06 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ml2'>
+      <pose frame=''>0.011 -0.1088 0.01 -0 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ml2_visual'>
+        <pose frame=''>0.024 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ml2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_mj4' type='revolute'>
+      <child>r_ml2</child>
+      <parent>r_ml1</parent>
+      <axis>
+        <xyz>0 -7e-06 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ml3'>
+      <pose frame=''>0.011001 -0.1328 0.009999 -0 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ml3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ml3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_mj5' type='revolute'>
+      <child>r_ml3</child>
+      <parent>r_ml2</parent>
+      <axis>
+        <xyz>0 -7e-06 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='r_ril1'>
+      <pose frame=''>0.01175 -0.078949 -0.006029 0.0873 0.008707 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ril1_visual'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ril1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_rij3' type='revolute'>
+      <child>r_ril1</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>-0.087189 -0.008674 0.996154</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ril2'>
+      <pose frame=''>0.01175 -0.104848 -0.006254 0.0873 0.008707 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ril2_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ril2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_rij4' type='revolute'>
+      <child>r_ril2</child>
+      <parent>r_ril1</parent>
+      <axis>
+        <xyz>-0.087189 -0.008674 0.996154</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_ril3'>
+      <pose frame=''>0.01175 -0.126848 -0.006446 0.0873 0.008707 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_ril3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_ril3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_rij5' type='revolute'>
+      <child>r_ril3</child>
+      <parent>r_ril2</parent>
+      <axis>
+        <xyz>-0.087189 -0.008674 0.996154</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='r_tl0'>
+      <pose frame=''>0.021 -0.0386 0.01235 -0.078604 -1.07329 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.222</mass>
+        <inertia>
+          <ixx>0.224</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.224</iyy>
+          <iyz>5.29396e-23</iyz>
+          <izz>0.224</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_tl0_visual'>
+        <pose frame=''>0 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_tl0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='r_tl0_fixed_joint_lump__r_tl1_visual_1'>
+        <pose frame=''>0.021 0.0056 -0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_tl1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_tj2' type='revolute'>
+      <child>r_tl0</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>0.078514 0.876064 0.47576</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_tl2'>
+      <pose frame=''>0.026583 -0.049008 0.030595 -1.6494 -1.07329 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_tl2_visual'>
+        <pose frame=''>0.026 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_tl2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_tj4' type='revolute'>
+      <child>r_tl2</child>
+      <parent>r_tl0</parent>
+      <axis>
+        <xyz>0.996913 -0.068997 -0.037476</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_tl3'>
+      <pose frame=''>0.026583 -0.061416 0.053443 -1.6494 -1.07329 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_tl3_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_tl3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_tj5' type='revolute'>
+      <child>r_tl3</child>
+      <parent>r_tl2</parent>
+      <axis>
+        <xyz>0.996913 -0.068997 -0.037476</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='r_tl4'>
+      <pose frame=''>0.026583 -0.071916 0.072776 -1.6494 -1.07329 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0511</mass>
+        <inertia>
+          <ixx>0.112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.112</iyy>
+          <iyz>0</iyz>
+          <izz>0.112</izz>
+        </inertia>
+      </inertial>
+      <visual name='r_tl4_visual'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/visual/r_hand/r_tl4.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_tj6' type='revolute'>
+      <child>r_tl4</child>
+      <parent>r_tl3</parent>
+      <axis>
+        <xyz>0.996913 -0.068997 -0.037476</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+  </model>
+</sdf>
