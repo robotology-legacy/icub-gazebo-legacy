@@ -101,6 +101,28 @@
       </visual>
     </link>
 
+	<link name='r_ai_dummy'>
+		<pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>
+    </link>
+    <joint name='r_aij6' type='revolute'>
+      <child>r_ai_dummy</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+	
     <link name='r_ail1'>
       <pose frame=''>0.01225 -0.079098 0.026741 0.0959 0.017507 -1.57079</pose>
       <inertial>
@@ -127,7 +149,7 @@
     </link>
     <joint name='r_aij3' type='revolute'>
       <child>r_ail1</child>
-      <parent>r_hand_base_link</parent>
+      <parent>r_ai_dummy</parent>
       <axis>
         <xyz>-0.095753 -0.017426 0.995253</xyz>
         <limit>
@@ -228,6 +250,32 @@
       </axis>
     </joint>
 
+	
+		
+		
+	  
+	<link name='r_li_dummy'>
+		<pose frame=''>0.0135 -0.06225 -0.02475 -1.4835 0.017507 -1.57079</pose>
+    </link>
+    <joint name='r_lij6' type='revolute'>
+      <child>r_li_dummy</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+	
     <link name='r_lil1'>
       <pose frame=''>0.0135 -0.077048 -0.025009 0.0873 0.017507 -1.57079</pose>
       <inertial>
@@ -254,7 +302,7 @@
     </link>
     <joint name='r_lij3' type='revolute'>
       <child>r_lil1</child>
-      <parent>r_hand_base_link</parent>
+      <parent>r_li_dummy</parent>
       <axis>
         <xyz>-0.087189 -0.01744 0.996039</xyz>
         <limit>
@@ -355,6 +403,28 @@
       </axis>
     </joint>
 
+	<link name='r_m_dummy'>
+		<pose frame=''>0.011 -0.0653 0.01 -1.5708 7e-06 -1.57079</pose>
+    </link>
+    <joint name='r_mj6' type='revolute'>
+      <child>r_m_dummy</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+	  
     <link name='r_ml1'>
       <pose frame=''>0.011 -0.0803 0.01 -0 7e-06 -1.57079</pose>
       <inertial>
@@ -381,7 +451,7 @@
     </link>
     <joint name='r_mj3' type='revolute'>
       <child>r_ml1</child>
-      <parent>r_hand_base_link</parent>
+      <parent>r_m_dummy</parent>
       <axis>
         <xyz>0 -7e-06 1</xyz>
         <limit>
@@ -482,6 +552,28 @@
       </axis>
     </joint>
 
+	<link name='r_ri_dummy'>
+		<pose frame=''>0.01175 -0.06415 -0.0059 -1.4835 0.008707 -1.57079</pose>
+    </link>
+    <joint name='r_rij6' type='revolute'>
+      <child>r_ri_dummy</child>
+      <parent>r_hand_base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1000</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+	  
     <link name='r_ril1'>
       <pose frame=''>0.01175 -0.078949 -0.006029 0.0873 0.008707 -1.57079</pose>
       <inertial>
@@ -508,7 +600,7 @@
     </link>
     <joint name='r_rij3' type='revolute'>
       <child>r_ril1</child>
-      <parent>r_hand_base_link</parent>
+      <parent>r_ri_dummy</parent>
       <axis>
         <xyz>-0.087189 -0.008674 0.996154</xyz>
         <limit>
