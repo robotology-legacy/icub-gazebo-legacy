@@ -106,7 +106,7 @@
       <child>l_ai_dummy</child>
       <parent>l_hand_base_link</parent>
       <axis>
-        <xyz>1 0 0</xyz>
+        <xyz>-1 0 0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
@@ -256,7 +256,7 @@
       <child>l_li_dummy</child>
       <parent>l_hand_base_link</parent>
       <axis>
-        <xyz>1 0 0</xyz>
+        <xyz>-1 0 0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
@@ -401,11 +401,11 @@
 	<link name='l_ml_dummy'>
 		<pose frame=''>0.011 -0.0653 -0.01 -1.5708 7e-06 -1.57079</pose>
     </link>
-    <joint name='l_mlj6' type='revolute'>
+    <joint name='l_mj6' type='revolute'>
       <child>l_ml_dummy</child>
       <parent>l_hand_base_link</parent>
       <axis>
-        <xyz>1 0 0</xyz>
+        <xyz>-1 0 0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
@@ -554,7 +554,7 @@
       <child>l_ril_dummy</child>
       <parent>l_hand_base_link</parent>
       <axis>
-        <xyz>1 0 0</xyz>
+        <xyz>-1 0 0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>

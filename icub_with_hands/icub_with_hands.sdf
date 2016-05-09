@@ -2139,6 +2139,9 @@
     <plugin name='controlboard_left_hand_pinky' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_pinky.ini</yarpConfigurationFile>
     </plugin>
+    <plugin name='controlboard_left_hand_finger' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_finger.ini</yarpConfigurationFile>
+    </plugin>
     <plugin name='controlboard_left_hand' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand.ini</yarpConfigurationFile>
     </plugin>   
@@ -2155,6 +2158,9 @@
     </plugin>
     <plugin name='controlboard_right_hand_pinky' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_pinky.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='controlboard_right_hand_finger' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_finger.ini</yarpConfigurationFile>
     </plugin>
 
     <plugin name='controlboard_right_hand' filename='libgazebo_yarp_controlboard.so'>
