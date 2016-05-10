@@ -33,7 +33,7 @@ Then, run Gazebo with the world file included in the world directory:
 ```
 gazebo ./icub-gazebo/world/icub.world
 ```
-or simply drag and drop the "iCub" model from the Insert tab in Gazebo.
+or simply drag and drop the `iCub (no hands)` or `iCub with hands` models from the Insert tab in Gazebo.
 The same instructions work also for the icub_legs model.
 
 Model generation
