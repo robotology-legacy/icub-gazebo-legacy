@@ -3,12 +3,11 @@
 
   <model name='r_hand'>
 
-
     <link name='r_hand_base_link'>
 
       <inertial>
         <pose frame=''>0.011682 -0.051682 0.000577 0 -0 0</pose>
-        <mass>1.221</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>1.23289</ixx>
           <ixy>0.000161951</ixy>
@@ -103,6 +102,9 @@
 
 	<link name='r_ai_dummy'>
 		<pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>
+        <inertial>
+          <mass>0.010</mass>
+        </inertial>
     </link>
     <joint name='r_aij6' type='revolute'>
       <child>r_ai_dummy</child>
@@ -127,7 +129,7 @@
       <pose frame=''>0.01225 -0.079098 0.026741 0.0959 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -169,7 +171,7 @@
       <pose frame=''>0.012251 -0.104994 0.026287 0.0959 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -211,7 +213,7 @@
       <pose frame=''>0.012251 -0.126991 0.025902 0.0959 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -251,11 +253,11 @@
     </joint>
 
 	
-		
-		
-	  
 	<link name='r_li_dummy'>
 		<pose frame=''>0.0135 -0.06225 -0.02475 -1.4835 0.017507 -1.57079</pose>
+        <inertial>
+          <mass>0.010</mass>
+        </inertial>
     </link>
     <joint name='r_lij6' type='revolute'>
       <child>r_li_dummy</child>
@@ -280,7 +282,7 @@
       <pose frame=''>0.0135 -0.077048 -0.025009 0.0873 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -322,7 +324,7 @@
       <pose frame=''>0.0135 -0.098844 -0.025391 0.0873 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -364,7 +366,7 @@
       <pose frame=''>0.0135 -0.117841 -0.025723 0.0873 0.017507 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>ass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -405,6 +407,9 @@
 
 	<link name='r_m_dummy'>
 		<pose frame=''>0.011 -0.0653 0.01 -1.5708 7e-06 -1.57079</pose>
+        <inertial>
+          <mass>0.010</mass>
+        </inertial>
     </link>
     <joint name='r_mj6' type='revolute'>
       <child>r_m_dummy</child>
@@ -429,7 +434,7 @@
       <pose frame=''>0.011 -0.0803 0.01 -0 7e-06 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -471,7 +476,7 @@
       <pose frame=''>0.011 -0.1088 0.01 -0 7e-06 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -513,7 +518,7 @@
       <pose frame=''>0.011001 -0.1328 0.009999 -0 7e-06 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -554,6 +559,9 @@
 
 	<link name='r_ri_dummy'>
 		<pose frame=''>0.01175 -0.06415 -0.0059 -1.4835 0.008707 -1.57079</pose>
+        <inertial>
+          <mass>0.010</mass>
+        </inertial>
     </link>
     <joint name='r_rij6' type='revolute'>
       <child>r_ri_dummy</child>
@@ -578,7 +586,7 @@
       <pose frame=''>0.01175 -0.078949 -0.006029 0.0873 0.008707 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -620,7 +628,7 @@
       <pose frame=''>0.01175 -0.104848 -0.006254 0.0873 0.008707 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -662,7 +670,7 @@
       <pose frame=''>0.01175 -0.126848 -0.006446 0.0873 0.008707 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -705,7 +713,7 @@
       <pose frame=''>0.021 -0.0386 0.01235 -0.078604 -1.07329 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.222</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.224</ixx>
           <ixy>0</ixy>
@@ -756,7 +764,7 @@
       <pose frame=''>0.026583 -0.049008 0.030595 -1.6494 -1.07329 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -798,7 +806,7 @@
       <pose frame=''>0.026583 -0.061416 0.053443 -1.6494 -1.07329 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
@@ -840,7 +848,7 @@
       <pose frame=''>0.026583 -0.071916 0.072776 -1.6494 -1.07329 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.0511</mass>
+        <mass>0.010</mass>
         <inertia>
           <ixx>0.112</ixx>
           <ixy>0</ixy>
