@@ -2175,11 +2175,14 @@
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
     </plugin>
-<!--
+
     <plugin name='mais_left_hand' filename='libgazebo_yarp_maissensor.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_mais.ini</yarpConfigurationFile>
     </plugin>   
--->
+
+    <plugin name='mais_right_hand' filename='libgazebo_yarp_maissensor.so'>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_mais.ini</yarpConfigurationFile>
+    </plugin>
 
   <pose>0 0 0.70 0 0 0</pose>
   </model>
