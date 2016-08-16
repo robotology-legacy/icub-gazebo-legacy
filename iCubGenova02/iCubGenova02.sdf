@@ -236,6 +236,54 @@
             <ode/>
           </friction>
         </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name='l_upper_leg_visual'>
         <pose>-0.0701 0.241013 0.043409 0 -0 0</pose>
@@ -246,13 +294,55 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
       <sensor name='l_upper_leg_mtb_acc_10b1' type='imu'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <pose>0.031565 0.049332 0.042002 0.837758 -8.6e-05 1.57087</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_upper_leg_mtb_acc_10b2' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.008384 0.039452 0.053355 0.837758 -8.6e-05 1.57087</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_upper_leg_mtb_acc_10b3' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.015071 0.004382 0.053785 0 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_upper_leg_mtb_acc_10b4' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>-0.014429 0.004382 0.053785 0 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_upper_leg_mtb_acc_10b5' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>-0.0415 -0.004658 0.034129 -1.18682 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_upper_leg_mtb_acc_10b6' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.017809 -0.026212 -0.043785 -3.14159 -0 -1.57091</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_upper_leg_mtb_acc_10b7' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>-0.014192 -0.026211 -0.043785 -3.14159 0 -1.57095</pose>
         <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
       </sensor>
     </link>
@@ -306,6 +396,30 @@
             <ode/>
           </friction>
         </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name='l_lower_leg_visual'>
         <pose>-0.046317 0.386638 0.043409 0 -0 0</pose>
@@ -316,13 +430,34 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
       <sensor name='l_lower_leg_mtb_acc_10b8' type='imu'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <pose>0.009984 -0.004318 0.054452 -0.349066 4e-05 1.5709</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_lower_leg_mtb_acc_10b9' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.066527 -0.043468 0.025915 1.309 -0.000112 1.57083</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <velocity_decay/>
+      <sensor name='l_lower_leg_mtb_acc_10b10' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.030989 -0.011037 0.052381 -1.32645 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_lower_leg_mtb_acc_10b11' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>-0.017936 -0.092958 0.018459 -1.309 -2.5e-05 1.57079</pose>
         <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
       </sensor>
     </link>
@@ -482,6 +617,14 @@
             <ode/>
           </friction>
         </surface>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name='l_foot_visual'>
         <pose>0.047209 0.0701 -0.647438 -1.5708 -0 -1.5708</pose>
@@ -492,13 +635,20 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
       <sensor name='l_foot_mtb_acc_10b12' type='imu'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <pose>0.105522 0.000807 -0.001215 0 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_foot_mtb_acc_10b13' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.080522 0.011807 -0.001215 0 -0 1.5708</pose>
         <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
       </sensor>
     </link>
@@ -1910,5 +2060,6 @@
     <plugin name='apply_external_wrench' filename='libgazebo_yarp_externalwrench.so'>
       <robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
     </plugin>
+    <pose> 0 0 0.62 0 0 0 </pose>
   </model>
 </sdf>

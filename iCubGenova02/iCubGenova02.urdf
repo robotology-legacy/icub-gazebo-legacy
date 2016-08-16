@@ -385,6 +385,48 @@
     <child link="l_upper_leg_mtb_acc_10b1"/>
     <dynamics damping="0.1"/>
   </joint>
+  <link name="l_upper_leg_mtb_acc_10b2"/>
+  <joint name="l_upper_leg_mtb_acc_10b2_fixed_joint" type="fixed">
+    <origin xyz="0.0083839 0.039452 0.05335544" rpy="0.837758036965 -8.62912869137e-05 1.57087402394"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_upper_leg_mtb_acc_10b3"/>
+  <joint name="l_upper_leg_mtb_acc_10b3_fixed_joint" type="fixed">
+    <origin xyz="0.0150706 0.004382 0.053785" rpy="0 0 1.57079632679"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_upper_leg_mtb_acc_10b4"/>
+  <joint name="l_upper_leg_mtb_acc_10b4_fixed_joint" type="fixed">
+    <origin xyz="-0.0144294 0.004382 0.053785" rpy="0 0 1.57079632679"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_upper_leg_mtb_acc_10b5"/>
+  <joint name="l_upper_leg_mtb_acc_10b5_fixed_joint" type="fixed">
+    <origin xyz="-0.0414999 -0.004658 0.03412949" rpy="-1.18682376254 0 1.57079632679"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_upper_leg_mtb_acc_10b6"/>
+  <joint name="l_upper_leg_mtb_acc_10b6_fixed_joint" type="fixed">
+    <origin xyz="0.0178086 -0.026212 -0.043785" rpy="3.14159265359 0 -1.57091243005"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b6"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_upper_leg_mtb_acc_10b7"/>
+  <joint name="l_upper_leg_mtb_acc_10b7_fixed_joint" type="fixed">
+    <origin xyz="-0.0141918 -0.026211 -0.043785" rpy="3.14159265359 0 -1.5709453147"/>
+    <parent link="l_upper_leg"/>
+    <child link="l_upper_leg_mtb_acc_10b7"/>
+    <dynamics damping="0.1"/>
+  </joint>
   <link name="l_lower_leg">
     <inertial>
       <origin xyz="0.0273768 -0.088559 0.000854" rpy="0 0 0"/>
@@ -418,6 +460,27 @@
     <origin xyz="0.0099841 -0.004318 0.0544518" rpy="-0.349065638045 3.97141037841e-05 1.57090544048"/>
     <parent link="l_lower_leg"/>
     <child link="l_lower_leg_mtb_acc_10b8"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_lower_leg_mtb_acc_10b9"/>
+  <joint name="l_lower_leg_mtb_acc_10b9_fixed_joint" type="fixed">
+    <origin xyz="0.0665272 -0.043468 0.0259151" rpy="1.30899714594 -0.000112159802878 1.57082638021"/>
+    <parent link="l_lower_leg"/>
+    <child link="l_lower_leg_mtb_acc_10b9"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_lower_leg_mtb_acc_10b10"/>
+  <joint name="l_lower_leg_mtb_acc_10b10_fixed_joint" type="fixed">
+    <origin xyz="0.030989 -0.011037 0.05238133" rpy="-1.32645042367 0 1.57079632679"/>
+    <parent link="l_lower_leg"/>
+    <child link="l_lower_leg_mtb_acc_10b10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_lower_leg_mtb_acc_10b11"/>
+  <joint name="l_lower_leg_mtb_acc_10b11_fixed_joint" type="fixed">
+    <origin xyz="-0.0179355 -0.092958 0.0184593" rpy="-1.3089971472 -2.54317885716e-05 1.57078951235"/>
+    <parent link="l_lower_leg"/>
+    <child link="l_lower_leg_mtb_acc_10b11"/>
     <dynamics damping="0.1"/>
   </joint>
   <link name="l_ankle_1">
@@ -507,6 +570,13 @@
     <origin xyz="0.1055224 0.0008072 -0.001215" rpy="0 0 1.57079632679"/>
     <parent link="l_foot"/>
     <child link="l_foot_mtb_acc_10b12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="l_foot_mtb_acc_10b13"/>
+  <joint name="l_foot_mtb_acc_10b13_fixed_joint" type="fixed">
+    <origin xyz="0.0805224 0.0118072 -0.001215" rpy="0 0 1.57079632679"/>
+    <parent link="l_foot"/>
+    <child link="l_foot_mtb_acc_10b13"/>
     <dynamics damping="0.1"/>
   </joint>
   <link name="l_sole"/>
@@ -1095,6 +1165,78 @@
     <parent link="l_upper_leg"/>
     <origin rpy="0.837758036961 -8.62912829653e-05 1.57087402394" xyz="0.031565 0.049332 0.04200163"/>
   </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b2" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.0083839 0.039452 0.05335544 0.837758036965 -8.62912869137e-05 1.57087402394</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b2" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="0.837758036965 -8.62912869137e-05 1.57087402394" xyz="0.0083839 0.039452 0.05335544"/>
+  </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b3" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.0150706 0.004382 0.053785 0.0 -0.0 1.57079632679</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b3" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="0.0 -0.0 1.57079632679" xyz="0.0150706 0.004382 0.053785"/>
+  </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b4" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>-0.0144294 0.004382 0.053785 0.0 -0.0 1.57079632679</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b4" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="0.0 -0.0 1.57079632679" xyz="-0.0144294 0.004382 0.053785"/>
+  </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b5" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>-0.0414999 -0.004658 0.03412949 -1.18682376254 -0.0 1.57079632679</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b5" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="-1.18682376254 -0.0 1.57079632679" xyz="-0.0414999 -0.004658 0.03412949"/>
+  </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b6" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.0178086 -0.026212 -0.043785 3.14159265359 0.0 -1.57091243005</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b6" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="3.14159265359 0.0 -1.57091243005" xyz="0.0178086 -0.026212 -0.043785"/>
+  </sensor>
+  <gazebo reference="l_upper_leg">
+    <sensor name="l_upper_leg_mtb_acc_10b7" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>-0.0141918 -0.026211 -0.043785 3.14159265359 0.0 -1.5709453147</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_upper_leg_mtb_acc_10b7" type="accelerometer">
+    <parent link="l_upper_leg"/>
+    <origin rpy="3.14159265359 0.0 -1.5709453147" xyz="-0.0141918 -0.026211 -0.043785"/>
+  </sensor>
   <gazebo reference="l_lower_leg">
     <sensor name="l_lower_leg_mtb_acc_10b8" type="imu">
       <always_on>1</always_on>
@@ -1107,6 +1249,42 @@
     <parent link="l_lower_leg"/>
     <origin rpy="-0.349065638045 3.97141037841e-05 1.57090544048" xyz="0.0099841 -0.004318 0.0544518"/>
   </sensor>
+  <gazebo reference="l_lower_leg">
+    <sensor name="l_lower_leg_mtb_acc_10b9" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.0665272 -0.043468 0.0259151 1.30899714594 -0.000112159802878 1.57082638021</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_lower_leg_mtb_acc_10b9" type="accelerometer">
+    <parent link="l_lower_leg"/>
+    <origin rpy="1.30899714594 -0.000112159802878 1.57082638021" xyz="0.0665272 -0.043468 0.0259151"/>
+  </sensor>
+  <gazebo reference="l_lower_leg">
+    <sensor name="l_lower_leg_mtb_acc_10b10" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.030989 -0.011037 0.05238133 -1.32645042367 -7.77156117238e-16 1.57079632679</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_lower_leg_mtb_acc_10b10" type="accelerometer">
+    <parent link="l_lower_leg"/>
+    <origin rpy="-1.32645042367 -7.77156117238e-16 1.57079632679" xyz="0.030989 -0.011037 0.05238133"/>
+  </sensor>
+  <gazebo reference="l_lower_leg">
+    <sensor name="l_lower_leg_mtb_acc_10b11" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>-0.0179355 -0.092958 0.0184593 -1.3089971472 -2.54317885712e-05 1.57078951235</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_lower_leg_mtb_acc_10b11" type="accelerometer">
+    <parent link="l_lower_leg"/>
+    <origin rpy="-1.3089971472 -2.54317885712e-05 1.57078951235" xyz="-0.0179355 -0.092958 0.0184593"/>
+  </sensor>
   <gazebo reference="l_foot">
     <sensor name="l_foot_mtb_acc_10b12" type="imu">
       <always_on>1</always_on>
@@ -1118,6 +1296,18 @@
   <sensor name="l_foot_mtb_acc_10b12" type="accelerometer">
     <parent link="l_foot"/>
     <origin rpy="0.0 -0.0 1.57079632679" xyz="0.1055224 0.0008072 -0.001215"/>
+  </sensor>
+  <gazebo reference="l_foot">
+    <sensor name="l_foot_mtb_acc_10b13" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <pose>0.0805224 0.0118072 -0.001215 0.0 -0.0 1.57079632679</pose>
+      <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so"/>
+    </sensor>
+  </gazebo>
+  <sensor name="l_foot_mtb_acc_10b13" type="accelerometer">
+    <parent link="l_foot"/>
+    <origin rpy="0.0 -0.0 1.57079632679" xyz="0.0805224 0.0118072 -0.001215"/>
   </sensor>
   <gazebo reference="r_arm_ft_sensor">
   <disableFixedJointLumping>true</disableFixedJointLumping>

@@ -154,13 +154,53 @@ sensors:
     linkName: l_upper_leg
     sensorName: l_upper_leg_mtb_acc_10b1
     sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B2
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b2
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B3
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b3
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B4
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b4
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B5
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b5
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B6
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b6
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B7
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b7
+    sensorType: "accelerometer"
   - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B8
     linkName: l_lower_leg
     sensorName: l_lower_leg_mtb_acc_10b8
     sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B9
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b9
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B10
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B11
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b11
+    sensorType: "accelerometer"
   - frameName: SCSYS_L_FOOT_MTB_ACC_10B12
     linkName: l_foot
     sensorName: l_foot_mtb_acc_10b12
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B13
+    linkName: l_foot
+    sensorName: l_foot_mtb_acc_10b13
     sensorType: "accelerometer"
 
 
