@@ -3,7 +3,7 @@
     <link name='root_link'>
       <pose>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.024882 0.000104 -0.044081 1.5708 0 -1.5708</pose>
+        <pose>0.024882 0.000104 -0.044081 1.5708 -0 -1.5708</pose>
         <mass>5.09143</mass>
         <inertia>
           <ixx>0.0139679</ixx>
@@ -15,7 +15,7 @@
         </inertia>
       </inertial>
       <collision name='root_link_collision'>
-        <pose>-0.0364 0 0.032 1.5708 0 -1.5708</pose>
+        <pose>-0.0364 0 0.032 1.5708 -0 -1.5708</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -24,7 +24,7 @@
         </geometry>
       </collision>
       <visual name='root_link_visual'>
-        <pose>-0.0364 0 0.032 1.5708 0 -1.5708</pose>
+        <pose>-0.0364 0 0.032 1.5708 -0 -1.5708</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -34,7 +34,7 @@
       </visual>
     </link>
     <link name='l_hip_1'>
-      <pose>0.006452 -0.022386 -0.119913 1.5708 0 -1.5708</pose>
+      <pose>0.006452 -0.022386 -0.119913 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>0.041678 -6.3e-05 -0.000401 0 -0 0</pose>
         <mass>0.915608</mass>
@@ -87,7 +87,7 @@
       </axis>
     </joint>
     <link name='l_hip_2'>
-      <pose>0.031992 -0.0701 -0.119913 1.5708 0 -1.5708</pose>
+      <pose>0.031992 -0.0701 -0.119913 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-1.9e-05 -0.044047 0.023959 0 -0 0</pose>
         <mass>0.421161</mass>
@@ -172,7 +172,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='l_leg_ft_sensor' type='fixed'>
+    <joint name='l_leg_ft_sensor' type='revolute'>
       <child>l_hip_3</child>
       <parent>l_hip_2</parent>
       <axis>
@@ -204,9 +204,6 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='left_leg_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='l_upper_leg'>
@@ -231,6 +228,14 @@
             <uri>model://iCubGenova02/meshes/dae/l_upper_leg.dae</uri>
           </mesh>
         </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name='l_upper_leg_visual'>
         <pose>-0.0701 0.241013 0.043409 0 -0 0</pose>
@@ -241,6 +246,15 @@
           </mesh>
         </geometry>
       </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_upper_leg_mtb_acc_10b1' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.031565 0.049332 0.042002 0.837758 -8.6e-05 1.57087</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
     </link>
     <joint name='l_hip_yaw' type='revolute'>
       <child>l_upper_leg</child>
@@ -284,6 +298,14 @@
             <uri>model://iCubGenova02/meshes/dae/l_lower_leg.dae</uri>
           </mesh>
         </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name='l_lower_leg_visual'>
         <pose>-0.046317 0.386638 0.043409 0 -0 0</pose>
@@ -294,6 +316,15 @@
           </mesh>
         </geometry>
       </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_lower_leg_mtb_acc_10b8' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.009984 -0.004318 0.054452 -0.349066 4e-05 1.5709</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
     </link>
     <joint name='l_knee' type='revolute'>
       <child>l_lower_leg</child>
@@ -435,7 +466,6 @@
           <izz>0.000273665</izz>
         </inertia>
       </inertial>
-      <!--
       <collision name='l_foot_collision'>
         <pose>0.047209 0.0701 -0.647438 -1.5708 -0 -1.5708</pose>
         <geometry>
@@ -444,43 +474,13 @@
             <uri>model://iCubGenova02/meshes/dae/l_foot.dae</uri>
           </mesh>
         </geometry>
-      </collision>
-      -->
-      <collision name='l_foot_collision_simplified'>
-        <pose>0.03 -0.005 -0.01 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.15 0.07 0.03</size>
-          </box>
-        </geometry>
-        <max_contacts>4</max_contacts>
         <surface>
           <contact>
-            <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
-              <!--<kd>1</kd>-->
-              <kd>100</kd>
-              <max_vel>100</max_vel>
-              <!--<min_depth>0.001</min_depth>-->
-              <min_depth>0.0001</min_depth>
-            </ode>
+            <ode/>
           </contact>
           <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0</slip1>
-              <slip2>0</slip2>
-            </ode>
+            <ode/>
           </friction>
-          <bounce>
-            <restitution_coefficient>0</restitution_coefficient>
-            <threshold>100000</threshold>
-          </bounce>
         </surface>
       </collision>
       <visual name='l_foot_visual'>
@@ -492,8 +492,17 @@
           </mesh>
         </geometry>
       </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+      <sensor name='l_foot_mtb_acc_10b12' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0.105522 0.000807 -0.001215 0 -0 1.5708</pose>
+        <plugin name='iCub_yarp_gazebo_plugin_ACC' filename='libgazebo_yarp_inertialmtb.so'/>
+      </sensor>
     </link>
-    <joint name='l_foot_ft_sensor' type='fixed'>
+    <joint name='l_foot_ft_sensor' type='revolute'>
       <child>l_foot</child>
       <parent>l_ankle_2</parent>
       <axis>
@@ -525,13 +534,10 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='left_foot_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='r_hip_1'>
-      <pose>0.006452 0.023366 -0.119913 1.5708 0 -1.5708</pose>
+      <pose>0.006452 0.023366 -0.119913 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-0.040711 -5.9e-05 -0.000523 0 -0 0</pose>
         <mass>0.920354</mass>
@@ -584,7 +590,7 @@
       </axis>
     </joint>
     <link name='r_hip_2'>
-      <pose>0.032796 0.0701 -0.119913 1.5708 0 -1.5708</pose>
+      <pose>0.032796 0.0701 -0.119913 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>4e-06 -0.044233 0.024898 0 -0 0</pose>
         <mass>0.4194</mass>
@@ -669,7 +675,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='r_leg_ft_sensor' type='fixed'>
+    <joint name='r_leg_ft_sensor' type='revolute'>
       <child>r_hip_3</child>
       <parent>r_hip_2</parent>
       <axis>
@@ -701,9 +707,6 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='right_leg_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='r_upper_leg'>
@@ -932,7 +935,6 @@
           <izz>0.000273419</izz>
         </inertia>
       </inertial>
-      <!--
       <collision name='r_foot_collision'>
         <pose>0.047209 -0.0701 -0.647438 -1.5708 -0 -1.5708</pose>
         <geometry>
@@ -941,44 +943,6 @@
             <uri>model://iCubGenova02/meshes/dae/r_foot.dae</uri>
           </mesh>
         </geometry>
-      </collision>
-      -->
-      <collision name='r_foot_collision_simplified'>
-        <pose>0.03 0.005 -0.01 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.15 0.07 0.03</size>
-          </box>
-        </geometry>
-        <max_contacts>4</max_contacts>
-        <surface>
-          <contact>
-            <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
-              <!--<kd>1</kd>-->
-              <kd>100</kd>
-              <max_vel>100</max_vel>
-              <!--<min_depth>0.001</min_depth>-->
-              <min_depth>0.0001</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0</slip1>
-              <slip2>0</slip2>
-            </ode>
-          </friction>
-          <bounce>
-            <restitution_coefficient>0</restitution_coefficient>
-            <threshold>100000</threshold>
-          </bounce>
-        </surface>
       </collision>
       <visual name='r_foot_visual'>
         <pose>0.047209 -0.0701 -0.647438 -1.5708 -0 -1.5708</pose>
@@ -990,7 +954,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='r_foot_ft_sensor' type='fixed'>
+    <joint name='r_foot_ft_sensor' type='revolute'>
       <child>r_foot</child>
       <parent>r_ankle_2</parent>
       <axis>
@@ -1022,13 +986,10 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='right_foot_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='torso_1'>
-      <pose>0 0.027046 0 1.5708 0 -1.5708</pose>
+      <pose>0 0.027046 0 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>0.027092 0.029148 -0.00044 0 -0 0</pose>
         <mass>0.67144</mass>
@@ -1081,7 +1042,7 @@
       </axis>
     </joint>
     <link name='torso_2'>
-      <pose>0.057691 0 0.032 1.5708 0 -1.5708</pose>
+      <pose>0.057691 0 0.032 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-0.000113 0.036182 0.057661 0 -0 0</pose>
         <mass>0.428161</mass>
@@ -1117,7 +1078,7 @@
       <child>torso_2</child>
       <parent>torso_1</parent>
       <axis>
-        <xyz>1 -0 0</xyz>
+        <xyz>-1 -0 0</xyz>
         <limit>
           <lower>-0.523599</lower>
           <upper>0.523599</upper>
@@ -1134,7 +1095,7 @@
       </axis>
     </joint>
     <link name='chest'>
-      <pose>-0.005497 0 0.082 1.5708 0 -1.5708</pose>
+      <pose>-0.005497 0 0.082 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>0.000189 0.073091 -0.047238 0 -0 0</pose>
         <mass>7.638</mass>
@@ -1187,7 +1148,7 @@
       </axis>
     </joint>
     <link name='l_shoulder_1'>
-      <pose>-0.013466 -0.120016 0.1748 1.5708 0 -1.5708</pose>
+      <pose>-0.013466 -0.120016 0.1748 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-0.008985 -3.3e-05 -0.0089 0 -0 0</pose>
         <mass>0.114882</mass>
@@ -1245,12 +1206,12 @@
         <pose>0.021475 0.000269 -0.019411 0 -0 0</pose>
         <mass>0.239074</mass>
         <inertia>
-          <ixx>0.00159206</ixx>
-          <ixy>1.51033e-06</ixy>
-          <ixz>-1.04783e-04</ixz>
-          <iyy>0.00207209</iyy>
-          <iyz>1.20634e-05</iyz>
-          <izz>0.00105106</izz>
+          <ixx>0.000159206</ixx>
+          <ixy>1.51033e-07</ixy>
+          <ixz>-1.04783e-05</ixz>
+          <iyy>0.000207209</iyy>
+          <iyz>1.20634e-06</iyz>
+          <izz>0.000105106</izz>
         </inertia>
       </inertial>
       <collision name='l_shoulder_2_collision'>
@@ -1378,7 +1339,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='l_arm_ft_sensor' type='fixed'>
+    <joint name='l_arm_ft_sensor' type='revolute'>
       <child>l_upper_arm</child>
       <parent>l_shoulder_3</parent>
       <axis>
@@ -1410,9 +1371,6 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='left_arm_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='l_elbow_1'>
@@ -1469,7 +1427,7 @@
       </axis>
     </joint>
     <link name='neck_1'>
-      <pose>-0.010808 0.0143 0.254797 1.5708 0 -1.5708</pose>
+      <pose>-0.010808 0.0143 0.254797 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>0.014371 0.006567 -0.006384 0 -0 0</pose>
         <mass>0.125793</mass>
@@ -1522,7 +1480,7 @@
       </axis>
     </joint>
     <link name='neck_2'>
-      <pose>-0.031608 0 0.264297 1.5708 0 -1.5708</pose>
+      <pose>-0.031608 0 0.264297 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-8.9e-05 0.035225 -0.019545 0 -0 0</pose>
         <mass>0.177087</mass>
@@ -1575,7 +1533,7 @@
       </axis>
     </joint>
     <link name='head'>
-      <pose>-0.010808 0 0.241953 1.5708 0 -1.5708</pose>
+      <pose>-0.010808 0 0.241953 1.5708 -0 -1.5708</pose>
       <inertial>
         <pose>-0.000574 0.113511 -0.007539 0 -0 0</pose>
         <mass>1.50691</mass>
@@ -1621,7 +1579,7 @@
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <pose>0.0095 0.133444 0.0093 -1.57081 1.5708 -1.1e-05</pose>
-         <plugin name='iCub_yarp_gazebo_plugin_IMU' filename='libgazebo_yarp_imu.so'>
+        <plugin name='iCub_yarp_gazebo_plugin_IMU' filename='libgazebo_yarp_imu.so'>
           <yarpConfigurationFile>model://iCubGenova02/conf/inertial.ini</yarpConfigurationFile>
         </plugin>
       </sensor>
@@ -1705,12 +1663,12 @@
         <pose>-0.021414 0.000272 -0.01944 0 -0 0</pose>
         <mass>0.238162</mass>
         <inertia>
-          <ixx>0.00158626</ixx>
-          <ixy>-1.12091e-06</ixy>
-          <ixz>1.02574e-04</ixz>
-          <iyy>0.00206526</iyy>
-          <iyz>1.19785e-05</iyz>
-          <izz>0.00104956</izz>
+          <ixx>0.000158626</ixx>
+          <ixy>-1.12091e-07</ixy>
+          <ixz>1.02574e-05</ixz>
+          <iyy>0.000206526</iyy>
+          <iyz>1.19785e-06</iyz>
+          <izz>0.000104956</izz>
         </inertia>
       </inertial>
       <collision name='r_shoulder_2_collision'>
@@ -1838,7 +1796,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='r_arm_ft_sensor' type='fixed'>
+    <joint name='r_arm_ft_sensor' type='revolute'>
       <child>r_upper_arm</child>
       <parent>r_shoulder_3</parent>
       <axis>
@@ -1870,9 +1828,6 @@
           <frame>child</frame>
           <measure_direction>child_to_parent</measure_direction>
         </force_torque>
-        <plugin name='right_arm_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://iCubGenova02/conf/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
-        </plugin>
       </sensor>
     </joint>
     <link name='r_elbow_1'>
@@ -1952,6 +1907,5 @@
     <plugin name='apply_external_wrench' filename='libgazebo_yarp_externalwrench.so'>
       <robotNamefromConfigFile>model://iCubGenova02/conf/gazebo_iCubGenova02_robotname.ini</robotNamefromConfigFile>
     </plugin>
-    <pose>0 0 0.62 0 0 0</pose>
   </model>
 </sdf>

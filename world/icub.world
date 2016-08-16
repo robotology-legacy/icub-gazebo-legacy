@@ -5,7 +5,7 @@
 -->
 
 <?xml version="1.0"?>
-<sdf version="1.4">
+<sdf version="1.5">
   <world name="default">
 
     <!-- Light -->
@@ -20,7 +20,7 @@
 
     <!-- iCub -->
     <include>
-        <uri>model://icub</uri>
+        <uri>model://iCubGenova02</uri>
     </include>
    
   </world>

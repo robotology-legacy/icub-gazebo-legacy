@@ -325,11 +325,13 @@ forceTorqueSensors:
   - jointName: r_arm_ft_sensor
     directionChildToParent: Yes
     
-IMUs:
+sensors:
   - linkName: head
     frameName: SCSYS_HEAD_MTX_IMU
-    sensorName: "imu_frame"
+    sensorName: "imu"
     exportFrameInURDF: Yes
+    sensorType: "imu"
+    updateRate: "100"
 
 # Workaround options 
 reverseRotationAxis:

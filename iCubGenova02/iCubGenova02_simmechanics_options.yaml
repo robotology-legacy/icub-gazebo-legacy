@@ -83,204 +83,6 @@ rename:
 exportAllUseradded: No
 
 exportedFrames:
-  - frameName: SCSYS_ROOT_LINK_EMS_ACC_EB5
-    frameReferenceLink: root_link
-    exportedFrameName: root_link_ems_acc_eb5
-  - frameName: SCSYS_ROOT_LINK_EMS_GYRO_EB5
-    frameReferenceLink: root_link
-    exportedFrameName: root_link_ems_gyro_eb5
-  - frameName: SCSYS_CHEST_EMS_ACC_EB1
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_acc_eb1
-  - frameName: SCSYS_CHEST_EMS_GYRO_EB1
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_gyro_eb1
-  - frameName: SCSYS_CHEST_EMS_ACC_EB2
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_acc_eb2
-  - frameName: SCSYS_CHEST_EMS_GYRO_EB2
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_gyro_eb2
-  - frameName: SCSYS_CHEST_EMS_ACC_EB3
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_acc_eb3
-  - frameName: SCSYS_CHEST_EMS_GYRO_EB3
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_gyro_eb3
-  - frameName: SCSYS_CHEST_EMS_ACC_EB4
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_acc_eb4
-  - frameName: SCSYS_CHEST_EMS_GYRO_EB4
-    frameReferenceLink: chest
-    exportedFrameName: chest_ems_gyro_eb4
-  - frameName: SCSYS_CHEST_MTB_ACC_0B7
-    frameReferenceLink: chest
-    exportedFrameName: chest_mtb_acc_0b7
-  - frameName: SCSYS_CHEST_MTB_ACC_0B8
-    frameReferenceLink: chest
-    exportedFrameName: chest_mtb_acc_0b8
-  - frameName: SCSYS_CHEST_MTB_ACC_0B9
-    frameReferenceLink: chest
-    exportedFrameName: chest_mtb_acc_0b9
-  - frameName: SCSYS_CHEST_MTB_ACC_0B10
-    frameReferenceLink: chest
-    exportedFrameName: chest_mtb_acc_0b10
-  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B10
-    frameReferenceLink: r_upper_arm
-    exportedFrameName: r_upper_arm_mtb_acc_2b10
-  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B11
-    frameReferenceLink: r_upper_arm
-    exportedFrameName: r_upper_arm_mtb_acc_2b11
-  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B12
-    frameReferenceLink: r_upper_arm
-    exportedFrameName: r_upper_arm_mtb_acc_2b12
-  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B13
-    frameReferenceLink: r_upper_arm
-    exportedFrameName: r_upper_arm_mtb_acc_2b13
-  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B7
-    frameReferenceLink: r_elbow_1
-    exportedFrameName: r_forearm_mtb_acc_2b7
-  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B8
-    frameReferenceLink: r_elbow_1
-    exportedFrameName: r_forearm_mtb_acc_2b8
-  - frameName: SCSYS_R_FOREARM_MTB_ACC_2B9
-    frameReferenceLink: r_elbow_1
-    exportedFrameName: r_forearm_mtb_acc_2b9
-  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B10
-    frameReferenceLink: l_upper_arm
-    exportedFrameName: l_upper_arm_mtb_acc_1b10
-  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B11
-    frameReferenceLink: l_upper_arm
-    exportedFrameName: l_upper_arm_mtb_acc_1b11
-  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B12
-    frameReferenceLink: l_upper_arm
-    exportedFrameName: l_upper_arm_mtb_acc_1b12
-  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B13
-    frameReferenceLink: l_upper_arm
-    exportedFrameName: l_upper_arm_mtb_acc_1b13
-  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B7
-    frameReferenceLink: l_elbow_1
-    exportedFrameName: l_forearm_mtb_acc_1b7
-  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B8
-    frameReferenceLink: l_elbow_1
-    exportedFrameName: l_forearm_mtb_acc_1b8
-  - frameName: SCSYS_L_FOREARM_MTB_ACC_1B9
-    frameReferenceLink: l_elbow_1
-    exportedFrameName: l_forearm_mtb_acc_1b9
-  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB8
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_ems_acc_eb8
-  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB11
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_ems_acc_eb11
-  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB8
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_ems_gyro_eb8
-  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB11
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_ems_gyro_eb11
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B1
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b1
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B2
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b2
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B3
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b3
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B4
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b4
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B5
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b5
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B6
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b6
-  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B7
-    frameReferenceLink: r_upper_leg
-    exportedFrameName: r_upper_leg_mtb_acc_11b7
-  - frameName: SCSYS_R_LOWER_LEG_EMS_ACC_EB9
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_ems_acc_eb9
-  - frameName: SCSYS_R_LOWER_LEG_EMS_GYRO_EB9
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_ems_gyro_eb9
-  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B8
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_mtb_acc_11b8
-  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B9
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_mtb_acc_11b9
-  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B10
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_mtb_acc_11b10
-  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B11
-    frameReferenceLink: r_lower_leg
-    exportedFrameName: r_lower_leg_mtb_acc_11b11
-  - frameName: SCSYS_R_FOOT_MTB_ACC_11B12
-    frameReferenceLink: r_foot
-    exportedFrameName: r_foot_mtb_acc_11b12
-  - frameName: SCSYS_R_FOOT_MTB_ACC_11B13
-    frameReferenceLink: r_foot
-    exportedFrameName: r_foot_mtb_acc_11b13
-  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB6
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_ems_acc_eb6
-  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB10
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_ems_acc_eb10
-  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB6
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_ems_gyro_eb6
-  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB10
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_ems_gyro_eb10
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B1
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b1
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B2
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b2
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B3
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b3
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B4
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b4
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B5
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b5
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B6
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b6
-  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B7
-    frameReferenceLink: l_upper_leg
-    exportedFrameName: l_upper_leg_mtb_acc_10b7
-  - frameName: SCSYS_L_LOWER_LEG_EMS_ACC_EB7
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_ems_acc_eb7
-  - frameName: SCSYS_L_LOWER_LEG_EMS_GYRO_EB7
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_ems_gyro_eb7
-  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B8
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_mtb_acc_10b8
-  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B9
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_mtb_acc_10b9
-  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B10
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_mtb_acc_10b10
-  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B11
-    frameReferenceLink: l_lower_leg
-    exportedFrameName: l_lower_leg_mtb_acc_10b11
-  - frameName: SCSYS_L_FOOT_MTB_ACC_10B12
-    frameReferenceLink: l_foot
-    exportedFrameName: l_foot_mtb_acc_10b12
-  - frameName: SCSYS_L_FOOT_MTB_ACC_10B13
-    frameReferenceLink: l_foot
-    exportedFrameName: l_foot_mtb_acc_10b13
   - frameName: SCSYS_L_SOLE
     frameReferenceLink: l_foot
     exportedFrameName: l_sole
@@ -325,11 +127,42 @@ forceTorqueSensors:
   - jointName: r_arm_ft_sensor
     directionChildToParent: Yes
     
-IMUs:
+sensors:
   - linkName: head
     frameName: SCSYS_HEAD_MTX_IMU
     sensorName: "imu_frame"
     exportFrameInURDF: Yes
+    sensorType: "imu"
+    updateRate: "100"
+    sensorBlobs: 
+    - |
+        <plugin name="iCub_yarp_gazebo_plugin_IMU" filename="libgazebo_yarp_imu.so">
+            <yarpConfigurationFile>model://iCubGenova02/conf/inertial.ini</yarpConfigurationFile>
+        </plugin>
+  - sensorName: "default"
+    exportFrameInURDF: Yes
+    sensorType: "accelerometer"
+    updateRate: "100"
+    sensorBlobs: 
+    - |
+        <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertialmtb.so" />
+  - sensorName: "default"
+    exportFrameInURDF: Yes
+    sensorType: "gyroscope"
+    updateRate: "100"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B1
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b1
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B8
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b8
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B12
+    linkName: l_foot
+    sensorName: l_foot_mtb_acc_10b12
+    sensorType: "accelerometer"
+
 
 # Workaround options 
 reverseRotationAxis:
