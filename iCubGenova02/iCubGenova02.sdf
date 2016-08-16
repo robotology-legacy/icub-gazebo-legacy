@@ -1884,6 +1884,9 @@
       </axis>
     </joint>
     <static>0</static>
+    <plugin name='iCub_yarp_gazebo_plugin_ACCpart' filename='libgazebo_yarp_inertialmtbPart.so'>
+      <yarpConfigurationFile>model://iCubGenova02/conf/MTB/gazebo-left_leg-mtb.ini</yarpConfigurationFile>
+    </plugin>
     <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://iCubGenova02/conf/gazebo_iCubGenova02_torso.ini</yarpConfigurationFile>
     </plugin>
