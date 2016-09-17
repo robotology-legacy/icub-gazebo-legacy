@@ -9,7 +9,7 @@ Install [gazebo_yarp_plugins](https://github.com/robotology/gazebo_yarp_plugins)
 
 Clone this repository:
 ```
-git clone https://github.com/robotology-playground/icub-gazebo.git
+git clone https://github.com/robotology/icub-gazebo.git
 ```
  
 
