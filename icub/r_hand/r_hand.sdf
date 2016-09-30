@@ -38,12 +38,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -82,12 +82,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -126,12 +126,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -170,12 +170,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -214,12 +214,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -258,12 +258,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -302,12 +302,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -346,12 +346,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -390,12 +390,12 @@
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -471,16 +471,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail1.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -548,16 +548,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail2.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -625,16 +625,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail3.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -729,16 +729,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil1.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -806,16 +806,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil2.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -883,16 +883,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil3.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -986,16 +986,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml1.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1063,16 +1063,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml2.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1140,16 +1140,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml3.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1243,16 +1243,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril1.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1320,16 +1320,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril2.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1397,16 +1397,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril3.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1475,16 +1475,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl0.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1519,16 +1519,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl1.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1596,16 +1596,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl2.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1673,16 +1673,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl3.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
@@ -1750,16 +1750,16 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl4.dae</uri>
           </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
+        <max_contacts>1</max_contacts>
         <surface>
           <contact>
             <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <kp>18000000</kp>
+              <soft_erp>0</soft_erp>
+              <soft_cfm>0.01</soft_cfm>
+              <kp>1000000</kp>
               <kd>100</kd>
-              <max_vel>100</max_vel>
-              <min_depth>0.0001</min_depth>
+              <max_vel>0.001</max_vel>
+              <min_depth>0.001</min_depth>
             </ode>
           </contact>
           <friction>
