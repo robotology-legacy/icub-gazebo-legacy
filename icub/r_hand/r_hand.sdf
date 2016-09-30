@@ -34,6 +34,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_palm.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rindexbase_visual_1'>
         <pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>
@@ -52,6 +78,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_indexbase.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rail0_visual_2'>
         <pose frame=''>0.01225 -0.079098 0.026741 0.0959 0.017507 -1.57079</pose>
@@ -70,6 +122,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail0.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rlittlebase_visual_3'>
         <pose frame=''>0.0135 -0.06225 -0.02475 -1.4835 0.017507 -1.57079</pose>
@@ -88,6 +166,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_littlebase.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rlil0_visual_4'>
         <pose frame=''>0.0135 -0.077048 -0.025009 0.0873 0.017507 -1.57079</pose>
@@ -106,6 +210,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil0.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rmiddlebase_visual_5'>
         <pose frame=''>0.011 -0.0653 0.01 -1.5708 7e-06 -1.57079</pose>
@@ -124,6 +254,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_middlebase.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rml0_visual_6'>
         <pose frame=''>0.011 -0.0803 0.01 -0 7e-06 -1.57079</pose>
@@ -142,6 +298,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml0.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rringbase_visual_7'>
         <pose frame=''>0.01175 -0.06415 -0.0059 -1.4835 0.008707 -1.57079</pose>
@@ -160,6 +342,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ringbase.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rril0_visual_8'>
         <pose frame=''>0.01175 -0.078949 -0.006029 0.0873 0.008707 -1.57079</pose>
@@ -178,6 +386,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril0.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
 
@@ -237,6 +471,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail1.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_aij3' type='revolute'>
@@ -288,6 +548,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail2.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_aij4' type='revolute'>
@@ -339,6 +625,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ail3.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_aij5' type='revolute'>
@@ -417,6 +729,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil1.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_lij3' type='revolute'>
@@ -468,6 +806,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil2.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_lij4' type='revolute'>
@@ -519,6 +883,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_lil3.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_lij5' type='revolute'>
@@ -596,6 +986,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml1.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_mj3' type='revolute'>
@@ -647,6 +1063,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml2.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_mj4' type='revolute'>
@@ -698,6 +1140,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ml3.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_mj5' type='revolute'>
@@ -775,6 +1243,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril1.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_rij3' type='revolute'>
@@ -826,6 +1320,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril2.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_rij4' type='revolute'>
@@ -877,6 +1397,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_ril3.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_rij5' type='revolute'>
@@ -929,6 +1475,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl0.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
       <visual name='r_tl0_fixed_joint_lump__r_tl1_visual_1'>
         <pose frame=''>0.021 0.0056 -0 -1.5708 0 0</pose>
@@ -947,6 +1519,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl1.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_tj2' type='revolute'>
@@ -998,6 +1596,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl2.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_tj4' type='revolute'>
@@ -1049,6 +1673,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl3.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_tj5' type='revolute'>
@@ -1100,6 +1750,32 @@
             <uri>model://icub/meshes/collision/r_hand/r_tl4.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>4</max_contacts>
+        <surface>
+          <contact>
+            <ode>
+              <soft_erp>0.2</soft_erp>
+              <soft_cfm>0</soft_cfm>
+              <kp>18000000</kp>
+              <kd>100</kd>
+              <max_vel>100</max_vel>
+              <min_depth>0.0001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce>
+        </surface>
       </collision>
     </link>
     <joint name='r_tj6' type='revolute'>
