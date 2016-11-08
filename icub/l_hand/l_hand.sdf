@@ -418,6 +418,14 @@
 		<pose frame=''>0.01225 -0.0643 -0.027 -1.4749 -0.072507 -1.57079</pose>
         <inertial>
           <mass>0.010</mass>
+          <inertia>
+          <ixx>0.0000112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
+        </inertia>
         </inertial>
     </link>
     <joint name='l_aij6' type='revolute'>
@@ -428,15 +436,27 @@
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
     <link name='l_ail1'>
@@ -445,12 +465,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ail1_visual'>
@@ -506,28 +526,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ail2'>
       <pose frame=''>0.01225 -0.101394 -0.027712 0.0959 0.017493 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ail2_visual'>
@@ -583,28 +616,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0.05</friction>			
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ail3'>
       <pose frame=''>0.01225 -0.12339 -0.028097 0.0959 0.017493 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ail3_visual'>
@@ -660,22 +706,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
-
 
     <link name='l_li_dummy'>
 		<pose frame=''>0.0135 -0.06225 0.02475 -1.6581 -0.017493 -1.57079</pose>
         <inertial>
           <mass>0.010</mass>
+          <inertia>
+          <ixx>0.0000112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
+        </inertia>
         </inertial>
     </link>
     <joint name='l_lij6' type='revolute'>
@@ -686,15 +751,27 @@
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
     <link name='l_lil1'>
@@ -703,12 +780,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_lil1_visual'>
@@ -764,28 +841,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_lil2'>
       <pose frame=''>0.013501 -0.098844 0.02539 -0.0873 -0.017493 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_lil2_visual'>
@@ -841,28 +931,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_lil3'>
       <pose frame=''>0.013501 -0.117841 0.025723 -0.0873 -0.017493 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
-        <mass>0.010</mass>ass>
+        <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_lil3_visual'>
@@ -918,21 +1021,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
 	<link name='l_ml_dummy'>
 		<pose frame=''>0.011 -0.0653 -0.01 -1.5708 7e-06 -1.57079</pose>
         <inertial>
           <mass>0.010</mass>
+          <inertia>
+          <ixx>0.0000112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
+        </inertia>
         </inertial>
     </link>
     <joint name='l_mj6' type='revolute'>
@@ -943,15 +1066,27 @@
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
     <link name='l_ml1'>
@@ -960,12 +1095,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ml1_visual'>
@@ -1021,28 +1156,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ml2'>
       <pose frame=''>0.011 -0.1088 -0.01 -0 7e-06 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ml2_visual'>
@@ -1098,28 +1246,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ml3'>
       <pose frame=''>0.011001 -0.1328 -0.010001 -0 7e-06 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ml3_visual'>
@@ -1175,21 +1336,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
 	<link name='l_ril_dummy'>
 		<pose frame=''>0.01175 -0.06415 0.0059 -1.6581 -0.008693 -1.57079</pose>
         <inertial>
           <mass>0.010</mass>
+          <inertia>
+          <ixx>0.0000112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
+        </inertia>
         </inertial>
     </link>
     <joint name='l_rij6' type='revolute'>
@@ -1200,15 +1381,27 @@
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
 
     <link name='l_ril1'>
@@ -1217,12 +1410,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ril1_visual'>
@@ -1278,28 +1471,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ril2'>
       <pose frame=''>0.01175 -0.104848 0.006254 -0.0873 -0.008693 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ril2_visual'>
@@ -1355,28 +1561,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+	      <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_ril3'>
       <pose frame=''>0.011751 -0.126848 0.006445 -0.0873 -0.008693 -1.57079</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_ril3_visual'>
@@ -1432,28 +1651,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_tl0'>
       <pose frame=''>0.021 -0.0386 -0.01235 -3.063 1.07329 -1.5708</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.224</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.224</iyy>
-          <iyz>5.29396e-23</iyz>
-          <izz>0.224</izz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_tl0_visual'>
@@ -1553,28 +1785,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_tl2'>
       <pose frame=''>0.026583 -0.049008 -0.030595 1.64938 1.07329 -1.5708</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_tl2_visual'>
@@ -1630,28 +1875,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_tl3'>
       <pose frame=''>0.026583 -0.061416 -0.053443 1.64938 1.07329 -1.5708</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_tl3_visual'>
@@ -1707,28 +1965,41 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
     <link name='l_tl4'>
       <pose frame=''>0.026583 -0.071915 -0.072776 1.64938 1.07329 -1.5708</pose>
       <inertial>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>0.112</ixx>
+          <ixx>0.0000112</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.112</iyy>
+          <iyy>0.0000112</iyy>
           <iyz>0</iyz>
-          <izz>0.112</izz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='l_tl4_visual'>
@@ -1784,15 +2055,28 @@
         <limit>
           <lower>0</lower>
           <upper>1.5708</upper>
-          <effort>1000</effort>
+          <effort>10</effort>
           <velocity>0.5</velocity>
         </limit>
         <dynamics>
+		  <damping>1</damping>
+          <friction>0.05</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+          <cfm_damping>1</cfm_damping>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
     </joint>
+    
 </model>
 </sdf>
