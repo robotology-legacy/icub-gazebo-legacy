@@ -3,16 +3,6 @@
   <model name='iCub'>
     <pose>0 0 0.6 0 0 3.14</pose>
 
-    <include>
-      <uri>model://icub/l_hand</uri>
-      <pose>-0.0107501 -0.110259 -0.11428 1.57 0 1.57</pose>
-    </include> 
-
-    <include>
-      <uri>model://icub/r_hand</uri>
-      <pose>-0.0107503 0.11026 -0.11428 1.57 0 -1.57</pose>
-    </include> 
-
     <link name='root_link'>
       <pose>0 0 0 0 -0 0</pose>
       <inertial>
@@ -46,6 +36,7 @@
         </geometry>
       </visual>
     </link>
+   
     <link name='l_hip_1'>
       <pose>0 -0.0681 -0.1199 2.65359e-06 1.57079 3.14159</pose>
       <inertial>
@@ -2103,6 +2094,16 @@
       </axis>
     </joint>
 
+    <include>
+      <uri>model://icub/l_hand</uri>
+      <pose>-0.0107501 -0.110259 -0.11428 1.57 0 1.57</pose>
+    </include> 
+
+    <include>
+      <uri>model://icub/r_hand</uri>
+      <pose>-0.0107503 0.11026 -0.11428 1.57 0 -1.57</pose>
+    </include> 
+    
     <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
     </plugin>
@@ -2184,6 +2185,5 @@
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_mais.ini</yarpConfigurationFile>
     </plugin>
 
-  <pose>0 0 0.70 0 0 0</pose>
   </model>
 </sdf>
