@@ -9,12 +9,12 @@
         <pose frame=''>0.011682 -0.051355 -0.000577 0 -0 0</pose>
         <mass>0.010</mass>
         <inertia>
-          <ixx>1.23288</ixx>
-          <ixy>0.000161724</ixy>
-          <ixz>-4.09406e-06</ixz>
-          <iyy>1.2322</iyy>
-          <iyz>-5.17611e-06</iyz>
-          <izz>1.23276</izz>
+          <ixx>0.0000112</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0000112</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000112</izz>
         </inertia>
       </inertial>
       <visual name='base_link_fixed_joint_lump__l_palm_visual'>
