@@ -1551,46 +1551,6 @@
         </plugin>
         <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
       </sensor>
-      <sensor name="left_camera" type="camera">
-        <pose>-0.07 -0.108 -0.034 1.5708 3.1415 0</pose>
-        <camera>
-          <horizontal_fov>1.5708</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-          </image>
-          <clip>
-            <near>0.1</near>
-            <far>100</far>
-          </clip>
-        </camera>
-        <always_on>1</always_on>
-        <update_rate>30</update_rate>
-        <visualize>true</visualize>
-        <plugin filename="libgazebo_yarp_camera.so" name="left_camera_plugin">
-          <yarpConfigurationFile>model://icub_with_hands_cameras/conf/left_camera.ini</yarpConfigurationFile>
-        </plugin>
-      </sensor>
-      <sensor name="right_camera" type="camera">
-        <pose>-0.07 -0.108 0.034 1.5708 3.1415 0</pose>
-        <camera>
-          <horizontal_fov>1.5708</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-          </image>
-          <clip>
-            <near>0.1</near>
-            <far>100</far>
-          </clip>
-        </camera>
-        <always_on>1</always_on>
-        <update_rate>30</update_rate>
-        <visualize>true</visualize>
-        <plugin filename="libgazebo_yarp_camera.so" name="right_camera_plugin">
-          <yarpConfigurationFile>model://icub_with_hands_cameras/conf/right_camera.ini</yarpConfigurationFile>
-        </plugin>
-      </sensor>
     </link>
     <joint name='neck_yaw' type='revolute'>
       <child>head</child>
@@ -1669,6 +1629,26 @@
    <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder> -->
         </geometry>
       </visual>
+      <sensor name="left_camera" type="camera">
+        <pose>0 0 0 0 -3.14159 0</pose>
+        <camera>
+          <horizontal_fov>1.5708</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_yarp_camera.so" name="left_camera_plugin">
+          <yarpConfigurationFile>model://icub/conf/left_camera.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </link>
 
     <link name='right_eye_link'>
@@ -1695,6 +1675,26 @@
           </mesh>
         </geometry>
       </visual>
+      <sensor name="right_camera" type="camera">
+        <pose>0 0 0 0 -3.14159 0</pose>
+        <camera>
+          <horizontal_fov>1.5708</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_yarp_camera.so" name="right_camera_plugin">
+          <yarpConfigurationFile>model://icub/conf/right_camera.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </link>
 
     <joint name='eyes_tilt' type='revolute'>
