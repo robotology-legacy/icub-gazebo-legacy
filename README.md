@@ -1,7 +1,7 @@
 icub-gazebo
 ===========
 
-Preliminary files for simulation of the iCub humanoid robot in Gazebo (meshes courtesy of Joseph Salini - UPMC).
+Preliminary files for simulation of the iCub humanoid robot in Gazebo (meshes courtesy of Joseph Salini - UPMC). Note that these models are compatible only with the Gazebo versions that use SDF 1.5
 
 Installation
 ------------
