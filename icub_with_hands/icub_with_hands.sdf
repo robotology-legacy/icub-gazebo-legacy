@@ -36,7 +36,7 @@
         </geometry>
       </visual>
     </link>
-   
+
     <link name='l_hip_1'>
       <pose>0 -0.0681 -0.1199 2.65359e-06 1.57079 3.14159</pose>
       <inertial>
@@ -1600,7 +1600,7 @@
   <!--     <visual name='eyes_tilt_visual'>
         <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
-          <cylinder><radius>0.01</radius><length>0.05</length></cylinder> 
+          <cylinder><radius>0.01</radius><length>0.05</length></cylinder>
         </geometry>
       </visual> -->
     </link>
@@ -1620,15 +1620,35 @@
         </inertia>
       </inertial>
        <visual name='left_eye_visual'>
-         <pose>0.055 0.033 -0.14 0 0 0</pose> 
+         <pose>0.055 0.033 -0.14 0 0 0</pose>
         <geometry>
              <mesh>
             <scale>1 1 1</scale>
             <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
+          </mesh>
    <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder> -->
         </geometry>
       </visual>
+      <sensor name="left_camera" type="camera">
+        <pose>0 0 0 0 -3.14159 0</pose>
+        <camera>
+          <horizontal_fov>1.5708</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_yarp_camera.so" name="left_camera_plugin">
+          <yarpConfigurationFile>model://icub/conf/left_camera.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </link>
 
     <link name='right_eye_link'>
@@ -1646,15 +1666,35 @@
         </inertia>
       </inertial>
       <visual name='right_eye_visual'>
-        <pose>0.055 0.033 -0.14 0 0 0</pose> 
+        <pose>0.055 0.033 -0.14 0 0 0</pose>
         <geometry>
  <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder>-->
             <mesh>
             <scale>1 1 1</scale>
             <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
+          </mesh>
         </geometry>
       </visual>
+      <sensor name="right_camera" type="camera">
+        <pose>0 0 0 0 -3.14159 0</pose>
+        <camera>
+          <horizontal_fov>1.5708</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_yarp_camera.so" name="right_camera_plugin">
+          <yarpConfigurationFile>model://icub/conf/right_camera.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </link>
 
     <joint name='eyes_tilt' type='revolute'>
@@ -2097,13 +2137,13 @@
     <include>
       <uri>model://icub/l_hand</uri>
       <pose>-0.0107501 -0.110259 -0.11428 1.57 0 1.57</pose>
-    </include> 
+    </include>
 
     <include>
       <uri>model://icub/r_hand</uri>
       <pose>-0.0107503 0.11026 -0.11428 1.57 0 -1.57</pose>
-    </include> 
-    
+    </include>
+
     <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
     </plugin>
@@ -2123,10 +2163,10 @@
     <plugin name='controlboard_left_arm_no_hand' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm_no_hand.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
-    </plugin> 
+    </plugin>
     <plugin name='controlboard_left_hand_thumb' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_thumb.ini</yarpConfigurationFile>
-    </plugin>   
+    </plugin>
     <plugin name='controlboard_left_hand_index' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_index.ini</yarpConfigurationFile>
     </plugin>
@@ -2141,16 +2181,16 @@
     </plugin>
     <plugin name='controlboard_left_hand' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand.ini</yarpConfigurationFile>
-    </plugin>   
+    </plugin>
 
 
     <plugin name='controlboard_right_arm_no_hand' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm_no_hand.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
-    </plugin> 
+    </plugin>
     <plugin name='controlboard_right_hand_thumb' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_thumb.ini</yarpConfigurationFile>
-    </plugin>   
+    </plugin>
     <plugin name='controlboard_right_hand_index' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_index.ini</yarpConfigurationFile>
     </plugin>
@@ -2166,7 +2206,7 @@
 
     <plugin name='controlboard_right_hand' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand.ini</yarpConfigurationFile>
-    </plugin>   
+    </plugin>
 
     <plugin name='controlboard_left_arm' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
@@ -2179,7 +2219,7 @@
 
     <plugin name='mais_left_hand' filename='libgazebo_yarp_maissensor.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_hand_mais.ini</yarpConfigurationFile>
-    </plugin>   
+    </plugin>
 
     <plugin name='mais_right_hand' filename='libgazebo_yarp_maissensor.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_mais.ini</yarpConfigurationFile>
