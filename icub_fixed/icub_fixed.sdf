@@ -2,7 +2,7 @@
 <sdf version='1.4'>
   <model name="iCub_fixed">
     <include>
-      <uri>model://icub</uri>
+      <uri>model://icub_with_hands</uri>
       <pose>0.0 0 1.0 0 0 3.14</pose>
     </include>
 
