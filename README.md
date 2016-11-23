@@ -40,7 +40,7 @@ FAQ
 
 ### How to change the model port prefix 
 All the ports created by the model start with a prefix. 
-This prefix is `/icubGazeboSim`. This can be changed by editing the [icub/conf/gazebo_icub_robotname.ini](icub/conf/gazebo_icub_robotname.ini) file. For more info on this, see https://github.com/robotology/icub-gazebo/issues/8#issuecomment-261536436 .
+This prefix is `/icubSim`. This can be changed by editing the [icub/conf/gazebo_icub_robotname.ini](icub/conf/gazebo_icub_robotname.ini) file. For more info on this, see https://github.com/robotology/icub-gazebo/issues/8#issuecomment-261536436 .
 
 
 Model generation
