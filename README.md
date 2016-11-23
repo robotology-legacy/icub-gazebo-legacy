@@ -5,14 +5,13 @@ Preliminary files for simulation of the iCub humanoid robot in Gazebo (meshes co
 
 Installation
 ------------
-Install [gazebo_yarp_plugins](https://github.com/robotology/gazebo_yarp_plugins)
+Install [YARP](http://www.yarp.it/install.html), [Gazebo](http://gazebosim.org/tutorials?cat=install) and  [gazebo-yarp-plugins](https://github.com/robotology/gazebo-yarp-plugins).
 
 Clone this repository:
 ```
 git clone https://github.com/robotology/icub-gazebo.git
 ```
  
-
 To let Gazebo know the existence of the models, you can add it to the `GAZEBO_MODEL_PATH` enviroment variable. You can add a line to the `.bashrc` file in your home:
 ```
 if [ -z "$GAZEBO_MODEL_PATH" ]; then
@@ -24,17 +23,25 @@ fi
 
 Usage
 -----
-As the iCub Gazebo models uses [Yarp](http://yarp.it), remember to start it before starting the simulation, using the following command in a console:
+As the iCub Gazebo models uses [YARP](http://yarp.it), remember to start it before starting the simulation, using the following command in a console:
 ```
 yarpserver 
 ```
 
 Then, run Gazebo with the world file included in the world directory:
 ```
-gazebo ./icub-gazebo/world/icub.world
+gazebo ./icub-gazebo/worlds/icub.world
 ```
 or simply drag and drop the `iCub (no hands)` or `iCub with hands` models from the Insert tab in Gazebo.
-The same instructions work also for the icub_legs model.
+The same instructions work also for the `iCubHeidelberg01` model.
+
+FAQ
+------
+
+### How to change the model port prefix 
+All the ports created by the model start with a prefix. 
+This prefix is `/icubGazeboSim`. This can be changed by editing the [icub/conf/gazebo_icub_robotname.ini](icub/conf/gazebo_icub_robotname.ini) file. For more info on this, see https://github.com/robotology/icub-gazebo/issues/8#issuecomment-261536436 .
+
 
 Model generation
 ----------------
