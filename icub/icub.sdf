@@ -1,11 +1,9 @@
-<?xml version='1.0'?>
-<sdf version='1.5'>
+<sdf version='1.6'>
   <model name='iCub'>
-    <pose>0 0 0.6 0 0 3.14</pose>
     <link name='root_link'>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>4.72</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -17,7 +15,7 @@
         </inertia>
       </inertial>
       <collision name='root_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -26,7 +24,7 @@
         </geometry>
       </collision>
       <visual name='root_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -36,9 +34,9 @@
       </visual>
     </link>
     <link name='l_hip_1'>
-      <pose>0 -0.0681 -0.1199 2.65359e-06 1.57079 3.14159</pose>
+      <pose frame=''>0 -0.0681 -0.1199 3e-06 1.57079 -3.14159</pose>
       <inertial>
-        <pose>0 -0.0782 0 0 -0 0</pose>
+        <pose frame=''>0 -0.0782 0 0 -0 0</pose>
         <mass>0.754</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -50,7 +48,7 @@
         </inertia>
       </inertial>
       <collision name='l_hip_1_collision'>
-        <pose>0 0 0 -0.785403 1.57079 -2.35619</pose>
+        <pose frame=''>0 0 0 -0.785403 1.57079 -2.35619</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -59,7 +57,7 @@
         </geometry>
       </collision>
       <visual name='l_hip_1_visual'>
-        <pose>0 0 0 -0.785403 1.57079 -2.35619</pose>
+        <pose frame=''>0 0 0 -0.785403 1.57079 -2.35619</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -72,7 +70,7 @@
       <child>l_hip_1</child>
       <parent>root_link</parent>
       <axis>
-        <xyz>2.65359e-06 1 -9.74718e-12</xyz>
+        <xyz>3e-06 1 -0</xyz>
         <limit>
           <lower>-0.767945</lower>
           <upper>2.30383</upper>
@@ -89,9 +87,9 @@
       </axis>
     </joint>
     <link name='l_hip_2'>
-      <pose>0 -0.0681 -0.1199 3.14159 -7.34641e-06 3.14159</pose>
+      <pose frame=''>0 -0.0681 -0.1199 3.14159 -7e-06 3.14159</pose>
       <inertial>
-        <pose>0 0 0.03045 0 -0 0</pose>
+        <pose frame=''>0 0 0.03045 0 -0 0</pose>
         <mass>0.526</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -103,7 +101,7 @@
         </inertia>
       </inertial>
       <collision name='l_hip_2_collision'>
-        <pose>0 0 0 0.785363 -1.57079 2.35623</pose>
+        <pose frame=''>0 0 0 0.785363 -1.57079 2.35623</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -112,7 +110,7 @@
         </geometry>
       </collision>
       <visual name='l_hip_2_visual'>
-        <pose>0 0 0 0.785363 -1.57079 2.35623</pose>
+        <pose frame=''>0 0 0 0.785363 -1.57079 2.35623</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -125,10 +123,10 @@
       <child>l_hip_2</child>
       <parent>l_hip_1</parent>
       <axis>
-        <xyz>-1 2.65359e-06 7.34641e-06</xyz>
+        <xyz>-1 3e-06 7e-06</xyz>
         <limit>
-          <lower>-0.296706</lower>
-          <upper>2.07694</upper>
+          <lower>-2.07694</lower>
+          <upper>0.296706</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -142,9 +140,9 @@
       </axis>
     </joint>
     <link name='l_hip_3'>
-      <pose>-4.88536e-07 -0.0680998 -0.1864 3.14159 -7.34641e-06 3.14159</pose>
+      <pose frame=''>-0 -0.0681 -0.1864 3.14159 -7e-06 3.14159</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -160,32 +158,40 @@
       <child>l_hip_3</child>
       <parent>l_hip_2</parent>
       <axis>
-        <xyz>0 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='left_leg_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='l_leg_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='left_leg_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='l_upper_leg'>
-      <pose>0 -0.0681 -0.1199 1.57079 -7.34641e-06 3.14159</pose>
+      <pose frame=''>0 -0.0681 -0.1199 1.57079 -7e-06 3.14159</pose>
       <inertial>
-        <pose>0.00144 -0.15943 -0.00039 0 -0 0</pose>
+        <pose frame=''>0.00144 -0.15943 -0.00039 0 -0 0</pose>
         <mass>2.175</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -197,7 +203,7 @@
         </inertia>
       </inertial>
       <collision name='l_upper_leg_collision'>
-        <pose>0 0 0 -2.67797 1.57079 -1.10716</pose>
+        <pose frame=''>0 0 0 -2.67797 1.57079 -1.10716</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -206,7 +212,7 @@
         </geometry>
       </collision>
       <visual name='l_upper_leg_visual'>
-        <pose>0 0 0 -2.67797 1.57079 -1.10716</pose>
+        <pose frame=''>0 0 0 -2.67797 1.57079 -1.10716</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -219,7 +225,7 @@
       <child>l_upper_leg</child>
       <parent>l_hip_3</parent>
       <axis>
-        <xyz>7.34639e-06 -6.3268e-06 1</xyz>
+        <xyz>7e-06 -6e-06 1</xyz>
         <limit>
           <lower>-1.37881</lower>
           <upper>1.37881</upper>
@@ -236,9 +242,9 @@
       </axis>
     </joint>
     <link name='l_lower_leg'>
-      <pose>-1.64265e-06 -0.0680986 -0.3435 2.09198 -1.57078 -0.521189</pose>
+      <pose frame=''>-2e-06 -0.068099 -0.3435 2.09198 -1.57078 -0.521189</pose>
       <inertial>
-        <pose>-0.1071 0.00182 0.00211 0 -0 0</pose>
+        <pose frame=''>-0.1071 0.00182 0.00211 0 -0 0</pose>
         <mass>1.264</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -250,7 +256,7 @@
         </inertia>
       </inertial>
       <collision name='l_lower_leg_collision'>
-        <pose>5.55112e-17 2.28232e-12 2.2823e-12 -3.14159 -2.33487e-16 1.5708</pose>
+        <pose frame=''>0 0 0 -3.14159 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -259,7 +265,7 @@
         </geometry>
       </collision>
       <visual name='l_lower_leg_visual'>
-        <pose>5.55112e-17 2.28232e-12 2.2823e-12 -3.14159 -2.33487e-16 1.5708</pose>
+        <pose frame=''>0 0 0 -3.14159 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -272,7 +278,7 @@
       <child>l_lower_leg</child>
       <parent>l_upper_leg</parent>
       <axis>
-        <xyz>5.30723e-06 1 6.32676e-06</xyz>
+        <xyz>5e-06 1 6e-06</xyz>
         <limit>
           <lower>-2.18166</lower>
           <upper>0.401426</upper>
@@ -289,9 +295,9 @@
       </axis>
     </joint>
     <link name='l_ankle_1'>
-      <pose>-3.98983e-06 -0.0680972 -0.5565 0.52118 -1.57078 -0.521189</pose>
+      <pose frame=''>-4e-06 -0.068097 -0.5565 0.52118 -1.57078 -0.521189</pose>
       <inertial>
-        <pose>-0.0054 0.00163 0.0172 0 -0 0</pose>
+        <pose frame=''>-0.0054 0.00163 0.0172 0 -0 0</pose>
         <mass>0.746</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -303,7 +309,7 @@
         </inertia>
       </inertial>
       <collision name='l_ankle_1_collision'>
-        <pose>1.11022e-16 -5.54343e-12 4.45647e-12 1.5708 1.53106e-11 1.53105e-11</pose>
+        <pose frame=''>0 -0 0 1.5708 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -312,7 +318,7 @@
         </geometry>
       </collision>
       <visual name='l_ankle_1_visual'>
-        <pose>1.11022e-16 -5.54343e-12 4.45647e-12 1.5708 1.53106e-11 1.53105e-11</pose>
+        <pose frame=''>0 -0 0 1.5708 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -325,7 +331,7 @@
       <child>l_ankle_1</child>
       <parent>l_lower_leg</parent>
       <axis>
-        <xyz>-8.98043e-06 -1 -6.32672e-06</xyz>
+        <xyz>-9e-06 -1 -6e-06</xyz>
         <limit>
           <lower>-0.733038</lower>
           <upper>0.366519</upper>
@@ -342,9 +348,9 @@
       </axis>
     </joint>
     <link name='l_ankle_2'>
-      <pose>-3.98983e-06 -0.0680972 -0.5565 3.14159 -7.34645e-06 3.14158</pose>
+      <pose frame=''>-4e-06 -0.068097 -0.5565 3.14159 -7e-06 3.14158</pose>
       <inertial>
-        <pose>0 0 0.037 0 -0 0</pose>
+        <pose frame=''>0 0 0.037 0 -0 0</pose>
         <mass>0.2675</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -360,7 +366,7 @@
       <child>l_ankle_2</child>
       <parent>l_ankle_1</parent>
       <axis>
-        <xyz>-1 8.98038e-06 7.34645e-06</xyz>
+        <xyz>-1 9e-06 7e-06</xyz>
         <limit>
           <lower>-0.418879</lower>
           <upper>0.418879</upper>
@@ -377,9 +383,9 @@
       </axis>
     </joint>
     <link name='l_foot'>
-      <pose>-4.26164e-06 -0.068097 -0.5935 3.14159 -7.34645e-06 3.14158</pose>
+      <pose frame=''>-4e-06 -0.068097 -0.5935 3.14159 -7e-06 3.14158</pose>
       <inertial>
-        <pose>0.024069 -0.000613931 -0.0284154 0 -0 0</pose>
+        <pose frame=''>0.024069 -0.000614 -0.028415 0 -0 0</pose>
         <mass>0.5935</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -391,44 +397,16 @@
         </inertia>
       </inertial>
       <collision name='l_foot_collision'>
-        <pose>0.03 0 -0.01 0 -0 0</pose>
+        <pose frame=''>0 -0 -0.037 -0.785403 1.57079 -0.785403</pose>
         <geometry>
-          <box>
-            <size>0.15 0.07 0.03</size>
-          </box>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/collision/icub_simple_collision_l_foot.dae</uri>
+          </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
-        <surface>
-          <contact>
-            <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
-              <!--<kd>1</kd>-->
-              <kd>100</kd>
-              <max_vel>100</max_vel>
-              <!--<min_depth>0.001</min_depth>-->
-              <min_depth>0.0001</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0</slip1>
-              <slip2>0</slip2>
-            </ode>
-          </friction>
-          <bounce>
-            <restitution_coefficient>0</restitution_coefficient>
-            <threshold>100000</threshold>
-          </bounce>
-        </surface>
       </collision>
       <visual name='l_foot_visual'>
-        <pose>4.45647e-12 -5.54343e-12 -0.037 -0.785403 1.57079 -0.785403</pose>
+        <pose frame=''>0 -0 -0.037 -0.785403 1.57079 -0.785403</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -441,32 +419,40 @@
       <child>l_foot</child>
       <parent>l_ankle_2</parent>
       <axis>
-        <xyz>0 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='left_foot_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='l_foot_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='left_foot_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='r_hip_1'>
-      <pose>0 0.0681 -0.1199 3.14159 1.57079 -3.14159</pose>
+      <pose frame=''>0 0.0681 -0.1199 3.14159 1.57079 -3.14159</pose>
       <inertial>
-        <pose>0 -0.0782 0 0 -0 0</pose>
+        <pose frame=''>0 -0.0782 0 0 -0 0</pose>
         <mass>0.754</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -478,7 +464,7 @@
         </inertia>
       </inertial>
       <collision name='r_hip_1_collision'>
-        <pose>0 0 0 1.76819 -1.57079 2.76109</pose>
+        <pose frame=''>0 0 0 1.76819 -1.57079 2.76109</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -487,7 +473,7 @@
         </geometry>
       </collision>
       <visual name='r_hip_1_visual'>
-        <pose>0 0 0 1.76819 -1.57079 2.76109</pose>
+        <pose frame=''>0 0 0 1.76819 -1.57079 2.76109</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -500,7 +486,7 @@
       <child>r_hip_1</child>
       <parent>root_link</parent>
       <axis>
-        <xyz>5.7211e-18 1 -1.22967e-22</xyz>
+        <xyz>0 1 -0</xyz>
         <limit>
           <lower>-0.767945</lower>
           <upper>2.30383</upper>
@@ -517,9 +503,9 @@
       </axis>
     </joint>
     <link name='r_hip_2'>
-      <pose>0 0.0681 -0.1199 -3.14159 -7.34641e-06 -3.14159</pose>
+      <pose frame=''>0 0.0681 -0.1199 -3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>0 0 0.03045 0 -0 0</pose>
+        <pose frame=''>0 0 0.03045 0 -0 0</pose>
         <mass>0.526</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -531,7 +517,7 @@
         </inertia>
       </inertial>
       <collision name='r_hip_2_collision'>
-        <pose>0 0 0 -2.35627 -1.57079 2.35627</pose>
+        <pose frame=''>0 0 0 -2.35627 -1.57079 2.35627</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -540,7 +526,7 @@
         </geometry>
       </collision>
       <visual name='r_hip_2_visual'>
-        <pose>0 0 0 -2.35627 -1.57079 2.35627</pose>
+        <pose frame=''>0 0 0 -2.35627 -1.57079 2.35627</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -553,10 +539,10 @@
       <child>r_hip_2</child>
       <parent>r_hip_1</parent>
       <axis>
-        <xyz>1 5.55111e-17 -7.34641e-06</xyz>
+        <xyz>1 0 -7e-06</xyz>
         <limit>
-          <lower>-0.296706</lower>
-          <upper>2.07694</upper>
+          <lower>-2.07694</lower>
+          <upper>0.296706</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -570,9 +556,9 @@
       </axis>
     </joint>
     <link name='r_hip_3'>
-      <pose>-4.88536e-07 0.0681 -0.1864 -3.14159 -7.34641e-06 -3.14159</pose>
+      <pose frame=''>-0 0.0681 -0.1864 -3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -588,32 +574,40 @@
       <child>r_hip_3</child>
       <parent>r_hip_2</parent>
       <axis>
-        <xyz>0 0 -0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='right_leg_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='r_leg_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='right_leg_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='r_upper_leg'>
-      <pose>0 0.0681 -0.1199 1.57079 -7.34641e-06 3.14159</pose>
+      <pose frame=''>0 0.0681 -0.1199 1.57079 -7e-06 3.14159</pose>
       <inertial>
-        <pose>0.00144 -0.15943 0.00039 0 -0 0</pose>
+        <pose frame=''>0.00144 -0.15943 0.00039 0 -0 0</pose>
         <mass>2.175</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -625,7 +619,7 @@
         </inertia>
       </inertial>
       <collision name='r_upper_leg_collision'>
-        <pose>0 0 0 1.57087 -1.57079 -7.26536e-05</pose>
+        <pose frame=''>0 0 0 1.57087 -1.57079 -7.3e-05</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -634,7 +628,7 @@
         </geometry>
       </collision>
       <visual name='r_upper_leg_visual'>
-        <pose>0 0 0 1.57087 -1.57079 -7.26536e-05</pose>
+        <pose frame=''>0 0 0 1.57087 -1.57079 -7.3e-05</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -647,7 +641,7 @@
       <child>r_upper_leg</child>
       <parent>r_hip_3</parent>
       <axis>
-        <xyz>-7.34641e-06 3.67321e-06 -1</xyz>
+        <xyz>-7e-06 4e-06 -1</xyz>
         <limit>
           <lower>-1.37881</lower>
           <upper>1.37881</upper>
@@ -664,9 +658,9 @@
       </axis>
     </joint>
     <link name='r_lower_leg'>
-      <pose>-1.64266e-06 0.0681008 -0.3435 1.89254 -1.57078 -0.321751</pose>
+      <pose frame=''>-2e-06 0.068101 -0.3435 1.89254 -1.57078 -0.321751</pose>
       <inertial>
-        <pose>-0.1071 0.00182 -0.00211 0 -0 0</pose>
+        <pose frame=''>-0.1071 0.00182 -0.00211 0 -0 0</pose>
         <mass>1.264</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -678,7 +672,7 @@
         </inertia>
       </inertial>
       <collision name='r_lower_leg_collision'>
-        <pose>5.55112e-17 2.28232e-12 -8.32667e-17 3.14159 -1.14426e-17 1.5708</pose>
+        <pose frame=''>0 0 -0 3.14159 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -687,7 +681,7 @@
         </geometry>
       </collision>
       <visual name='r_lower_leg_visual'>
-        <pose>5.55112e-17 2.28232e-12 -8.32667e-17 3.14159 -1.14426e-17 1.5708</pose>
+        <pose frame=''>0 0 -0 3.14159 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -700,7 +694,7 @@
       <child>r_lower_leg</child>
       <parent>r_upper_leg</parent>
       <axis>
-        <xyz>2.65362e-06 1 3.67318e-06</xyz>
+        <xyz>3e-06 1 4e-06</xyz>
         <limit>
           <lower>-2.18166</lower>
           <upper>0.401426</upper>
@@ -717,9 +711,9 @@
       </axis>
     </joint>
     <link name='r_ankle_1'>
-      <pose>-3.98984e-06 0.0681016 -0.5565 -2.81984 -1.57078 -0.321751</pose>
+      <pose frame=''>-4e-06 0.068102 -0.5565 -2.81984 -1.57078 -0.321751</pose>
       <inertial>
-        <pose>-0.0054 0.00163 -0.0172 0 -0 0</pose>
+        <pose frame=''>-0.0054 0.00163 -0.0172 0 -0 0</pose>
         <mass>0.746</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -731,7 +725,7 @@
         </inertia>
       </inertial>
       <collision name='r_ankle_1_collision'>
-        <pose>1.11022e-16 -1.08717e-12 -4.45647e-12 -1.5708 -1.53106e-11 5.10376e-12</pose>
+        <pose frame=''>0 -0 -0 -1.5708 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -740,7 +734,7 @@
         </geometry>
       </collision>
       <visual name='r_ankle_1_visual'>
-        <pose>1.11022e-16 -1.08717e-12 -4.45647e-12 -1.5708 -1.53106e-11 5.10376e-12</pose>
+        <pose frame=''>0 -0 -0 -1.5708 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -753,7 +747,7 @@
       <child>r_ankle_1</child>
       <parent>r_lower_leg</parent>
       <axis>
-        <xyz>1.01959e-06 -1 -3.67322e-06</xyz>
+        <xyz>1e-06 -1 -4e-06</xyz>
         <limit>
           <lower>-0.733038</lower>
           <upper>0.366519</upper>
@@ -770,9 +764,9 @@
       </axis>
     </joint>
     <link name='r_ankle_2'>
-      <pose>-3.98984e-06 0.0681016 -0.5565 3.14159 -1.4236e-05 -3.14159</pose>
+      <pose frame=''>-4e-06 0.068102 -0.5565 3.14159 -1.4e-05 -3.14159</pose>
       <inertial>
-        <pose>0 0 0.037 0 -0 0</pose>
+        <pose frame=''>0 0 0.037 0 -0 0</pose>
         <mass>0.2675</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -788,7 +782,7 @@
       <child>r_ankle_2</child>
       <parent>r_ankle_1</parent>
       <axis>
-        <xyz>1 2.79362e-06 -1.4236e-05</xyz>
+        <xyz>1 3e-06 -1.4e-05</xyz>
         <limit>
           <lower>-0.418879</lower>
           <upper>0.418879</upper>
@@ -805,9 +799,9 @@
       </axis>
     </joint>
     <link name='r_foot'>
-      <pose>-4.51657e-06 0.0681019 -0.5935 3.14159 -1.4236e-05 -3.14159</pose>
+      <pose frame=''>-5e-06 0.068102 -0.5935 3.14159 -1.4e-05 -3.14159</pose>
       <inertial>
-        <pose>0.024069 0.000613931 -0.0284154 0 -0 0</pose>
+        <pose frame=''>0.024069 0.000614 -0.028415 0 -0 0</pose>
         <mass>0.5935</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -819,44 +813,16 @@
         </inertia>
       </inertial>
       <collision name='r_foot_collision'>
-        <pose>0.03 0 -0.01 0 -0 0</pose>
+        <pose frame=''>0 0 -0.037 -2.81983 1.57079 0.321763</pose>
         <geometry>
-          <box>
-            <size>0.15 0.07 0.03</size>
-          </box>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://icub/meshes/collision/icub_simple_collision_r_foot.dae</uri>
+          </mesh>
         </geometry>
-        <max_contacts>4</max_contacts>
-        <surface>
-          <contact>
-            <ode>
-              <soft_erp>0.2</soft_erp>
-              <soft_cfm>0</soft_cfm>
-              <!--<kp>100000</kp>-->
-              <kp>18000000</kp>
-              <!--<kd>1</kd>-->
-              <kd>100</kd>
-              <max_vel>100</max_vel>
-              <!--<min_depth>0.001</min_depth>-->
-              <min_depth>0.0001</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
-              <fdir1>0 0 0</fdir1>
-              <slip1>0</slip1>
-              <slip2>0</slip2>
-            </ode>
-          </friction>
-          <bounce>
-            <restitution_coefficient>0</restitution_coefficient>
-            <threshold>100000</threshold>
-          </bounce>
-        </surface>
       </collision>
       <visual name='r_foot_visual'>
-        <pose>4.45647e-12 1.08717e-12 -0.037 -2.81983 1.57079 0.321763</pose>
+        <pose frame=''>0 0 -0.037 -2.81983 1.57079 0.321763</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -869,32 +835,40 @@
       <child>r_foot</child>
       <parent>r_ankle_2</parent>
       <axis>
-        <xyz>0 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='right_foot_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='r_foot_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='right_foot_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='torso_1'>
-      <pose>0 0 0 3.14159 -1.57079 -2.65359e-06</pose>
+      <pose frame=''>0 0 0 -3.14159 -1.57079 -3e-06</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -906,7 +880,7 @@
         </inertia>
       </inertial>
       <collision name='torso_1_collision'>
-        <pose>0 0 0 -1.5708 5.10314e-12 1.11022e-16</pose>
+        <pose frame=''>0 0 0 -1.5708 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -915,7 +889,7 @@
         </geometry>
       </collision>
       <visual name='torso_1_visual'>
-        <pose>0 0 0 -1.5708 5.10314e-12 1.11022e-16</pose>
+        <pose frame=''>0 0 0 -1.5708 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -928,7 +902,7 @@
       <child>torso_1</child>
       <parent>root_link</parent>
       <axis>
-        <xyz>-2.65359e-06 -1 -1.05879e-22</xyz>
+        <xyz>-3e-06 -1 -0</xyz>
         <limit>
           <lower>-0.383972</lower>
           <upper>1.46608</upper>
@@ -945,9 +919,9 @@
       </axis>
     </joint>
     <link name='torso_2'>
-      <pose>1.17543e-07 -3.1191e-13 0.032 -3.14159 3.67321e-06 1.57079</pose>
+      <pose frame=''>0 -0 0.032 -3.14159 4e-06 1.57079</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -963,7 +937,7 @@
       <child>torso_2</child>
       <parent>torso_1</parent>
       <axis>
-        <xyz>1 -2.6536e-06 -7.34641e-06</xyz>
+        <xyz>1 -3e-06 -7e-06</xyz>
         <limit>
           <lower>-0.680678</lower>
           <upper>0.680678</upper>
@@ -980,9 +954,9 @@
       </axis>
     </joint>
     <link name='chest'>
-      <pose>-0.00549988 1.45945e-08 0.032 1.5708 -7.34642e-06 -3.14159</pose>
+      <pose frame=''>-0.0055 0 0.032 1.5708 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>0.00222898 0.075 -1.18362e-17 0 -0 0</pose>
+        <pose frame=''>0.002229 0.075 -0 0 -0 0</pose>
         <mass>4.81</mass>
         <inertia>
           <ixx>0.07472</ixx>
@@ -994,7 +968,7 @@
         </inertia>
       </inertial>
       <collision name='chest_collision'>
-        <pose>-0.0055 -6.93889e-18 -3.55271e-18 -1.10717 -1.57079 2.67798</pose>
+        <pose frame=''>-0.0055 -0 -0 -1.10717 -1.57079 2.67798</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1003,7 +977,7 @@
         </geometry>
       </collision>
       <visual name='chest_visual'>
-        <pose>-0.0055 -6.93889e-18 -3.55271e-18 -1.10717 -1.57079 2.67798</pose>
+        <pose frame=''>-0.0055 -0 -0 -1.10717 -1.57079 2.67798</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1016,7 +990,7 @@
       <child>chest</child>
       <parent>torso_2</parent>
       <axis>
-        <xyz>-7.34642e-06 1.94942e-11 -1</xyz>
+        <xyz>-7e-06 0 -1</xyz>
         <limit>
           <lower>-1.02974</lower>
           <upper>1.02974</upper>
@@ -1033,9 +1007,9 @@
       </axis>
     </joint>
     <link name='l_shoulder_1'>
-      <pose>-0.0107487 -0.11026 0.1753 -0.261794 -1.57079 -1.42917e-06</pose>
+      <pose frame=''>-0.010749 -0.11026 0.1753 -0.261794 -1.57079 -1e-06</pose>
       <inertial>
-        <pose>-5e-06 0.0187 -0.00119 0 -0 0</pose>
+        <pose frame=''>-5e-06 0.0187 -0.00119 0 -0 0</pose>
         <mass>0.189</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1047,7 +1021,7 @@
         </inertia>
       </inertial>
       <collision name='l_shoulder_1_collision'>
-        <pose>3.08642e-14 0.109285 -0.00521101 -0.301063 1.57079 -1.87186</pose>
+        <pose frame=''>0 0.109285 -0.005211 -0.301063 1.57079 -1.87186</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1056,7 +1030,7 @@
         </geometry>
       </collision>
       <visual name='l_shoulder_1_visual'>
-        <pose>3.08642e-14 0.109285 -0.00521101 -0.301063 1.57079 -1.87186</pose>
+        <pose frame=''>0 0.109285 -0.005211 -0.301063 1.57079 -1.87186</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1069,7 +1043,7 @@
       <child>l_shoulder_1</child>
       <parent>chest</parent>
       <axis>
-        <xyz>-0.258815 -0.965927 2.85203e-06</xyz>
+        <xyz>-0.258815 -0.965927 3e-06</xyz>
         <limit>
           <lower>-1.65806</lower>
           <upper>0.0872665</upper>
@@ -1086,9 +1060,9 @@
       </axis>
     </joint>
     <link name='l_shoulder_2'>
-      <pose>-0.0107487 -0.11026 0.1753 3.14159 8.21174e-07 -1.83259</pose>
+      <pose frame=''>-0.010749 -0.11026 0.1753 3.14159 1e-06 -1.83259</pose>
       <inertial>
-        <pose>9.4e-05 -0.00627 0.0166 0 -0 0</pose>
+        <pose frame=''>9.4e-05 -0.00627 0.0166 0 -0 0</pose>
         <mass>0.179</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1100,7 +1074,7 @@
         </inertia>
       </inertial>
       <collision name='l_shoulder_2_collision'>
-        <pose>-0.00154529 -0.00521101 -1.11181e-12 -2.14033 1.57079 -0.569533</pose>
+        <pose frame=''>-0.001545 -0.005211 -0 -2.14033 1.57079 -0.569533</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1109,7 +1083,7 @@
         </geometry>
       </collision>
       <visual name='l_shoulder_2_visual'>
-        <pose>-0.00154529 -0.00521101 -1.11181e-12 -2.14033 1.57079 -0.569533</pose>
+        <pose frame=''>-0.001545 -0.005211 -0 -2.14033 1.57079 -0.569533</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1122,7 +1096,7 @@
       <child>l_shoulder_2</child>
       <parent>l_shoulder_1</parent>
       <axis>
-        <xyz>-0.965927 0.258815 6.97095e-06</xyz>
+        <xyz>-0.965927 0.258815 7e-06</xyz>
         <limit>
           <lower>0</lower>
           <upper>2.80649</upper>
@@ -1139,9 +1113,9 @@
       </axis>
     </joint>
     <link name='l_shoulder_3'>
-      <pose>-0.0107487 -0.11026 0.1753 3.14159 -6.5209e-06 -3.14159</pose>
+      <pose frame=''>-0.010749 -0.11026 0.1753 3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>0.00559398 9.77357e-05 0.0501346 0 -0 0</pose>
+        <pose frame=''>0.005594 9.8e-05 0.050135 0 -0 0</pose>
         <mass>0.156157</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1157,7 +1131,7 @@
       <child>l_shoulder_3</child>
       <parent>l_shoulder_2</parent>
       <axis>
-        <xyz>-6.5209e-06 2.59738e-06 -1</xyz>
+        <xyz>-7e-06 3e-06 -1</xyz>
         <limit>
           <lower>-0.645772</lower>
           <upper>1.74533</upper>
@@ -1174,9 +1148,9 @@
       </axis>
     </joint>
     <link name='l_upper_arm'>
-      <pose>-0.0257492 -0.11026 0.1073 3.14159 -6.5209e-06 -3.14159</pose>
+      <pose frame=''>-0.025749 -0.11026 0.1073 3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>-0.000156 -9.87e-05 0.0298 0 -0 0</pose>
+        <pose frame=''>-0.000156 -9.9e-05 0.0298 0 -0 0</pose>
         <mass>0.727843</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1188,7 +1162,7 @@
         </inertia>
       </inertial>
       <collision name='l_upper_arm_collision'>
-        <pose>-0.0204334 0.000143922 -0.068 1.15274e-11 4.92958e-12 -1.309</pose>
+        <pose frame=''>-0.020433 0.000144 -0.068 0 0 -1.309</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1197,7 +1171,7 @@
         </geometry>
       </collision>
       <visual name='l_upper_arm_visual'>
-        <pose>-0.0204334 0.000143922 -0.068 1.15274e-11 4.92958e-12 -1.309</pose>
+        <pose frame=''>-0.020433 0.000144 -0.068 0 0 -1.309</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1210,32 +1184,40 @@
       <child>l_upper_arm</child>
       <parent>l_shoulder_3</parent>
       <axis>
-        <xyz>-0 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='left_arm_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='l_arm_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='left_arm_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='l_elbow_1'>
-      <pose>-0.0257497 -0.11026 0.0230202 3.14159 -6.5209e-06 -3.14159</pose>
+      <pose frame=''>-0.02575 -0.11026 0.02302 3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>-0.0013 0.00371 -0.00105 0 -0 0</pose>
+        <pose frame=''>-0.0013 0.00371 -0.00105 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1251,7 +1233,7 @@
       <child>l_elbow_1</child>
       <parent>l_upper_arm</parent>
       <axis>
-        <xyz>-1.01957e-06 1 2.59739e-06</xyz>
+        <xyz>-1e-06 1 3e-06</xyz>
         <limit>
           <lower>0.0959931</lower>
           <upper>1.85005</upper>
@@ -1268,9 +1250,9 @@
       </axis>
     </joint>
     <link name='l_forearm'>
-      <pose>-0.0107497 -0.11026 0.0230201 -1.5708 2.59741e-06 -1.57079</pose>
+      <pose frame=''>-0.01075 -0.11026 0.02302 -1.5708 3e-06 -1.57079</pose>
       <inertial>
-        <pose>0.000347 0.066 0.00476 0 -0 0</pose>
+        <pose frame=''>0.000347 0.066 0.00476 0 -0 0</pose>
         <mass>0.525</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1282,7 +1264,7 @@
         </inertia>
       </inertial>
       <collision name='l_forearm_collision'>
-        <pose>-0.000143922 -1.25974e-12 0.0204334 -2.66395 1.57079 -1.09315</pose>
+        <pose frame=''>-0.000144 -0 0.020433 -2.66395 1.57079 -1.09315</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1291,7 +1273,7 @@
         </geometry>
       </collision>
       <visual name='l_forearm_visual'>
-        <pose>-0.000143922 -1.25974e-12 0.0204334 -2.66395 1.57079 -1.09315</pose>
+        <pose frame=''>-0.000144 -0 0.020433 -2.66395 1.57079 -1.09315</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1304,7 +1286,7 @@
       <child>l_forearm</child>
       <parent>l_elbow_1</parent>
       <axis>
-        <xyz>-2.8477e-06 2.5974e-06 -1</xyz>
+        <xyz>-3e-06 3e-06 -1</xyz>
         <limit>
           <lower>-0.872665</lower>
           <upper>0.872665</upper>
@@ -1321,9 +1303,9 @@
       </axis>
     </joint>
     <link name='l_wrist_1'>
-      <pose>-0.0107501 -0.110259 -0.11428 -2.7153 1.57079 1.99709</pose>
+      <pose frame=''>-0.01075 -0.110259 -0.11428 -2.7153 1.57079 1.99709</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1339,7 +1321,7 @@
       <child>l_wrist_1</child>
       <parent>l_forearm</parent>
       <axis>
-        <xyz>1 1.01958e-06 -2.84771e-06</xyz>
+        <xyz>1 1e-06 -3e-06</xyz>
         <limit>
           <lower>-1.13446</lower>
           <upper>0.174533</upper>
@@ -1356,9 +1338,9 @@
       </axis>
     </joint>
     <link name='l_hand'>
-      <pose>-0.0107501 -0.110259 -0.11428 -2.7153 1.57079 1.99709</pose>
+      <pose frame=''>-0.01075 -0.110259 -0.11428 -2.7153 1.57079 1.99709</pose>
       <inertial>
-        <pose>0.07023 -0.00805 -0.007 0 -0 0</pose>
+        <pose frame=''>0.07023 -0.00805 -0.007 0 -0 0</pose>
         <mass>0.213</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1370,7 +1352,7 @@
         </inertia>
       </inertial>
       <collision name='l_hand_collision'>
-        <pose>-1.25973e-12 0.0204334 -0.000143922 5.10271e-12 -2.64186e-12 1.49622e-11</pose>
+        <pose frame=''>-0 0.020433 -0.000144 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1379,7 +1361,7 @@
         </geometry>
       </collision>
       <visual name='l_hand_visual'>
-        <pose>-1.25973e-12 0.0204334 -0.000143922 5.10271e-12 -2.64186e-12 1.49622e-11</pose>
+        <pose frame=''>-0 0.020433 -0.000144 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1392,7 +1374,7 @@
       <child>l_hand</child>
       <parent>l_wrist_1</parent>
       <axis>
-        <xyz>1.01956e-06 -1 -6.27061e-06</xyz>
+        <xyz>1e-06 -1 -6e-06</xyz>
         <limit>
           <lower>-0.436332</lower>
           <upper>0.436332</upper>
@@ -1409,9 +1391,9 @@
       </axis>
     </joint>
     <link name='neck_1'>
-      <pose>-0.00780846 1.22355e-08 0.2253 6.12199e-06 -1.57079 -1.42918e-06</pose>
+      <pose frame=''>-0.007808 0 0.2253 6e-06 -1.57079 -1e-06</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1423,7 +1405,7 @@
         </inertia>
       </inertial>
       <collision name='neck_1_collision'>
-        <pose>-5.55112e-17 9.62889e-13 -0.0055 3.14159 -1.57079 1.5708</pose>
+        <pose frame=''>-0 0 -0.0055 3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1432,7 +1414,7 @@
         </geometry>
       </collision>
       <visual name='neck_1_visual'>
-        <pose>-5.55112e-17 9.62889e-13 -0.0055 3.14159 -1.57079 1.5708</pose>
+        <pose frame=''>-0 0 -0.0055 3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1445,10 +1427,10 @@
       <child>neck_1</child>
       <parent>chest</parent>
       <axis>
-        <xyz>-4.69281e-06 1 6.74621e-11</xyz>
+        <xyz>-5e-06 1 0</xyz>
         <limit>
-          <lower>-0.523599</lower>
-          <upper>0.383972</upper>
+          <lower>-0.698132</lower>
+          <upper>0.523599</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -1460,21 +1442,11 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
     </joint>
     <link name='neck_2'>
-      <pose>-0.00780836 1.22353e-08 0.2348 -1.46928e-05 3.67327e-06 -1.57079</pose>
+      <pose frame=''>-0.007808 0 0.2348 -1.5e-05 4e-06 -1.57079</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1486,7 +1458,7 @@
         </inertia>
       </inertial>
       <collision name='neck_2_collision'>
-        <pose>-9.62885e-13 0.0055 0.0235 -3.14157 -1.57079 -1.57082</pose>
+        <pose frame=''>-0 0.0055 0.0235 -3.14157 -1.57079 -1.57082</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1495,7 +1467,7 @@
         </geometry>
       </collision>
       <visual name='neck_2_visual'>
-        <pose>-9.62885e-13 0.0055 0.0235 -3.14157 -1.57079 -1.57082</pose>
+        <pose frame=''>-0 0.0055 0.0235 -3.14157 -1.57079 -1.57082</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1508,10 +1480,10 @@
       <child>neck_2</child>
       <parent>neck_1</parent>
       <axis>
-        <xyz>-1 -4.69282e-06 1.46928e-05</xyz>
+        <xyz>-1 -5e-06 1.5e-05</xyz>
         <limit>
-          <lower>-0.349066</lower>
-          <upper>0.349066</upper>
+          <lower>-1.22173</lower>
+          <upper>1.0472</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -1523,33 +1495,23 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
     </joint>
     <link name='head'>
-      <pose>-0.00780836 1.22353e-08 0.2348 -1.5708 1.46928e-05 8.36603e-06</pose>
+      <pose frame=''>-0.007808 0 0.2348 -1.5708 1.5e-05 8e-06</pose>
       <inertial>
-        <pose>0.0185 -0.1108 6.78454e-18 0 -0 0</pose>
+        <pose frame=''>0.0185 -0.1108 0 0 -0 0</pose>
         <mass>3</mass>
         <inertia>
           <ixx>0.01</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
+          <ixy>1.73472e-18</ixy>
+          <ixz>-4.81482e-35</ixz>
           <iyy>0.01</iyy>
-          <iyz>0</iyz>
+          <iyz>3.85186e-34</iyz>
           <izz>0.01</izz>
         </inertia>
       </inertial>
       <collision name='head_collision'>
-        <pose>0.0045 -0.0235 9.42472e-13 -1.32582 1.57079 -2.89662</pose>
+        <pose frame=''>0.0045 -0.0235 0 -1.32582 1.57079 -2.89662</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1558,35 +1520,23 @@
         </geometry>
       </collision>
       <visual name='head_visual'>
-     <!--   <pose>0.0045 -0.0235 9.42472e-13 -1.32582 1.57079 -2.89662</pose>-->
-
-       <pose>0.0045 -0.0235 9.42472e-13 -2.89662 1.57079 -2.89662</pose>
+        <pose frame=''>0.0045 -0.0235 0 -1.32582 1.57079 -2.89662</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_head_without_eyes.dae</uri>
+            <uri>model://icub/meshes/visual/icub_head.dae</uri>
           </mesh>
         </geometry>
       </visual>
-      <sensor name='imu_sensor' type='imu'>
-        <always_on>1</always_on>
-        <update_rate>100</update_rate>
-        <visualize>1</visualize>
-        <imu/>
-        <plugin name='iCub_yarp_gazebo_plugin_IMU' filename='libgazebo_yarp_imu.so'>
-          <yarpConfigurationFile>model://icub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
-        </plugin>
-        <pose>0.0185 -0.1108 0.0066 1.5708 -0 0</pose>
-      </sensor>
     </link>
     <joint name='neck_yaw' type='revolute'>
       <child>head</child>
       <parent>neck_2</parent>
       <axis>
-        <xyz>1.46928e-05 1.48834e-12 1</xyz>
+        <xyz>1.5e-05 0 1</xyz>
         <limit>
-          <lower>-0.767945</lower>
-          <upper>0.767945</upper>
+          <lower>-0.959931</lower>
+          <upper>0.959931</upper>
           <effort>20</effort>
           <velocity>100</velocity>
         </limit>
@@ -1598,189 +1548,11 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
     </joint>
-
-    <link name='eyes_tilt_link'>
-      <pose>-62.81e-03 0e-03 340.8e-03 1.57079 0 0</pose>
-      <inertial>
-        <pose>0.0 0.0 0.0 0 0 0</pose>
-        <mass>0.01</mass>
-        <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0</iyz>
-          <izz>0.001</izz>
-        </inertia>
-      </inertial>
-  <!--     <visual name='eyes_tilt_visual'>
-        <pose>0.0 0.0 0.0 0 0 0</pose>
-        <geometry>
-          <cylinder><radius>0.01</radius><length>0.05</length></cylinder> 
-        </geometry>
-      </visual> -->
-    </link>
-
-    <link name='left_eye_link'>
-      <pose>-62.81e-03 -34e-03 340.8e-03 -3.14159 0 0</pose>
-      <inertial>
-        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
-        <mass>0.01</mass>
-        <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0</iyz>
-          <izz>0.001</izz>
-        </inertia>
-      </inertial>
-       <visual name='left_eye_visual'>
-         <pose>0.055 0.033 -0.14 0 0 0</pose> 
-        <geometry>
-             <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
-   <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder> -->
-        </geometry>
-      </visual>
-    </link>
-
-    <link name='right_eye_link'>
-      <pose> -62.81e-03 34e-03 340.8e-03 -3.14159 0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 0 0</pose>
-        <mass>0.01</mass>
-        <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0</iyz>
-          <izz>0.001</izz>
-        </inertia>
-      </inertial>
-      <visual name='right_eye_visual'>
-        <pose>0.055 0.033 -0.14 0 0 0</pose> 
-        <geometry>
- <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder>-->
-            <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
-        </geometry>
-      </visual>
-    </link>
-
-    <joint name='eyes_tilt' type='revolute'>
-      <child>eyes_tilt_link</child>
-      <parent>head</parent>
-      <axis>
-        <xyz>0.0 1.0 0.0</xyz>
-        <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
-          <effort>84</effort>
-          <velocity>100</velocity>
-        </limit>
-        <dynamics>
-          <damping>1</damping>
-          <friction>0</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
-    </joint>
-
-    <joint name='left_eye' type='revolute'>
-      <child>left_eye_link</child>
-      <parent>eyes_tilt_link</parent>
-      <axis>
-        <xyz>0.0 0.0 1.0</xyz>
-        <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
-          <effort>84</effort>
-          <velocity>100</velocity>
-        </limit>
-        <dynamics>
-          <damping>1</damping>
-          <friction>0</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
-    </joint>
-
-    <joint name='right_eye' type='revolute'>
-      <child>right_eye_link</child>
-      <parent>eyes_tilt_link</parent>
-      <axis>
-        <xyz>0.0 0.0 1.0</xyz>
-        <limit>
-          <lower>-1.5708</lower>
-          <upper>1.5708</upper>
-          <effort>84</effort>
-          <velocity>100</velocity>
-        </limit>
-        <dynamics>
-          <damping>1</damping>
-          <friction>0</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-      <physics>
-        <ode>
-          <implicit_spring_damper>1</implicit_spring_damper>
-          <cfm_damping>1</cfm_damping>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-        </ode>
-      </physics>
-    </joint>
-
     <link name='r_shoulder_1'>
-      <pose>-0.0107489 0.11026 0.1753 -2.87979 -1.57079 -1.42916e-06</pose>
+      <pose frame=''>-0.010749 0.11026 0.1753 -2.87979 -1.57079 -1e-06</pose>
       <inertial>
-        <pose>5e-06 0.0187 0.00119 0 -0 0</pose>
+        <pose frame=''>5e-06 0.0187 0.00119 0 -0 0</pose>
         <mass>0.189</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1792,7 +1564,7 @@
         </inertia>
       </inertial>
       <collision name='r_shoulder_1_collision'>
-        <pose>-3.08642e-14 0.109285 0.00521101 3.06003 1.57079 -1.65235</pose>
+        <pose frame=''>-0 0.109285 0.005211 3.06003 1.57079 -1.65235</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1801,7 +1573,7 @@
         </geometry>
       </collision>
       <visual name='r_shoulder_1_visual'>
-        <pose>-3.08642e-14 0.109285 0.00521101 3.06003 1.57079 -1.65235</pose>
+        <pose frame=''>-0 0.109285 0.005211 3.06003 1.57079 -1.65235</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1814,7 +1586,7 @@
       <child>r_shoulder_1</child>
       <parent>chest</parent>
       <axis>
-        <xyz>0.258817 -0.965926 -2.85208e-06</xyz>
+        <xyz>0.258817 -0.965926 -3e-06</xyz>
         <limit>
           <lower>-1.65806</lower>
           <upper>0.0872665</upper>
@@ -1831,9 +1603,9 @@
       </axis>
     </joint>
     <link name='r_shoulder_2'>
-      <pose>-0.0107489 0.11026 0.1753 6.97094e-06 8.21122e-07 1.83259</pose>
+      <pose frame=''>-0.010749 0.11026 0.1753 7e-06 1e-06 1.83259</pose>
       <inertial>
-        <pose>-9.4e-05 -0.00627 -0.0166 0 -0 0</pose>
+        <pose frame=''>-9.4e-05 -0.00627 -0.0166 0 -0 0</pose>
         <mass>0.179</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1845,7 +1617,7 @@
         </inertia>
       </inertial>
       <collision name='r_shoulder_2_collision'>
-        <pose>-0.00154529 -0.00521101 -1.11181e-12 -1.00125 -1.57079 2.57205</pose>
+        <pose frame=''>-0.001545 -0.005211 -0 -1.00125 -1.57079 2.57205</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1854,7 +1626,7 @@
         </geometry>
       </collision>
       <visual name='r_shoulder_2_visual'>
-        <pose>-0.00154529 -0.00521101 -1.11181e-12 -1.00125 -1.57079 2.57205</pose>
+        <pose frame=''>-0.001545 -0.005211 -0 -1.00125 -1.57079 2.57205</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1867,7 +1639,7 @@
       <child>r_shoulder_2</child>
       <parent>r_shoulder_1</parent>
       <axis>
-        <xyz>0.965926 0.258817 -6.97094e-06</xyz>
+        <xyz>0.965926 0.258817 -7e-06</xyz>
         <limit>
           <lower>0</lower>
           <upper>2.80649</upper>
@@ -1884,9 +1656,9 @@
       </axis>
     </joint>
     <link name='r_shoulder_3'>
-      <pose>-0.0107489 0.11026 0.1753 3.14159 -6.5209e-06 -3.14159</pose>
+      <pose frame=''>-0.010749 0.11026 0.1753 3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>0.00553932 -2.47652e-05 0.0493895 0 -0 0</pose>
+        <pose frame=''>0.005539 -2.5e-05 0.04939 0 -0 0</pose>
         <mass>0.155</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1902,7 +1674,7 @@
       <child>r_shoulder_3</child>
       <parent>r_shoulder_2</parent>
       <axis>
-        <xyz>6.5209e-06 -5.62481e-08 1</xyz>
+        <xyz>7e-06 -0 1</xyz>
         <limit>
           <lower>-0.645772</lower>
           <upper>1.74533</upper>
@@ -1919,9 +1691,9 @@
       </axis>
     </joint>
     <link name='r_upper_arm'>
-      <pose>-0.0257494 0.11026 0.1073 3.14159 -6.5209e-06 -3.14159</pose>
+      <pose frame=''>-0.025749 0.11026 0.1073 3.14159 -7e-06 -3.14159</pose>
       <inertial>
-        <pose>-0.00015906 8.28733e-05 0.0298828 0 -0 0</pose>
+        <pose frame=''>-0.000159 8.3e-05 0.029883 0 -0 0</pose>
         <mass>0.729</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1933,7 +1705,7 @@
         </inertia>
       </inertial>
       <collision name='r_upper_arm_collision'>
-        <pose>-0.0204334 -0.000143922 -0.068 -3.14159 -1.51363e-11 1.309</pose>
+        <pose frame=''>-0.020433 -0.000144 -0.068 -3.14159 -0 1.309</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1942,7 +1714,7 @@
         </geometry>
       </collision>
       <visual name='r_upper_arm_visual'>
-        <pose>-0.0204334 -0.000143922 -0.068 -3.14159 -1.51363e-11 1.309</pose>
+        <pose frame=''>-0.020433 -0.000144 -0.068 -3.14159 -0 1.309</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -1955,32 +1727,40 @@
       <child>r_upper_arm</child>
       <parent>r_shoulder_3</parent>
       <axis>
-        <xyz>-0 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 1</xyz>
       </axis>
-      <sensor name='right_arm_ft' type='force_torque'>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+      <sensor name='r_arm_ft_sensor' type='force_torque'>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
-        <pose>0 0 0 0 0 0</pose>
-        <plugin name='right_arm_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
-          <yarpConfigurationFile>model://icub/conf/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
-        </plugin>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
       </sensor>
     </joint>
     <link name='r_elbow_1'>
-      <pose>-0.0257499 0.11026 0.0230202 -2.59732e-06 6.5209e-06 3.6732e-06</pose>
+      <pose frame=''>-0.02575 0.11026 0.02302 -3e-06 7e-06 4e-06</pose>
       <inertial>
-        <pose>0.0013 -0.00371 0.00105 0 -0 0</pose>
+        <pose frame=''>0.0013 -0.00371 0.00105 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -1996,7 +1776,7 @@
       <child>r_elbow_1</child>
       <parent>r_upper_arm</parent>
       <axis>
-        <xyz>-3.67322e-06 1 -2.59732e-06</xyz>
+        <xyz>-4e-06 1 -3e-06</xyz>
         <limit>
           <lower>0.0959931</lower>
           <upper>1.85005</upper>
@@ -2013,9 +1793,9 @@
       </axis>
     </joint>
     <link name='r_forearm'>
-      <pose>-0.0107499 0.11026 0.0230201 1.57079 -2.59734e-06 -1.5708</pose>
+      <pose frame=''>-0.01075 0.11026 0.02302 1.57079 -3e-06 -1.5708</pose>
       <inertial>
-        <pose>-0.000347 -0.066 -0.00476 0 -0 0</pose>
+        <pose frame=''>-0.000347 -0.066 -0.00476 0 -0 0</pose>
         <mass>0.525</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -2027,7 +1807,7 @@
         </inertia>
       </inertial>
       <collision name='r_forearm_collision'>
-        <pose>0.000143922 -1.07214e-12 -0.0204334 -1.74165 1.57079 -0.170863</pose>
+        <pose frame=''>0.000144 -0 -0.020433 -1.74165 1.57079 -0.170863</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -2036,7 +1816,7 @@
         </geometry>
       </collision>
       <visual name='r_forearm_visual'>
-        <pose>0.000143922 -1.07214e-12 -0.0204334 -1.74165 1.57079 -0.170863</pose>
+        <pose frame=''>0.000144 -0 -0.020433 -1.74165 1.57079 -0.170863</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -2049,7 +1829,7 @@
       <child>r_forearm</child>
       <parent>r_elbow_1</parent>
       <axis>
-        <xyz>2.84768e-06 2.59734e-06 1</xyz>
+        <xyz>3e-06 3e-06 1</xyz>
         <limit>
           <lower>-0.872665</lower>
           <upper>0.872665</upper>
@@ -2066,9 +1846,9 @@
       </axis>
     </joint>
     <link name='r_wrist_1'>
-      <pose>-0.0107503 0.11026 -0.11428 0.426292 -1.57079 1.14451</pose>
+      <pose frame=''>-0.01075 0.11026 -0.11428 0.426292 -1.57079 1.14451</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -2084,7 +1864,7 @@
       <child>r_wrist_1</child>
       <parent>r_forearm</parent>
       <axis>
-        <xyz>-1 -3.67321e-06 2.84771e-06</xyz>
+        <xyz>-1 -4e-06 3e-06</xyz>
         <limit>
           <lower>-1.13446</lower>
           <upper>0.174533</upper>
@@ -2101,9 +1881,9 @@
       </axis>
     </joint>
     <link name='r_hand'>
-      <pose>-0.0107503 0.11026 -0.11428 -0.720145 1.57079 -2.29094</pose>
+      <pose frame=''>-0.01075 0.11026 -0.11428 -0.720145 1.57079 -2.29094</pose>
       <inertial>
-        <pose>0.07023 -0.00805 0.007 0 -0 0</pose>
+        <pose frame=''>0.07023 -0.00805 0.007 0 -0 0</pose>
         <mass>0.213</mass>
         <inertia>
           <ixx>0.01</ixx>
@@ -2115,7 +1895,7 @@
         </inertia>
       </inertial>
       <collision name='r_hand_collision'>
-        <pose>1.0721e-12 0.0204334 0.000143922 1.53098e-11 2.00656e-11 -3.14159</pose>
+        <pose frame=''>0 0.020433 0.000144 0 0 -3.14159</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -2124,7 +1904,7 @@
         </geometry>
       </collision>
       <visual name='r_hand_visual'>
-        <pose>1.0721e-12 0.0204334 0.000143922 1.53098e-11 2.00656e-11 -3.14159</pose>
+        <pose frame=''>0 0.020433 0.000144 0 0 -3.14159</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -2137,7 +1917,7 @@
       <child>r_hand</child>
       <parent>r_wrist_1</parent>
       <axis>
-        <xyz>3.67323e-06 -1 6.27054e-06</xyz>
+        <xyz>4e-06 -1 6e-06</xyz>
         <limit>
           <lower>-0.436332</lower>
           <upper>0.436332</upper>
@@ -2153,29 +1933,29 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+    <static>0</static>
     <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
     </plugin>
     <plugin name='controlboard_head' filename='libgazebo_yarp_controlboard.so'>
-      <yarpConfigurationFile>model://icub/conf/gazebo_icub_head.ini</yarpConfigurationFile>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
     </plugin>
-    <plugin name='controlboard_left_arm_no_arm' filename='libgazebo_yarp_controlboard.so'>
+    <plugin name='controlboard_left_arm' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm_no_hand_for_no_hand_model.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
     </plugin>
-    <plugin name='controlboard_right_arm_no_arm' filename='libgazebo_yarp_controlboard.so'>
+    <plugin name='controlboard_right_arm' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm_no_hand_for_no_hand_model.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.698</initialConfiguration>
-    </plugin>
-    <plugin name='controlboard_left_leg' filename='libgazebo_yarp_controlboard.so'>
-      <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
     </plugin>
     <plugin name='controlboard_right_leg' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
     </plugin>
-    <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
-      <robotNamefromConfigFile>model://icub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>>
+    <plugin name='controlboard_left_leg' filename='libgazebo_yarp_controlboard.so'>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
     </plugin>
-    <pose>0 0 0.70 0 0 0</pose>
+    <plugin name='apply_external_wrench' filename='libgazebo_yarp_externalwrench.so'>
+      <robotNamefromConfigFile>model://icub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>
+    </plugin>
   </model>
 </sdf>
