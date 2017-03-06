@@ -153,8 +153,8 @@
       <axis>
         <xyz>-1 3e-06 7e-06</xyz>
         <limit>
-          <lower>-2.07694</lower>
-          <upper>0.296706</upper>
+          <lower>0</lower>
+          <upper>1.5708</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -744,8 +744,8 @@
       <axis>
         <xyz>1 0 -7e-06</xyz>
         <limit>
-          <lower>-2.07694</lower>
-          <upper>0.296706</upper>
+          <lower>0</lower>
+          <upper>1.5708</upper>
           <effort>84</effort>
           <velocity>100</velocity>
         </limit>
@@ -2565,10 +2565,16 @@
       </axis>
     </joint>
     <static>0</static>
-    <plugin name='iCub_yarp_gazebo_plugin_ACCpart' filename='libgazebo_yarp_inertialmtbPart.so'>
+    <plugin name='iCub_yarp_gazebo_plugin_ACC_left_arm' filename='libgazebo_yarp_inertialmtbPart.so'>
+      <yarpConfigurationFile>model://icub/conf/MTB/gazebo_icub_left_arm_mtb.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='iCub_yarp_gazebo_plugin_ACC_right_arm' filename='libgazebo_yarp_inertialmtbPart.so'>
+      <yarpConfigurationFile>model://icub/conf/MTB/gazebo_icub_right_arm_mtb.ini</yarpConfigurationFile>
+    </plugin>
+    <plugin name='iCub_yarp_gazebo_plugin_ACC_left_leg' filename='libgazebo_yarp_inertialmtbPart.so'>
       <yarpConfigurationFile>model://icub/conf/MTB/gazebo_icub_left_leg_mtb.ini</yarpConfigurationFile>
     </plugin>
-    <plugin name='iCub_yarp_gazebo_plugin_ACCpart' filename='libgazebo_yarp_inertialmtbPart.so'>
+    <plugin name='iCub_yarp_gazebo_plugin_ACC_right_leg' filename='libgazebo_yarp_inertialmtbPart.so'>
       <yarpConfigurationFile>model://icub/conf/MTB/gazebo_icub_right_leg_mtb.ini</yarpConfigurationFile>
     </plugin>
     <plugin name='controlboard_torso' filename='libgazebo_yarp_controlboard.so'>
