@@ -24,11 +24,17 @@ subdirlist(subdirs ${CMAKE_CURRENT_SOURCE_DIR})
 # Remove the worlds directory that is not a model 
 list(REMOVE_ITEM subdirs "worlds")
 
+# Remove the urdf directory that is not a Gazebo-ready model 
+list(REMOVE_ITEM subdirs "urdf")
+
 # Install each model 
 foreach (dir ${subdirs})
   install (DIRECTORY ${dir} DESTINATION share/gazebo/models)
 endforeach ()
 
-
 # Add worlds 
 add_subdirectory(worlds)
+
+# Install legacy URDF models roughly corresponding to iCub (no hands),
+# see https://github.com/robotology/yarp-wholebodyinterface/issues/84 for more info
+install(FILES urdf/model.urdf DESTINATION share/iCub/robots/icubGazeboSim)

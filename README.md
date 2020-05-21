@@ -33,7 +33,16 @@ Then, run Gazebo with the world file included in the world directory:
 gazebo ./icub-gazebo/worlds/icub.world
 ```
 or simply drag and drop the `iCub (no hands)` or `iCub with hands` models from the Insert tab in Gazebo.
-The same instructions work also for the `iCubHeidelberg01` model.
+
+On Windows no `gazebo` command is available, so you can instead obtained the same result by executing on one prompt (assuming that the correct enviroment variables have been sed):
+~~~
+gzserver ./icub-gazebo/worlds/icub.world
+~~~
+and in another prompt:
+~~~
+gzclient
+~~~
+
 
 FAQ
 ------
