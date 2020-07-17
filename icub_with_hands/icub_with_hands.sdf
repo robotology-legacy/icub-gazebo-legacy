@@ -876,7 +876,7 @@
       <child>left_eye_link</child>
       <parent>eyes_tilt_link</parent>
       <axis>
-        <xyz>0.0 0.0 1.0</xyz>
+        <xyz>0.0 0.0 -1.0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
@@ -907,7 +907,7 @@
       <child>right_eye_link</child>
       <parent>eyes_tilt_link</parent>
       <axis>
-        <xyz>0.0 0.0 1.0</xyz>
+        <xyz>0.0 0.0 -1.0</xyz>
         <limit>
           <lower>-1.5708</lower>
           <upper>1.5708</upper>
