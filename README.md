@@ -1,6 +1,9 @@
 icub-gazebo
 ===========
 
+**This repository hosted for a long time some manually assembled models to simulate the iCub humanoid robot in Gazebo. Being manually modified, the model contained in this repo are deprecated, and all users interested in simulating the iCub in Gazebo should use the model provided in https://github.com/robotology/icub-models instead. See https://github.com/robotology/robotology-superbuild/issues/542 for more details.**
+
+
 Preliminary files for simulation of the iCub humanoid robot in Gazebo (meshes courtesy of Joseph Salini - UPMC). Note that these models are compatible only with the Gazebo versions that use SDF 1.5 or higher. 
 
 Installation
